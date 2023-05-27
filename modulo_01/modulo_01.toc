@@ -1,0 +1,9 @@
+\babel@toc {english}{}\relax 
+\beamer@sectionintoc {1}{Ementa}{3}{0}{1}
+\beamer@sectionintoc {2}{Introdução ao Python}{8}{0}{2}
+\beamer@subsectionintoc {2}{1}{Ementa}{9}{0}{2}
+\beamer@subsectionintoc {2}{2}{Conceitos De Programação}{10}{0}{2}
+\beamer@subsectionintoc {2}{3}{Algoritmos}{12}{0}{2}
+\beamer@sectionintoc {3}{Linguagem Python}{15}{0}{3}
+\beamer@subsectionintoc {3}{1}{O que é Python}{16}{0}{3}
+\beamer@sectionintoc {4}{Exercícios}{17}{0}{4}
