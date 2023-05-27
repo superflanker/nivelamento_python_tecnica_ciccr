@@ -1,0 +1,15 @@
+\frametitle{Funções em \textit {Python}}
+Exemplo:
+	\rule{\textwidth}{1pt}
+	\scriptsize
+	\begin{minted}{python}
+		# Definindo uma função que implementa a operação de soma
+		def soma(a, b):
+			resultado = a + b
+			return resultado
+		
+		# Chamando a função e imprimindo o resultado
+		resultado_soma = soma(5, 3)
+		print(resultado_soma)
+			\end{minted}
+	\rule{\textwidth}{1pt}

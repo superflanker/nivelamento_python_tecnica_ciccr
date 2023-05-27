@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		\PYG{c+c1}{\PYGZsh{} Definindo uma função que implementa a operação de soma}
+		\PYG{k}{def} \PYG{n+nf}{soma}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{b}\PYG{p}{):}
+			\PYG{n}{resultado} \PYG{o}{=} \PYG{n}{a} \PYG{o}{+} \PYG{n}{b}
+			\PYG{k}{return} \PYG{n}{resultado}
+		
+		\PYG{c+c1}{\PYGZsh{} Chamando a função e imprimindo o resultado}
+		\PYG{n}{resultado\PYGZus{}soma} \PYG{o}{=} \PYG{n}{soma}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{)}
+		\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{resultado\PYGZus{}soma}\PYG{p}{)}
+\end{Verbatim}

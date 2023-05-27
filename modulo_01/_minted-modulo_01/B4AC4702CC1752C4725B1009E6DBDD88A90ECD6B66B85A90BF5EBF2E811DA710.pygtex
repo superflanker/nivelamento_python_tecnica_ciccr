@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		\PYG{c+c1}{\PYGZsh{} exemplo de lista}
+		\PYG{n}{frutas} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}maçã\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}banana\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}laranja\PYGZsq{}}\PYG{p}{]}
+		\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{frutas}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{])}  \PYG{c+c1}{\PYGZsh{} saída: \PYGZsq{}maçã\PYGZsq{}}
+		
+		\PYG{c+c1}{\PYGZsh{} exemplo de dicionário}
+		\PYG{n}{contatos} \PYG{o}{=} \PYG{p}{\PYGZob{}}\PYG{l+s+s1}{\PYGZsq{}João\PYGZsq{}}\PYG{p}{:} \PYG{l+s+s1}{\PYGZsq{}123456789\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Maria\PYGZsq{}}\PYG{p}{:} \PYG{l+s+s1}{\PYGZsq{}987654321\PYGZsq{}}\PYG{p}{\PYGZcb{}}
+		\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{contatos}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}João\PYGZsq{}}\PYG{p}{])}  \PYG{c+c1}{\PYGZsh{} saída: \PYGZsq{}123456789\PYGZsq{}}
+\end{Verbatim}

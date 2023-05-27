@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		\PYG{c+c1}{\PYGZsh{} exemplo de tupla}
+		\PYG{n}{ponto} \PYG{o}{=} \PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{4}\PYG{p}{)}
+		\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{ponto}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{])}  \PYG{c+c1}{\PYGZsh{} saída: 3}
+		
+		\PYG{c+c1}{\PYGZsh{} exemplo de conjunto}
+		\PYG{n}{numeros} \PYG{o}{=} \PYG{p}{\PYGZob{}}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{4}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{\PYGZcb{}}
+		\PYG{n}{numeros}\PYG{o}{.}\PYG{n}{add}\PYG{p}{(}\PYG{l+m+mi}{6}\PYG{p}{)}
+		\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{numeros}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} saída: \PYGZob{}1, 2, 3, 4, 5, 6\PYGZcb{}}
+		
+\end{Verbatim}

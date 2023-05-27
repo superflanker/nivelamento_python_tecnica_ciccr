@@ -1,10 +1,11 @@
 \documentclass{beamer}
 \usepackage{amsfonts,amsmath,oldgerm}
+\usepackage[utf8]{inputenc}
 \usepackage{hyperref}
 \usepackage[portuguese, brazil, english]{babel}
 \usepackage{minted}
 \usetheme{sintef}
-
+\usepackage[ddmmyyyy]{datetime}
 \hypersetup{
 	colorlinks=true,
 	linkcolor=white,
@@ -166,7 +167,7 @@ Programar é:
 
 \section{Linguagem Python}
 
-\subsection{O que é Python}
+\subsection{O que é \textit{Python}}
 
 
 \begin{frame}{O que é \textit{Python}}
@@ -175,13 +176,320 @@ Programar é:
 		\item \textbf{\textit{Definição:}} Linguagem de programação simples e versátil
 		\item \textbf{\textit{Características:}}
 		\begin{itemize}
-			\item 
-			\item
-			\item 
+			\item Multiplataforma
+			\item Multiparadigma
+			\item Linguagem Interpretada
 		\end{itemize}
 	\end{itemize}
 \end{frame}
 
+\begin{frame}{O que é \textit{Python}}
+	Não posso gerar executável a partir do \textbf{\textit{Python}}? Pode.....
+	\begin{itemize}
+		\item Py2Exe
+		\item PyInstaller
+	\end{itemize}
+\end{frame}
+
+\subsection{Sintaxe}
+
+\begin{frame}{Panorama geral}
+	
+	A sintaxe do \textit{Python} é a forma como o código em \textit{Python} é escrito e
+    estruturado. 
+    
+    \begin{itemize}
+    	\item O código escrito em \textit{Python} é estruturado em blocos;
+    	\item identação faz parte da estrutura;
+    	\item sem necessidade de caracteres de abertura e fechamento de Blocos;
+    	\item sem necessidade de terminador de instrução;
+    	\item comentários simples e multilinha
+    	\item Variáveis são utilizadas para armazenar valores e sua atribuição é feita atraés de um sinal de igualdade
+    \end{itemize}
+	
+\end{frame}
+
+\begin{frame}[fragile]{Panorama geral}
+	Exemplo:
+	\rule{\textwidth}{1pt}
+	\scriptsize
+	\begin{minted}{python}
+		# comentário de uma linha
+		# atribuindo o valor 5 a uma variável x
+		x = 5
+		if x > 5: 
+			# inicio de um bloco
+			print("x é maior que 5")
+			# fim de um bloco
+		else:
+			# inicio de outro bloco
+			print("x é menor ou igual a 5")
+			# fim de outro bloco
+	\end{minted}
+	\rule{\textwidth}{1pt}
+\end{frame}
+
+\begin{frame}[fragile]{Panorama geral}
+	Exemplo de comentário multilinha:
+	\rule{\textwidth}{1pt}
+	\scriptsize
+	\begin{minted}{python}
+	"""
+	Introdução ao Python - CICCR
+	@author Augusto Mathias Adams <augusto.mathias@sesp.pr.gov.br>
+	MIT License
+	..........
+	"""
+	\end{minted}
+
+	\rule{\textwidth}{1pt}	
+\end{frame}
+
+
+\subsection{Estruturas de Controle}
+
+\begin{frame}{Estruturas de Controle}
+	As estruturas de controle em \textbf{\textit{Python}} são usadas para controlar o fluxo de execução de um programa. Elas permitem que você tome decisões com base em condições e repita a execução de um bloco de código várias vezes.
+\end{frame}
+
+\begin{frame}[fragile]{Estruturas Condicionais}
+	\begin{itemize}
+		\item  \textbf{\textit{if:}} Executa um bloco de código se uma condição for verdadeira.
+		\item \textbf{\textit{elif:}} Permite testar condições adicionais se as condições anteriores forem falsas.
+		\item \textbf{\textit{else:}} Executa um bloco de código se todas as condições anteriores forem falsas.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Estruturas Condicionais}
+	Exemplo:
+	\rule{\textwidth}{1pt}
+	\scriptsize
+	\begin{minted}{python}
+		x = 5
+		if x > 0:
+			print("x é positivo")
+		elif x == 0:
+			print("x é igual a zero")
+		else:
+			print("x é negativo")
+	\end{minted}
+	\rule{\textwidth}{1pt}
+\end{frame}
+
+
+\begin{frame}[fragile]{Estruturas de Repetição}
+
+	\begin{itemize}
+		\item  \textbf{\textit{for:}} Itera sobre uma sequência (como uma lista, tupla ou string) ou um objeto iterável por um número específico de vezes.
+		\item \textbf{\textit{while:}} Executa um bloco de código repetidamente enquanto uma condição for verdadeira.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Estruturas de Repetição}
+	Exemplo:
+	\rule{\textwidth}{1pt}
+	\scriptsize	
+	\begin{minted}{python}
+		# loop for
+		for i in range(5):
+			print(i)
+		
+		x = 10
+		# loop while
+		while x > 0:
+			print(x)
+			x -= 1
+	\end{minted}
+	\rule{\textwidth}{1pt}
+	
+\end{frame}
+
+
+\begin{frame}[fragile]{Controle de Loop}
+	\begin{itemize}
+		\item  \textbf{\textit{break:}} Encerra imediatamente o loop em que está sendo executado.
+		\item \textbf{\textit{continue:}} Pula para a próxima iteração do loop, ignorando o restante do código dentro do bloco do loop.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Controle De Loop}
+	Exemplo:
+	\rule{\textwidth}{1pt}
+	\scriptsize
+	\begin{minted}{python}
+		# exemplo de break
+		for i in range(10):
+			if i == 5:
+				break
+			print(i)
+		
+		# exemplo de continue
+		for i in range(10):
+			if i % 2 == 0:
+				continue
+			print(i)
+
+	\end{minted}
+	\rule{\textwidth}{1pt}
+	
+\end{frame}
+
+\begin{frame}[fragile]{Tratamento de Exceções}
+	\begin{itemize}
+		\item  \textbf{\textit{estrutura try .... except:}} utilizada para lidar com exceções e tratar erros de forma controlada. Ela permite que você execute um bloco de código suscetível a erros e defina como lidar com esses erros, evitando que o programa seja interrompido abruptamente. 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Tratamento de Exceções}
+	Exemplo:
+	\rule{\textwidth}{1pt}
+	\scriptsize
+	\begin{minted}{python}
+		try:
+			numero = int(input("Digite um número: "))
+			resultado = 10 / numero
+			print("O resultado é:", resultado)
+		except ValueError:
+			print("O valor digitado não é um número válido.")
+		except ZeroDivisionError:
+			print("Não é possível dividir por zero.")
+		else:
+			print("Nenhum erro ocorreu.")
+		finally:
+			print("Fim da execução.")		
+	\end{minted}
+	\rule{\textwidth}{1pt}
+\end{frame}
+
+\begin{frame}[fragile]{Tratamento de Exceções}
+\begin{itemize}
+	\item O código dentro do bloco \texttt{try} é executado normalmente.
+	\item Se ocorrer uma exceção no bloco \texttt{try}, o fluxo de execução é interrompido e o \textbf{\textit{Python}} procura pelo bloco \texttt{except} correspondente à exceção lançada.
+	\item Se o tipo de exceção lançada for correspondente a algum bloco \texttt{except}, o código dentro desse bloco é executado.
+	\item Se a exceção lançada não corresponder a nenhum bloco \texttt{except}, ela será propagada para níveis superiores na pilha de chamadas ou tratada por um bloco \texttt{except} mais geral.
+	\item O bloco \texttt{else} é opcional e é executado se nenhum erro ocorrer no bloco \texttt{try}.
+	\item O bloco \texttt{finally} é opcional e sempre é executado, independentemente de ocorrer uma exceção ou não. É usado para executar código de limpeza ou finalização.
+\end{itemize}
+\end{frame}
+
+
+\subsection{Estruturas de Dados}
+
+\begin{frame}[fragile]{Estruturas de Dados}
+	\begin{itemize}
+		\item \textbf{\textit{Listas(list):}} coleção ordenada e mutável de elementos, que podem ser de diferentes tipos. Os elementos de uma lista são acessados através de índices, onde o primeiro elemento tem índice 0.
+		\item \textbf{\textit{Dicionários(dict):}} coleção de pares chave-valor, onde cada chave é única e mapeada a um valor correspondente. Os dicionários são úteis para armazenar informações relacionadas e acessá-las de forma eficiente através das chaves.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Estruturas de Dados}
+	Exemplo:
+	\rule{\textwidth}{1pt}
+	\scriptsize
+	\begin{minted}{python}
+		# exemplo de lista
+		frutas = ['maçã', 'banana', 'laranja']
+		print(frutas[0])  # saída: 'maçã'
+		
+		# exemplo de dicionário
+		contatos = {'João': '123456789', 'Maria': '987654321'}
+		print(contatos['João'])  # saída: '123456789'
+	\end{minted}
+	\rule{\textwidth}{1pt}
+\end{frame}
+
+\begin{frame}[fragile]{Estruturas de Dados}
+	\begin{itemize}
+		\item \textbf{\textit{Tuplas(tuple):}} Semelhante a uma lista, uma tupla é uma coleção ordenada de elementos. A diferença é que as tuplas são imutáveis, ou seja, seus elementos não podem ser alterados após a criação.
+		\item \textbf{\textit{Conjuntos(sets):}} coleção não ordenada de elementos únicos. Os conjuntos não permitem elementos duplicados e suportam operações como união, interseção e diferença.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Estruturas de Dados}
+	Exemplo:
+	\rule{\textwidth}{1pt}
+	\scriptsize
+	\begin{minted}{python}
+		# exemplo de tupla
+		ponto = (3, 4)
+		print(ponto[0])  # saída: 3
+		
+		# exemplo de conjunto
+		numeros = {1, 2, 3, 4, 5}
+		numeros.add(6)
+		print(numeros)  # saída: {1, 2, 3, 4, 5, 6}
+		
+	\end{minted}
+	\rule{\textwidth}{1pt}
+\end{frame}
+
+\begin{frame}[fragile]{Estruturas de Dados}
+	\begin{itemize}
+		\item \textbf{\textit{Strings:}} sequência imutável de caracteres. Elas são usadas para armazenar e manipular texto em \textbf{\textit{Python}}. As strings podem ser acessadas por índices e suportam várias operações, como concatenação e fatiamento (\textit{slicing}).
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]{Estruturas de Dados}
+	Exemplo:
+	\rule{\textwidth}{1pt}
+	\scriptsize
+	\begin{minted}{python}
+		# exemplo de string
+		mensagem = "Olá, mundo!"
+		print(mensagem[4])  # saída: ' '
+	\end{minted}
+	\rule{\textwidth}{1pt}
+\end{frame}
+
+\subsection{Funções em Python}
+\begin{frame}{Funções em \textit{Python}}
+	\begin{itemize}
+		\item \textbf{\textit{Funções:}} blocos de código reutilizáveis que executam uma tarefa específica. Elas são usadas para agrupar um conjunto de instruções relacionadas e podem receber argumentos (valores de entrada) e retornar resultados (valores de saída).
+		\item \textbf{\textit{Vantagens:}} Modularidade, Reutilização de Código, Legibilidade, Manutenção, Testabilidade, Organização
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Funções em \textit{Python}}
+	Estrutura de uma função:
+	\begin{itemize}
+		\item \textbf{\textit{Definição:}} Uma função é definida usando a palavra-chave \texttt{def}, seguida pelo nome da função e parênteses contendo os argumentos, se houver.
+		\item \textbf{\textit{Parâmetros}}: Os parâmetros são variáveis que recebem os valores passados para a função quando ela é chamada. 
+		\item \textbf{\textit{Corpo da função:}} bloco de código indentado que contém as instruções a serem executadas quando a função é chamada. 
+		\item \textbf{\textit{Retorno de valores:}} Uma função pode retornar um valor usando a palavra-chave \texttt{return}. Isso permite que a função forneça um resultado para o código que a chamou.
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]{Funções em \textit{Python}}
+	Exemplo:
+	\rule{\textwidth}{1pt}
+	\scriptsize
+	\begin{minted}{python}
+		# Definindo uma função que implementa a operação de soma
+		def soma(a, b):
+			resultado = a + b
+			return resultado
+		
+		# Chamando a função e imprimindo o resultado
+		resultado_soma = soma(5, 3)
+		print(resultado_soma)
+			\end{minted}
+	\rule{\textwidth}{1pt}
+\end{frame}
+
+\subsection{Aplicativo em \textit{Python}}
+
+\begin{frame}{Aplicativo em \textit{Python}}
+
+	Tendo como base o conhecimento adquirdo até agora, vamos implementar uma calculadora com as 4 operações básicas:
+	\begin{itemize}
+		\item Implemente uma função para cada uma das 4 operações da calculadora (soma, subtração, multiplicação e divisão)
+		\item implemente o \textit{loop} principal utilizando a função \texttt{input} nativa do \textbf{\textit{Python}} e um \textit{loop \texttt{while}} com a condição sempre verdadeira. É um \textit{loop} infinito, porém, nao se preocupe com isto agora.
+		\item Não tem idéia de como fazer? Temos uma colinha especial em: \href{MaoNaMassa/Modulo_01/calculadora.py}{\textbf{\textit{Calculadora de Padeiro}}}
+	\end{itemize}
+
+\end{frame}
 
 \section{Exercícios}
 
@@ -199,13 +507,13 @@ Receita de Bolo da Vovó:
 \end{frame}
 
 \begin{frame}{Exercício 2 - Algoritmos}
-Receita de Bolo da Vovó em \textit{Python}:
-\begin{itemize}
-	\item Crie uma função para cada item do algoritmo definido no exercício anterior.
-	\item Crie uma função que gerenciará os passos de execução do algoritmo.
-	\item crie uma chamada de função ao gerenciador que criou e exiba a saída do programa.
-	\item \textbf{\textit{Dica:}} copie a estrutura da minha receita contida em \href{Exercicios/Modulo_01/exercicio_01/receita_de_bolo.py}{\textbf{\textit{Receita de Bolo da Vovó}}}
-\end{itemize}
+	Receita de Bolo da Vovó em \textit{Python}:
+	\begin{itemize}
+		\item Crie uma função para cada item do algoritmo definido no exercício anterior.
+		\item Crie uma função que gerenciará os passos de execução do algoritmo.
+		\item Crie uma chamada de função ao gerenciador que criou e exiba a saída do programa.
+		\item \textbf{\textit{Dica:}} copie a estrutura da minha receita contida em \href{Exercicios/Modulo_01/exercicio_01/receita_de_bolo.py}{\textbf{\textit{Receita de Bolo da Vovó}}}
+	\end{itemize}
 \end{frame}
 
 
@@ -222,11 +530,7 @@ Receita de Bolo da Vovó em \textit{Python}:
 
 \begin{frame}{Exercício 4 - Algoritmos}
 	 O que falta na bula de remédios para se tornar um algoritmo? Comente pelo menos 2 casos aplicáveis.
-	 
 \end{frame}
-
-
-
 
 \backmatter
 \end{document}
