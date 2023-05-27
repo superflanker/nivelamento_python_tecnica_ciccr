@@ -64,7 +64,7 @@ def adicionar_fermento(n):
     print("Adicionando ingrediente - Fermento ({:.02f} colher(es))".format(n))
 
 def adicionar_erva_doce(n):
-    print("Adicionando ingrediente - Erva Doce ({:.02f} colher(es))".format(n))
+    print("Polvilhando o bolo com Erva Doce ({:.02f} colher(es))".format(n))
 
 def bater_ingredientes():
     print("Batendo todos os ingredientes")
@@ -72,11 +72,14 @@ def bater_ingredientes():
 def despejar_em_uma_forma(n):
     print("Despejando em uma forma untada")
 
-def assando():
-    print("Assando em um forno pr")
+def assando(n):
+    print("Assando o bolo no forno aquecido por {:d} minutos".format(n))
 
 def esfriando():
     print("Esperando a forma esfriar")
+
+def tirando_da_forma():
+    print("Tirando o bolo da forma")
 
 def servindo():
     print("Servindo o bolo")
@@ -92,8 +95,10 @@ def receita_bolo_de_fuba():
     adicionar_leite(1)
     adicionar_oleo(1)
     bater_ingredientes()
-    assando()
+    assando(35)
     esfriando()
+    tirando_da_forma()
+    adicionar_erva_doce(1)
     servindo()
 
 receita_bolo_de_fuba()
