@@ -26,7 +26,7 @@ OUT OF OR IN
 
 # definição de operações da calculadora
 
-def soma(a, b):
+def soma(a, b) -> float:
     """
     Efetua a Soma dos Números a e b
     Args:
@@ -38,7 +38,7 @@ def soma(a, b):
     s = a + b
     return s
 
-def subtrai(a, b):
+def subtrai(a, b) -> float:
     """
     Efetua a Subtração dos Números a e b
     Args:
@@ -50,7 +50,7 @@ def subtrai(a, b):
     s = a - b
     return s
 
-def multiplica(a, b):
+def multiplica(a, b) -> float:
     """
     Efetua a multiplicação dos Números a e b
     Args:
@@ -62,7 +62,7 @@ def multiplica(a, b):
     s = a * b
     return s
 
-def divide(a, b):
+def divide(a, b) -> float:
     """
     Efetua a divisão dos Números a e b
     Args:

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.5)  28 MAY 2023 19:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.5)  28 MAY 2023 20:56
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1226,7 +1226,7 @@ LaTeX Font Info:    Font shape `OT1/Carlito-OsF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 30.
 LaTeX Font Info:    Font shape `OT1/Carlito-OsF/b/n' will be
 (Font)              scaled to size 8.0pt on input line 30.
-<assets/background.png, id=72, 2971.1pt x 2168.1pt>
+<assets/background.png, id=68, 2971.1pt x 2168.1pt>
 File: assets/background.png Graphic file (type png)
 <use assets/background.png>
 Package pdftex.def Info: assets/background.png  used on input line 30.
@@ -1282,11 +1282,7 @@ LaTeX Font Info:    Font shape `OT1/Caladea-TLF/m/n' will be
 (Font)              scaled to size 10.95pt on input line 2.
 LaTeX Font Info:    Font shape `OT1/Caladea-TLF/m/it' will be
 (Font)              scaled to size 10.95pt on input line 2.
-)
-Overfull \vbox (5.19159pt too high) detected at line 39
- []
-
-[3
+) [3
 
  <./assets/logo_RGB_negative.png>]
 LaTeX Font Info:    Trying to load font information for TS1+Carlito-OsF on inpu
@@ -1307,11 +1303,7 @@ LaTeX Font Info:    Font shape `TS1/Carlito-OsF/m/n' will be
 
 ] [7
 
-] (./modulo_01.toc)
-Overfull \vbox (6.63968pt too high) detected at line 83
- []
-
-[8
+] (./modulo_01.toc) [8
 
 ] [9
 
@@ -1329,13 +1321,13 @@ LaTeX Font Info:    Font shape `OT1/Carlito-OsF/b/it' will be
  [12
 
 ]
-<imagens/fluxograma-exemplo.jpg, id=199, 345.29pt x 345.29pt>
+<imagens/fluxograma-exemplo.jpg, id=192, 345.29pt x 345.29pt>
 File: imagens/fluxograma-exemplo.jpg Graphic file (type jpg)
 <use imagens/fluxograma-exemplo.jpg>
 Package pdftex.def Info: imagens/fluxograma-exemplo.jpg  used on input line 154
 .
 (pdftex.def)             Requested size: 139.4179pt x 139.42018pt.
-<imagens/nao_e_algoritmo.jpg, id=200, 437.635pt x 452.69125pt>
+<imagens/nao_e_algoritmo.jpg, id=193, 437.635pt x 452.69125pt>
 File: imagens/nao_e_algoritmo.jpg Graphic file (type jpg)
 <use imagens/nao_e_algoritmo.jpg>
 Package pdftex.def Info: imagens/nao_e_algoritmo.jpg  used on input line 154.
@@ -1344,16 +1336,13 @@ Package pdftex.def Info: imagens/nao_e_algoritmo.jpg  used on input line 154.
 
  <./imagens/fluxograma-exemplo.jpg> <./imagens/nao_e_algoritmo.jpg>] [14
 
-] (./modulo_01.toc)
-Overfull \vbox (6.67479pt too high) detected at line 168
- []
-
-[15
+] (./modulo_01.toc) [15
 
 ]
 LaTeX Font Info:    Font shape `OT1/Carlito-OsF/b/it' will be
 (Font)              scaled to size 14.4pt on input line 184.
- [16
+
+[16
 
 ] [17
 
@@ -1510,15 +1499,25 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <8> not available
 1DA710.pygtex)) [39
 
 ]
+\openout4 = `modulo_01.vrb'.
+
+ (./modulo_01.vrb
+\openout5 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/03CC5F5C98581DE379D7A0CD5907A98DA90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)) [40
+
+]
 LaTeX Font Info:    Font shape `OT1/Caladea-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 490.
+(Font)              scaled to size 10.0pt on input line 506.
 LaTeX Font Info:    Font shape `OT1/Caladea-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 490.
+(Font)              scaled to size 7.0pt on input line 506.
 LaTeX Font Info:    Font shape `OT1/Caladea-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 490.
+(Font)              scaled to size 10.0pt on input line 506.
 LaTeX Font Info:    Font shape `OT1/Caladea-TLF/m/it' will be
-(Font)              scaled to size 7.0pt on input line 490.
- [40
+(Font)              scaled to size 7.0pt on input line 506.
+ [41
 
 ]
 \openout4 = `modulo_01.vrb'.
@@ -1528,17 +1527,11 @@ LaTeX Font Info:    Font shape `OT1/Caladea-TLF/m/it' will be
 
 
 (./_minted-modulo_01/0B8C41D5DB3A2B700435F0483E46AA2BA90ECD6B66B85A90BF5EBF2E81
-1DA710.pygtex)) [41
+1DA710.pygtex)) [42
 
-] [42
+] [43
 
-] (./modulo_01.toc)
-Overfull \vbox (5.97998pt too high) detected at line 520
- []
-
-[43
-
-] [44
+] (./modulo_01.toc) [44
 
 ] [45
 
@@ -1546,16 +1539,18 @@ Overfull \vbox (5.97998pt too high) detected at line 520
 
 ] [47
 
+] [48
+
 ]
 LaTeX Font Info:    Font shape `OT1/Carlito-OsF/m/n' will be
-(Font)              scaled to size 24.88pt on input line 562.
+(Font)              scaled to size 24.88pt on input line 578.
 LaTeX Font Info:    Font shape `OT1/Carlito-OsF/m/sl' in size <14.4> not availa
 ble
 (Font)              Font shape `OT1/Carlito-OsF/m/it' tried instead on input li
-ne 562.
+ne 578.
 LaTeX Font Info:    Font shape `OT1/Carlito-OsF/m/it' will be
-(Font)              scaled to size 14.4pt on input line 562.
- [48
+(Font)              scaled to size 14.4pt on input line 578.
+ [49
 
 ]
 \tf@nav=\write8
@@ -1567,17 +1562,18 @@ LaTeX Font Info:    Font shape `OT1/Carlito-OsF/m/it' will be
 \tf@snm=\write10
 \openout10 = `modulo_01.snm'.
 
- (./modulo_01.aux)
+
+(./modulo_01.aux)
 Package rerunfilecheck Info: File `modulo_01.out' has not changed.
-(rerunfilecheck)             Checksum: F42F17372143083FA60BC7D6BEB9965F;1880.
+(rerunfilecheck)             Checksum: 2B460883AF8AE9A664E7080796F5805A;1724.
 runsystem(rm modulo_01.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 30764 strings out of 478287
- 618413 string characters out of 5849290
- 920324 words of memory out of 5000000
- 48097 multiletter control sequences out of 15000+600000
+ 30772 strings out of 478287
+ 618947 string characters out of 5849290
+ 920397 words of memory out of 5000000
+ 48099 multiletter control sequences out of 15000+600000
  541148 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,16n,122p,1003b,929s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1596,10 +1592,10 @@ c/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/m
 sam10.pfb>
-Output written on modulo_01.pdf (48 pages, 1752621 bytes).
+Output written on modulo_01.pdf (49 pages, 1753510 bytes).
 PDF statistics:
- 538 PDF objects out of 1000 (max. 8388607)
- 445 compressed objects within 5 object streams
- 111 named destinations out of 1000 (max. 500000)
- 180 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 537 PDF objects out of 1000 (max. 8388607)
+ 443 compressed objects within 5 object streams
+ 112 named destinations out of 1000 (max. 500000)
+ 172 words of extra memory for PDF output out of 10000 (max. 10000000)
 

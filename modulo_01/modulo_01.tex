@@ -449,7 +449,6 @@ Programar é:
 		\item \textbf{\textit{Vantagens:}} Modularidade, Reutilização de Código, Legibilidade, Manutenção, Testabilidade, Organização.
 	\end{itemize}
 \end{frame}
-\subsection{Funções em Python}
 
 \begin{frame}{Funções em \textit{Python}}
 	Estrutura de uma função:
@@ -477,6 +476,23 @@ Programar é:
 		print(resultado_soma)
 			\end{minted}
 	\rule{\textwidth}{1pt}
+\end{frame}
+
+\begin{frame}[fragile]{Funções em \textit{Python}}
+Exemplo com tipo de retorno definido:
+\rule{\textwidth}{1pt}
+\scriptsize
+\begin{minted}{python}
+	# Definindo uma função que implementa a operação de soma
+	def soma(a, b) -> float:
+		resultado = a + b
+		return resultado
+	
+	# Chamando a função e imprimindo o resultado
+	resultado_soma = soma(5, 3)
+	print(resultado_soma)
+\end{minted}
+\rule{\textwidth}{1pt}
 \end{frame}
 
 
