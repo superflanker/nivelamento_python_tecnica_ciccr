@@ -10,5 +10,6 @@
 \beamer@subsectionintoc {3}{3}{Estruturas de Controle}{21}{0}{3}
 \beamer@subsectionintoc {3}{4}{Estruturas de Dados}{31}{0}{3}
 \beamer@subsectionintoc {3}{5}{Funções em Python}{37}{0}{3}
-\beamer@subsectionintoc {3}{6}{Aplicativo em \textit {Python}}{40}{0}{3}
-\beamer@sectionintoc {4}{Exercícios}{41}{0}{4}
+\beamer@subsectionintoc {3}{6}{Funções em Python}{38}{0}{3}
+\beamer@subsectionintoc {3}{7}{Aplicativo em \textit {Python}}{42}{0}{3}
+\beamer@sectionintoc {4}{Exercícios}{43}{0}{4}

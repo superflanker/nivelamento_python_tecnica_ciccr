@@ -446,9 +446,10 @@ Programar é:
 \begin{frame}{Funções em \textit{Python}}
 	\begin{itemize}
 		\item \textbf{\textit{Funções:}} blocos de código reutilizáveis que executam uma tarefa específica. Elas são usadas para agrupar um conjunto de instruções relacionadas e podem receber argumentos (valores de entrada) e retornar resultados (valores de saída).
-		\item \textbf{\textit{Vantagens:}} Modularidade, Reutilização de Código, Legibilidade, Manutenção, Testabilidade, Organização
+		\item \textbf{\textit{Vantagens:}} Modularidade, Reutilização de Código, Legibilidade, Manutenção, Testabilidade, Organização.
 	\end{itemize}
 \end{frame}
+\subsection{Funções em Python}
 
 \begin{frame}{Funções em \textit{Python}}
 	Estrutura de uma função:
@@ -475,6 +476,31 @@ Programar é:
 		resultado_soma = soma(5, 3)
 		print(resultado_soma)
 			\end{minted}
+	\rule{\textwidth}{1pt}
+\end{frame}
+
+
+\begin{frame}{Funções em \textit{Python}}
+	\begin{itemize}
+		\item \textbf{\textit{Funções Anônimas:}} são funções em linha de código que não possuem um nome definido. Elas são úteis quando você precisa de uma função simples e de curta duração.
+		\begin{itemize}
+			\item São frequentemente usadas em combinação com outras funções, como $map()$, $filter(),$ e $reduce()$, para realizar operações em coleções de dados de forma concisa.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Funções em \textit{Python}}
+	Exemplo:
+	\rule{\textwidth}{1pt}
+	\scriptsize
+	\begin{minted}{python}
+		# definindo uma função lambda
+		quadrado = lambda x: x**2
+		
+		# Chamando a função lambda
+		resultado = quadrado(5)
+		print(resultado)
+	\end{minted}
 	\rule{\textwidth}{1pt}
 \end{frame}
 

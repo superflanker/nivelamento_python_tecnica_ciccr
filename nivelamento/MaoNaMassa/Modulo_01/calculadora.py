@@ -80,7 +80,9 @@ def divide(a, b):
 
 # loop principal
 
-while True:
+q = ord('a')
+
+while q != 'q':
     # entrada de operandos e a operação - Notação Polonesa
 
     print("Digite o primeiro operando: ")
@@ -116,3 +118,7 @@ while True:
         print(divide(opa, opb))
     else:
         print("Operação sem Suporte")
+
+    print("Pressione qualquer tecla para continuar, q para sair")
+
+    q = input()
