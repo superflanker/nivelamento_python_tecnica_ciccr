@@ -6,9 +6,9 @@
 \beamer@subsectionintoc {2}{3}{Algoritmos}{12}{0}{2}
 \beamer@sectionintoc {3}{Linguagem Python}{15}{0}{3}
 \beamer@subsectionintoc {3}{1}{O que é \textit {Python}}{16}{0}{3}
-\beamer@subsectionintoc {3}{2}{Sintaxe}{18}{0}{3}
-\beamer@subsectionintoc {3}{3}{Estruturas de Controle}{21}{0}{3}
-\beamer@subsectionintoc {3}{4}{Estruturas de Dados}{31}{0}{3}
-\beamer@subsectionintoc {3}{5}{Funções em Python}{37}{0}{3}
-\beamer@subsectionintoc {3}{6}{Aplicativo em \textit {Python}}{43}{0}{3}
-\beamer@sectionintoc {4}{Exercícios}{44}{0}{4}
+\beamer@subsectionintoc {3}{2}{Sintaxe}{19}{0}{3}
+\beamer@subsectionintoc {3}{3}{Estruturas de Controle}{22}{0}{3}
+\beamer@subsectionintoc {3}{4}{Estruturas de Dados}{32}{0}{3}
+\beamer@subsectionintoc {3}{5}{Funções em Python}{38}{0}{3}
+\beamer@subsectionintoc {3}{6}{Aplicativo em \textit {Python}}{44}{0}{3}
+\beamer@sectionintoc {4}{Exercícios}{45}{0}{4}
