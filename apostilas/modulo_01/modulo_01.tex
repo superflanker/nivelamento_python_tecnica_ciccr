@@ -1,0 +1,405 @@
+%\documentclass[journal, onecolumn, letterpaper]{IEEEtran}
+%\documentclass[journal,onecolumn]{IEEEtran}
+% \documentclass[conference]{IEEEtran}
+\documentclass[a4paper, 12pt, onecolumn,singlespacing]{article}
+
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage[level]{fmtcount} % equivalent to \usepackage{nth}
+% \include{util}
+\usepackage[portuguese, brazil, english]{babel}
+\usepackage{multirow}
+\usepackage{array} % for defining a new column type
+\usepackage{varwidth} %for the varwidth minipage environment
+\usepackage[super]{nth}
+\usepackage{authblk}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{ulem}
+\usepackage{graphicx}
+% \usepackage{subfig}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{titlesec}
+\usepackage{helvet}
+\usepackage{gensymb}
+\usepackage{setspace} % espacamento entre linhas
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usepackage{minted}
+\usepackage[left=2cm, right=2cm, bottom=2cm, top=2cm]{geometry} 
+\usepackage{makecell}
+\usepackage{pdfpages}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\fancyhf{} % limpa os cabecalhos e rodapés
+\fancyhead[C]{\textit{INTRODUÇÃO AO PYTHON- CICCR - MÓDULO 01} } % define o cabeçalho personalizado
+\fancyfoot[C]{\textit{AUGUSTO MATHIAS ADAMS (INSTRUTOR)}}
+\pagestyle{fancy} % sem definir esse comando, o cabeçalho personalizado não é exibido
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=blue,      
+	urlcolor=blue,
+	pdftitle={Curso de Drones - CICCR - Noções de Meteorologia}
+}
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+
+%dashed line
+\usepackage{booktabs, makecell}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{}
+\usepackage{arydshln}
+\setlength\dashlinedash{0.2pt}
+\setlength\dashlinegap{1.5pt}
+\setlength\arrayrulewidth{0.3pt}
+
+% padrao 1.5 de espacamento entre linhas
+\setstretch{1.5}
+
+\title{INTRODUÇÃO AO PYTHON - MÓDULO 01\\SECRETARIA DE ESTADO DE SEGURANÇA PÚBLICA DO PARANÁ\\CENTRO INTEGRADO DE COMANDO E CONTROLE EM CRISE REGIONAL}
+
+\author[1]{NIVELAMENTO EM \textit{PYTHON}}
+\affil[1]{EQUIPE TÉCNICA CICCR}
+\setcounter{Maxaffil}{0}
+\renewcommand\Affilfont{\itshape\small}
+
+\begin{document}
+	% Seleciona o idioma do documento
+	\selectlanguage{brazil}
+	
+	% título
+	\maketitle
+	
+	\section{Objetivos do Módulo}
+	
+	O Nivelamento de \textbf{\textit{Conceitos de Programação - Introdução ao Python }}tem como objetivo introduzir os participantes à linguagem de programação \textit{Python}, fornecendo as habilidades básicas para escrever programas funcionais, compreender conceitos fundamentais e promover a resolução de problemas. Ao final do nivelamento, os alunos estarão preparados para aplicar seus conhecimentos em projetos pessoais ou profissionais.
+	
+	Ao fim deste módulo, o aluno deverá dominar os seguintes tópicos:
+	
+	\begin{itemize}
+		
+		\item \textbf{Do que se trata programar}: Programar é o ato de escrever código de computador para instruir um computador a executar determinadas tarefas. Envolve a criação de algoritmos, o uso de linguagens de programação e a aplicação de lógica e resolução de problemas para desenvolver soluções computacionais.
+		
+		\item \textbf{O que significa o termo algoritmo}: Um algoritmo é uma sequência de passos ou instruções lógicas bem definidas para resolver um problema ou realizar uma tarefa. É um conjunto de regras que descreve uma série de etapas para obter um resultado desejado.
+		
+		\item \textbf{Onde encontrar informações sobre como instalar o \textit{Python}}: Para obter informações sobre como instalar o \textbf{\textit{Python}}, você pode visitar o site oficial do \textbf{\textit{Python}} em \textit{python.org}. Lá você encontrará documentação detalhada, tutoriais e guias de instalação para diferentes plataformas. Para um guia de consulta rápida, acesso \href{Guia_Instalacao_Python.pdf}{\textbf{Guia de Instalação do \textit{\textbf{Python}}}}.
+		
+		\item \textbf{Sintaxe e Estrutura de Dados}: A sintaxe em programação se refere às regras e convenções que determinam como o código fonte deve ser escrito em uma determinada linguagem de programação. A estrutura de dados se refere às formas de organizar e armazenar dados em um programa, como listas, tuplas, conjuntos, dicionários, entre outros.
+		
+		\item \textbf{Funções em \textit{Python}}: Em \textbf{\textit{Python}}, as funções são blocos de código reutilizáveis que realizam uma tarefa específica. Elas permitem dividir um programa em partes menores e mais gerenciáveis, facilitando a organização e a reutilização de código. As funções podem receber argumentos, executar um conjunto de instruções e retornar um resultado, se necessário.
+		
+		\item \textbf{Primeira Aplicação em Python}: A primeira aplicação em Python refere-se à criação do seu primeiro programa usando a linguagem \textit{\textbf{Python}}. Geralmente, é um programa simples que mostra uma saída na tela ou realiza uma tarefa básica para familiarizá-lo com a sintaxe e as estruturas básicas da linguagem.
+		
+		\item \textbf{Comentários na sua primeira aplicação}: Comentários são trechos de texto adicionados ao código fonte para fornecer explicações e informações adicionais sobre o código. Na sua primeira aplicação em \textit{\textbf{Python}}, os comentários podem ser usados para descrever o propósito do programa, fornecer instruções ou explicar partes específicas do código. Eles são ignorados pelo interpretador \textbf{\textit{Python}} durante a execução do programa.
+		
+	\end{itemize}
+	
+	\section{Introdução Ao Python}
+	
+	\subsection{Programação e Algoritmos}
+	
+	\paragraph{O que é programar} Programar é o ato de escrever um conjunto de instruções ou algoritmos que um computador pode executar para realizar uma tarefa específica. Envolve a criação de código em uma linguagem de programação que segue uma sintaxe e estrutura definidas. A programação permite que os desenvolvedores criem software, aplicativos, sites e sistemas que automatizam processos, resolvam problemas e forneçam funcionalidades úteis. Programar requer habilidades lógicas e analíticas para que as instruções sejam escritas de forma clara e precisa, permitindo que o computador execute as tarefas conforme especificado. É uma habilidade essencial no mundo da tecnologia e desempenha um papel fundamental no avanço da computação e da inovação tecnológica.
+	
+	Programar refere-se ao processo de criar um conjunto de instruções ou algoritmos para serem executados por um computador ou outro dispositivo eletrônico. É a arte de escrever código, que consiste em uma série de comandos precisos e lógicos, para que o computador execute tarefas específicas.
+	
+	A programação permite que os desenvolvedores criem programas de software, aplicativos móveis, sites, jogos e uma ampla gama de soluções tecnológicas. É por meio da programação que os computadores são capazes de realizar diversas tarefas, desde cálculos complexos até a execução de operações de processamento de dados.
+	
+	Ao programar, os desenvolvedores utilizam linguagens de programação, como Python, Java, C++, JavaScript, entre outras. Essas linguagens fornecem uma sintaxe específica e um conjunto de regras que permitem aos programadores expressar suas instruções de forma clara e precisa para que o computador as execute corretamente.
+	
+	A programação requer habilidades lógicas, criatividade e resolução de problemas. Os programadores devem entender o problema que desejam resolver, projetar uma solução eficiente e implementar o código necessário para alcançar o resultado desejado. Além disso, a depuração e o teste do código são partes essenciais do processo de programação para garantir que o programa funcione corretamente e produza os resultados esperados.
+	
+	A programação é uma área em constante evolução, impulsionada pelo avanço da tecnologia e das demandas da sociedade. A capacidade de programar é uma habilidade valiosa em muitos setores, como desenvolvimento de software, ciência de dados, inteligência artificial, engenharia de software e muitos outros. Ela permite que as pessoas criem soluções inovadoras e automatizem tarefas para melhorar a eficiência e a produtividade em diversos campos de atuação.
+	
+	\subparagraph{O que é uma linguagem de Programação} Uma linguagem de programação é uma forma de comunicação entre um programador e um computador. É um conjunto de regras e símbolos que permitem escrever instruções para que o computador execute tarefas específicas. Essas linguagens são projetadas para serem compreensíveis tanto para os seres humanos quanto para as máquinas.
+	
+	As linguagens de programação fornecem um conjunto de palavras-chave, símbolos, estruturas gramaticais e regras semânticas que permitem aos programadores expressar suas instruções de forma estruturada e lógica. Elas permitem que os programadores escrevam algoritmos, que são sequências de passos que o computador deve seguir para resolver um determinado problema.
+	
+	Existem muitas linguagens de programação disponíveis, cada uma com suas próprias características e finalidades. Algumas linguagens são de uso geral, como Python, Java, C++ e JavaScript, e podem ser usadas para uma ampla variedade de aplicações. Outras são mais especializadas e foram projetadas para fins específicos, como linguagens para desenvolvimento web, análise de dados, inteligência artificial, entre outros.
+	
+	As linguagens de programação podem ser classificadas em diferentes níveis de abstração. Linguagens de baixo nível, como \textit{\textbf{Assembly}}, estão mais próximas da linguagem de máquina e requerem um conhecimento mais detalhado do hardware do computador. Por outro lado, linguagens de alto nível, como \textbf{\textit{Python}}, permitem que os programadores expressem suas instruções de maneira mais próxima da linguagem humana, sendo menos dependentes dos detalhes de implementação.
+	
+	Cada linguagem de programação tem suas próprias regras e características, mas todas compartilham o objetivo de permitir que os programadores desenvolvam soluções e criem programas que possam ser executados em um computador. O conhecimento de diferentes linguagens de programação permite aos programadores escolher a linguagem mais adequada para o problema em questão e expandir suas habilidades no desenvolvimento de software.
+	
+	\subparagraph{Estrutura de uma linguagem de programação} A estrutura de uma linguagem de programação é composta por diversos elementos que definem como o código deve ser organizado e como as instruções devem ser escritas. Os principais elementos de estrutura de uma linguagem de programação são:
+	
+	\begin{itemize}
+		\item \textbf{\textit{Sintaxe:}} A sintaxe é o conjunto de regras que define a estrutura correta das instruções na linguagem. Ela determina como as palavras-chave, operadores, variáveis e outros elementos devem ser combinados para formar instruções válidas. A sintaxe define a ordem e a forma correta de escrever o código.
+		
+		\item \textbf{\textit{Palavras-chave:}} As palavras-chave são termos reservados pela linguagem de programação que possuem um significado específico. Elas são usadas para definir estruturas de controle, declaração de variáveis, operações matemáticas e outras funcionalidades da linguagem. Exemplos de palavras-chave incluem "if", "for", "while", "function", "class", entre outras.
+		
+		\item \textbf{\textit{Tipos de dados:}} As linguagens de programação possuem diferentes tipos de dados, como números, texto, booleanos, arrays, objetos, entre outros. Os tipos de dados definem o tipo de valor que uma variável pode armazenar e as operações que podem ser realizadas com esses valores.
+		
+		\item \textbf{\textit{Variáveis:}} As variáveis são utilizadas para armazenar valores na memória durante a execução do programa. Elas possuem um nome e um tipo de dados associado. As variáveis podem ser usadas para armazenar informações temporárias, realizar cálculos e representar dados em geral.
+		
+		\item \textbf{\textit{Estruturas de controle:}} As estruturas de controle permitem que o fluxo de execução do programa seja controlado. Elas incluem estruturas condicionais (como "if" e "else") que permitem executar diferentes blocos de código dependendo de uma condição, e estruturas de repetição (como "for" e "while") que permitem executar um bloco de código várias vezes.
+		
+		\item \textbf{\textit{Funções e procedimentos:}} As funções e procedimentos são blocos de código que podem ser definidos e chamados em diferentes partes do programa. Eles permitem agrupar um conjunto de instruções em uma unidade lógica e reutilizável. As funções podem receber parâmetros e retornar valores.
+		
+		\item \textbf{\textit{Bibliotecas e módulos:}} Muitas linguagens de programação possuem bibliotecas ou módulos que são conjuntos de código pré-existente que fornecem funcionalidades adicionais. Essas bibliotecas podem conter funções, classes e outras estruturas que podem ser importadas e utilizadas em um programa. Elas permitem estender as capacidades da linguagem de programação e facilitam o desenvolvimento de soluções complexas.
+		
+		\item \textbf{\textit{Estruturas de dados:}} As estruturas de dados são formas organizadas de armazenar e manipular conjuntos de dados. Elas incluem \textit{arrays}, listas, conjuntos, dicionários, entre outros. Cada estrutura de dados tem suas próprias características e métodos para realizar operações específicas, como adicionar, remover, buscar ou modificar elementos.
+		
+		\item \textbf{\textit{Orientação a objetos:}} Muitas linguagens de programação são orientadas a objetos, o que significa que elas permitem a criação de classes e objetos. A programação orientada a objetos organiza o código em torno de objetos que possuem atributos (dados) e métodos (ações). Essa abordagem permite encapsular a lógica do programa e promover a reutilização de código.
+		
+		\item \textbf{\textit{Tratamento de erros:}} As linguagens de programação têm mecanismos para lidar com erros e exceções que podem ocorrer durante a execução do programa. Isso permite que o desenvolvedor capture e trate essas situações inesperadas, evitando falhas ou comportamentos indesejados do programa.
+		
+	\end{itemize}
+	
+	\subparagraph{Paradigmas de Programação} Um paradigma, no contexto da programação de computadores, refere-se a um conjunto de conceitos, princípios e abordagens que definem a forma como os programas são estruturados, organizados e desenvolvidos. É uma forma de pensar e abordar a resolução de problemas na programação.
+	
+	Cada paradigma de programação possui suas próprias regras, diretrizes e estilo de escrita de código. Ele define a estrutura básica do programa, as técnicas de solução de problemas e os padrões de design a serem seguidos.
+	
+	Os paradigmas de programação fornecem diferentes formas de pensar sobre a estrutura do programa, o fluxo de controle, o gerenciamento de estado e a interação entre os componentes do sistema. Eles influenciam a maneira como os programadores abordam a resolução de problemas e as ferramentas e técnicas que eles utilizam.
+	
+	É importante mencionar que não existe um único paradigma \textbf{\textit{``melhor''}} ou \textbf{\textit{``correto''}}. Cada paradigma tem suas vantagens e desvantagens, e a escolha do paradigma adequado depende do tipo de problema a ser resolvido, das restrições e das preferências pessoais. Além disso, muitas linguagens de programação permitem a combinação de múltiplos paradigmas, permitindo maior flexibilidade na forma como os programas são escritos.
+	
+	Os paradigmas de programação mais comuns incluem a programação imperativa, orientada a objetos, funcional, lógica, estruturada, entre outros. Cada um deles oferece uma abordagem única para a construção de programas e tem suas próprias técnicas e conceitos específicos.
+	
+	Alguns paradigmas de programação são:
+	
+	\begin{itemize}
+		\item \textbf{\textit{Programação Imperativa: }}É o paradigma mais tradicional e amplamente utilizado. Nesse paradigma, os programas são estruturados em sequências de instruções que modificam o estado do programa. Ele se baseia na ideia de que um programa é uma série de comandos que são executados em ordem.
+		
+		\item \textbf{\textit{Programação Orientada a Objetos (POO)}}: Nesse paradigma, os programas são organizados em torno de objetos, que são instâncias de classes. Os objetos possuem atributos (dados) e métodos (ações) que podem interagir uns com os outros. A POO enfatiza a reutilização de código, encapsulamento e modularidade.
+		
+		\item \textbf{\textit{Programação Funcional:}} Nesse paradigma, o foco está nas funções. Os programas são escritos em termos de funções puras, que não possuem efeitos colaterais e retornam um valor com base em seus argumentos. A programação funcional enfatiza a imutabilidade dos dados e o uso de funções de ordem superior.
+		
+		\item \textbf{\textit{Programação Lógica:}} Nesse paradigma, os programas são escritos em termos de regras lógicas. A programação lógica se baseia no uso de predicados e inferência lógica para resolver problemas. A linguagem de programação Prolog é um exemplo comum de programação lógica.
+		
+		\item \textbf{\textit{Programação Estruturada:}} É um paradigma que enfatiza a organização do código em estruturas bem definidas, como sequências, laços e condicionais. A programação estruturada busca evitar o uso de desvios incondicionais (como o "goto") e promover a legibilidade e a manutenibilidade do código.
+		
+	\end{itemize}
+	
+	Além desses, existem outros paradigmas de programação, como programação procedural, programação orientada a eventos, programação concorrente, entre outros. Cada paradigma tem suas próprias vantagens e é mais adequado para determinados tipos de problemas. Muitas linguagens de programação permitem a combinação de paradigmas, permitindo ao programador escolher a abordagem mais adequada para cada situação.
+	
+	\subparagraph{Programação Estruturada} A programação estruturada é um paradigma de programação que se baseia na organização do código em estruturas lógicas bem definidas. Nesse estilo de programação, o programa é dividido em blocos de código chamados de procedimentos ou funções, que contêm uma sequência lógica de instruções para executar uma determinada tarefa.
+	
+	A programação estruturada segue alguns princípios-chave:
+	\begin{itemize}
+		\item  \textbf{\textit{Sequência:}} As instruções são executadas em ordem sequencial, de cima para baixo, sem desvios ou saltos incondicionais.
+		
+		\item \textbf{\textit{Seleção:}} A seleção é realizada por meio de estruturas de controle condicionais, como o \texttt{``if-else''} ou \texttt{``switch-case''}, permitindo que diferentes blocos de código sejam executados com base em condições específicas.
+		
+		\item \textbf{\textit{Repetição:}} A repetição é realizada por meio de estruturas de controle de \textit{loop}, como \texttt{``for''} e \texttt{``while''}, permitindo que um bloco de código seja executado várias vezes com base em uma condição específica.
+		
+		\item \textbf{\textit{Modularidade:}} O código é dividido em procedimentos ou funções independentes, que podem ser chamados de outros locais do programa. Essa abordagem promove a reutilização de código, facilita a compreensão e a manutenção do programa.
+		
+	\end{itemize}
+	
+	A programação estruturada tem como objetivo principal tornar o código mais legível, organizado e fácil de entender. Ela evita o uso excessivo de desvios incondicionais, como "goto", que podem tornar o código confuso e difícil de dar manutenção. Além disso, a programação estruturada facilita a identificação de erros e a depuração do código.
+	
+	Ao seguir os princípios da programação estruturada, é possível escrever programas mais eficientes, modulares e robustos. No entanto, ela possui algumas limitações em lidar com problemas complexos, especialmente quando se trata de lidar com grandes volumes de dados ou lógicas mais avançadas. Nesses casos, paradigmas como a programação orientada a objetos podem ser mais adequados.
+	
+	\subparagraph{Programação Procedural} A programação procedural é um paradigma de programação que se concentra em estruturar o código em procedimentos ou funções. Ela se baseia na ideia de que um programa é composto por uma sequência de instruções que são executadas em ordem, e o controle do fluxo do programa é realizado por meio de estruturas de controle, como loops e condicionais.
+	
+	Na programação procedural, o foco está na decomposição do programa em procedimentos ou funções menores e mais gerenciáveis, que podem ser reutilizados em diferentes partes do programa. Cada procedimento é uma sequência de instruções que realiza uma tarefa específica e pode receber argumentos (parâmetros) e retornar um valor.
+	
+	Uma das principais características da programação procedural é o uso de variáveis, que armazenam dados temporários e podem ser manipuladas por meio de operações como atribuição, cálculos e comparações.
+	
+	A programação procedural segue uma abordagem top-down, onde o programa principal é dividido em procedimentos e subprocedimentos hierarquicamente. Essa divisão modular facilita a compreensão, a manutenção e a reutilização do código.
+	
+	Linguagens de programação como C, Pascal e Fortran são exemplos de linguagens que suportam a programação procedural. No entanto, muitas linguagens modernas combinam elementos da programação procedural com outros paradigmas, como a programação orientada a objetos, permitindo uma abordagem mais flexível e modular na construção de programas.
+	
+	\subparagraph{Programação Orientada a Objetos}
+	A programação orientada a objetos (\textit{POO}) é um paradigma de programação que organiza o código em torno de objetos, que são instâncias de classes. Na \textit{POO}, um objeto é uma entidade que contém dados e comportamentos relacionados.
+	
+	O paradigma da programação orientada a objetos baseia-se em quatro princípios fundamentais:
+	\begin{itemize}
+		\item 	\textbf{\textit{Abstração:}} Permite representar objetos do mundo real no código, identificando suas características relevantes e ignorando detalhes irrelevantes. Isso ajuda a modelar e compreender o problema a ser resolvido.
+		
+		\textbf{\textit{Encapsulamento:}} Envolve os dados e os comportamentos relacionados em uma única unidade chamada classe. A classe define a estrutura e o comportamento de um objeto, ocultando os detalhes internos e fornecendo interfaces para interagir com o objeto.
+		
+		\textbf{\textit{Herança:}} Permite criar novas classes a partir de classes existentes, herdeiras das características e comportamentos da classe pai. A herança facilita a reutilização de código e a criação de hierarquias de classes.
+		
+		\textbf{\textit{Polimorfismo:}} Permite que objetos de diferentes classes sejam tratados de maneira uniforme, por meio do uso de métodos com o mesmo nome, mas com comportamentos específicos para cada classe. Isso aumenta a flexibilidade e a extensibilidade do código.
+		
+	\end{itemize}
+	
+	Na programação orientada a objetos, as classes são utilizadas para definir objetos, especificando suas propriedades (atributos) e comportamentos (métodos). Os objetos são criados a partir das classes e podem interagir uns com os outros por meio de troca de mensagens.
+	
+	O estado de um objeto é definido pelos valores dos seus atributos ou propriedades. Os atributos representam as características ou informações que um objeto possui. Por exemplo, um objeto \textbf{\textit{``Carro''}} pode ter atributos como \textbf{\textit{``marca''}}, \textbf{\textit{``modelo''}}, \textbf{\textit{``cor''}} e \textbf{\textit{``velocidade''}}. O estado do objeto seria determinado pelos valores desses atributos, como $marca = 'Toyota'$, $modelo = 'Corolla'$, $cor = 'vermelho'$ e $velocidade = 60$.
+	
+	O comportamento de um objeto é definido pelos métodos associados a ele. Os métodos são as ações ou operações que um objeto pode realizar. Eles representam o comportamento do objeto e podem ser usados para modificar o estado do objeto ou realizar cálculos. Continuando com o exemplo do objeto \textbf{\textit{``Carro''}}, ele pode ter métodos como $acelerar()$, $frear()$, $ligar()$ e $desligar()$. Esses métodos definem as ações que o carro pode executar, afetando seu estado, como aumentar a velocidade, diminuir a velocidade, ligar o motor e desligar o motor.
+	
+	Linguagens de programação como \textit{Java}, \textit{C++}, \textit{Python} e \textit{C\#} são exemplos de linguagens que suportam a programação orientada a objetos. A \textit{POO} é amplamente utilizada devido à sua capacidade de modelar problemas complexos de forma mais clara, modular e reutilizável, facilitando o desenvolvimento e a manutenção de software.
+	
+	\paragraph{O que são algoritmos} O estudo e uso de algoritmos remonta a milhares de anos. A palavra \textit{``algoritmo''} deriva do nome de um matemático persa do século IX, \textit{Al-Khwarizmi}, que foi um dos primeiros a sistematizar métodos de resolução de equações lineares e quadráticas. No entanto, a ideia de algoritmo e seu uso prático são anteriores a \textit{Al-Khwarizmi}.
+	
+	Antes do advento dos computadores, os algoritmos eram resolvidos manualmente por matemáticos e cientistas. Grandes avanços foram feitos por matemáticos notáveis, como \textit{\textbf{Euclides}}, que desenvolveu o algoritmo para encontrar o maior divisor comum de dois números (Algoritmo de Euclides), e \textbf{\textit{\textit{Isaac Newton}}}, que desenvolveu algoritmos para cálculo diferencial e integral.
+	
+	Com o avanço da tecnologia e a invenção dos computadores, o estudo e desenvolvimento de algoritmos expandiu-se significativamente. Durante a Segunda Guerra Mundial, os primeiros computadores foram construídos para auxiliar nos cálculos e criptografia. Esse período marcou o início da programação de computadores e do desenvolvimento de algoritmos para resolver problemas complexos.
+	
+	Nos anos seguintes, a ciência da computação emergiu como uma disciplina acadêmica, e muitos pesquisadores contribuíram para o desenvolvimento de algoritmos eficientes e otimizados. Diversos algoritmos famosos foram criados nessa época, como o algoritmo de classificação rápida (\textit{quicksort}), o algoritmo de busca binária e o algoritmo de \textit{Dijkstra\textbf{}} para encontrar o caminho mais curto em um grafo.
+	
+	À medida que os computadores se tornaram mais poderosos e acessíveis, o campo da ciência da computação se expandiu rapidamente, levando ao desenvolvimento de algoritmos mais avançados e sofisticados. Algoritmos de aprendizado de máquina, algoritmos de criptografia, algoritmos de compressão de dados e algoritmos de otimização são apenas alguns exemplos das áreas em que os algoritmos têm sido amplamente utilizados.
+	
+	Hoje em dia, os algoritmos estão presentes em quase todos os aspectos de nossas vidas, desde a pesquisa na web até as transações financeiras. O estudo contínuo e a evolução dos algoritmos são fundamentais para acompanhar os avanços tecnológicos e resolver problemas cada vez mais complexos.
+	
+	Algoritmo é uma sequência de passos usada para resolver um problema. A sequência apresenta um método único de abordar uma questão, fornecendo uma solução específica. Um algoritmo não precisa representar conceitos matemáticos ou lógicos, embora as apresentações de algoritmos frequentemente se enquadrem nessa categoria. Algumas fórmulas especiais também são algoritmos, como a fórmula quadrática. Para que um processo represente um algoritmo, ele deve ser:
+	
+	\begin{itemize}
+		\item \textbf{\textit{Finito:}} O algoritmo deve eventualmente resolver o problema. Este livro discute problemas com uma solução conhecida para que você possa avaliar se um algoritmo resolve o problema corretamente.
+		\item \textbf{\textit{Bem-definido:}} A série de passos deve ser precisa e apresentar etapas compreensíveis. Especialmente porque os computadores estão envolvidos no uso de algoritmos, o computador deve ser capaz de entender as etapas para criar um algoritmo utilizável.
+		\item \textbf{\textit{Efetivo:}} Um algoritmo deve resolver todos os casos do problema para o qual alguém o definiu. Um algoritmo deve sempre resolver o problema que precisa ser resolvido. Embora se deva antecipar algumas falhas, a ocorrência de falhas é rara e ocorre apenas em situações aceitáveis para o uso pretendido do algoritmo.
+	\end{itemize}
+	
+	Para criar um algoritmo, siga estas etapas:
+	
+	\begin{itemize}
+		
+		\item \textbf{\textit{Compreenda o problema:}} Analise e compreenda claramente o problema que deseja resolver. Identifique os requisitos, restrições e objetivos do problema.
+		
+		\item \textbf{\textit{Divida o problema em etapas menores:}} Quebre o problema em etapas menores e mais gerenciáveis. Isso ajuda a simplificar o problema e facilita a resolução passo a passo.
+		
+		\item \textbf{\textit{Identifique as entradas e saídas:}} Determine quais informações são necessárias como entrada para o algoritmo e qual é a saída esperada após a execução do algoritmo.
+		
+		\item \textbf{\textit{Projete a lógica do algoritmo:}} Desenvolva a lógica do algoritmo, definindo a sequência de passos que devem ser seguidos para resolver o problema. Use estruturas de controle, como loops e condicionais, para controlar o fluxo do algoritmo.
+		
+		\item \textbf{\textit{Teste e revise o algoritmo:}} Teste o algoritmo com diferentes conjuntos de dados de entrada para garantir que ele esteja funcionando corretamente. Faça ajustes e revisões conforme necessário para melhorar a eficiência e corrigir erros.
+		
+		\item \textbf{\textit{Documente o algoritmo:}} Escreva o algoritmo de forma clara e organizada. Utilize comentários para explicar o propósito de cada etapa e fornecer informações adicionais para facilitar a compreensão.
+		
+		\item \textbf{\textit{Implemente o algoritmo:}} Traduza o algoritmo para a linguagem de programação escolhida. Escreva o código correspondente para cada etapa do algoritmo.
+		
+		\item \textbf{\textit{Teste e depure o código:}} Execute o código implementado, fornecendo diferentes dados de entrada e verificando se a saída corresponde ao esperado. Identifique e corrija quaisquer erros ou problemas de execução.
+		
+		\item \textbf{\textit{Otimize o algoritmo:}} Analise o desempenho do algoritmo e faça melhorias para torná-lo mais eficiente, reduzindo o tempo de execução ou a utilização de recursos.
+		
+	\end{itemize}
+	
+	
+	\textit{Lembre-se de que a criação de um algoritmo requer prática e experiência. À medida que você ganha mais familiaridade com a programação e a resolução de problemas, se tornará mais fácil criar algoritmos eficazes e eficientes.}
+	
+	\subparagraph{Representação de Algoritmos}
+	
+	Um algoritmo pode ser apresentado de diversas formas, dependendo do contexto em que está sendo utilizado. Aqui estão algumas das maneiras mais comuns de representar um algoritmo:
+	
+	\begin{itemize}
+		\item \textbf{\textit{Descrição Narrativa:}} Nesse formato, o algoritmo é descrito em linguagem natural, usando frases e parágrafos para explicar os passos necessários para resolver um problema. Essa descrição pode incluir exemplos e detalhes adicionais para facilitar o entendimento.
+		
+		\item \textbf{\textit{Fluxograma:}} Um fluxograma é uma representação gráfica do algoritmo. Nele, são usadas formas geométricas, como retângulos, losangos e setas, para representar os diferentes passos do algoritmo. As setas indicam a sequência de execução, e as formas geométricas contêm as instruções ou ações a serem realizadas.
+		
+		\item \textbf{\textit{Pseudocódigo}}: O pseudocódigo é uma forma intermediária entre a descrição narrativa e a linguagem de programação real. Ele usa uma mistura de linguagem natural e elementos de programação para descrever os passos do algoritmo. O pseudocódigo não segue a sintaxe de nenhuma linguagem específica, mas é uma forma mais estruturada e próxima da programação real.
+		
+		\item \textbf{\textit{Linguagem de Programação:}} Um algoritmo também pode ser apresentado diretamente em uma linguagem de programação real. Nesse caso, o algoritmo é escrito usando a sintaxe e as estruturas da linguagem escolhida. Essa forma de apresentação é mais adequada para programadores experientes ou quando se deseja implementar o algoritmo em um ambiente específico.
+		
+	\end{itemize}
+	
+	Independentemente da forma de apresentação escolhida, um algoritmo deve ser claro, preciso e completo. Deve descrever em detalhes os passos necessários para resolver um problema, indicando a sequência de ações, as condições de controle e os dados envolvidos. A escolha da forma de apresentação depende do público-alvo e do contexto em que o algoritmo será utilizado.
+	
+	\subparagraph{Fluxogramas}
+	Fluxogramas são diagramas visuais que representam a sequência de passos ou fluxo de um processo, algoritmo ou sistema. Eles são amplamente utilizados na programação e em outras áreas para representar de forma clara e visual as etapas e decisões envolvidas em um processo.
+	
+	Os fluxogramas permitem visualizar a lógica e a estrutura de um processo, tornando mais fácil entender e comunicar o fluxo das operações. Eles são ferramentas valiosas para projetar, documentar e depurar algoritmos e sistemas complexos, além de facilitar a colaboração entre membros de uma equipe.
+	
+	Um fluxograma usa símbolos gráficos para representar diferentes elementos e estruturas do algoritmo. Aqui estão alguns dos símbolos comumente usados em um fluxograma:
+	
+	\begin{itemize}
+		\item \textbf{\textit{Início/Finalização:}} Representado por um oval, indica o início e o término do fluxograma.
+		
+		\item \textbf{\textit{Processamento:}} Representado por um retângulo, indica uma ação ou operação a ser executada. Pode ser uma atribuição de valor, cálculo matemático, chamada de função, etc.
+		
+		\item \textbf{\textit{Decisão:}} Representado por um losango, é usado para tomar uma decisão com base em uma condição. O fluxo se divide em diferentes caminhos, dependendo do resultado da condição.
+		
+		\item \textbf{\textit{Entrada/Saída:}} Representado por um paralelogramo, indica a entrada de dados ou a exibição de resultados.
+		
+		\item \textbf{\textit{Conector:}} Representado por um círculo pequeno, é usado para conectar diferentes partes do fluxograma quando há um desvio de fluxo.
+		
+		\item \textbf{\textit{Setas:}} Usadas para indicar a direção do fluxo, conectando os diferentes símbolos.
+		
+	\end{itemize}
+	
+	Além desses símbolos básicos, existem variações e símbolos adicionais que podem ser usados em fluxogramas mais complexos, dependendo da notação adotada. Esses símbolos fornecem uma representação visual clara e compreensível do fluxo de um algoritmo, facilitando a compreensão e análise do mesmo.
+	
+	Além dos símbolos mencionados anteriormente, aqui estão alguns símbolos adicionais comumente encontrados em fluxogramas:
+	
+	\begin{itemize}
+	
+		\item \textbf{\textit{Loop (Laço):}} Representado por um retângulo com duas linhas diagonais internas, indica a repetição de um conjunto de instruções até que uma condição seja atendida.
+		
+		\item \textbf{\textit{Sub-rotina:}} Representado por um retângulo com cantos arredondados, indica uma sequência de instruções que são agrupadas e podem ser chamadas várias vezes de diferentes partes do fluxograma.
+		
+		\item \textbf{\textit{Armazenamento de Dados:}} Representado por um paralelogramo com uma linha curva na parte superior, indica o armazenamento ou recuperação de dados em um meio físico, como um banco de dados ou arquivo.
+		
+		\item \textbf{\textit{Conexões:}} São setas que conectam os diferentes símbolos para indicar o fluxo de execução, seja sequencialmente, por decisões ou ciclos.
+		
+	\end{itemize}
+
+	\subparagraph{Pseudocódigo}
+	
+	Pseudocódigo é uma forma de representação textual de um algoritmo, utilizando uma linguagem simplificada e próxima da linguagem natural. É uma forma de escrever instruções de forma mais clara e compreensível, antes de serem traduzidas para uma linguagem de programação específica.
+	
+	O pseudocódigo não segue uma estrutura rígida como uma linguagem de programação real, mas geralmente utiliza palavras-chave simples e convenções para indicar as instruções e estruturas de controle. Ele é usado para expressar a lógica de um algoritmo de forma genérica, sem se preocupar com a sintaxe de uma linguagem de programação específica.
+	
+	Um exemplo simples de pseudocódigo seria:
+	
+	\begin{minted}{python}
+		Início
+			Ler valor1
+			Ler valor2
+			Soma <- valor1 + valor2
+			Escrever Soma
+		Fim
+	\end{minted}
+	
+	Nesse exemplo, temos um pseudocódigo que lê dois valores, realiza a soma e exibe o resultado. As instruções são escritas em uma sequência lógica, utilizando palavras-chave como \textbf{\textit{``Ler''}}, \textbf{\textit{``Escrever''}} e o operador de atribuição \textbf{\textit{``<-''}} para indicar a atribuição de valores a variáveis.
+	
+	O pseudocódigo é uma ferramenta útil para planejar e estruturar algoritmos antes de implementá-los em uma linguagem de programação real. Ele permite a expressão de ideias de forma mais simples e clara, facilitando o entendimento e a comunicação entre desenvolvedores. Além disso, o pseudocódigo é independente de qualquer linguagem de programação específica, tornando-o mais flexível e acessível para diferentes pessoas e contextos.
+	
+	Outro exemplo de pseudocódigo, comumente encontrado em artigos, é dado a seguir:
+		
+	\begin{algorithm}
+		\caption{An algorithm with caption}\label{alg:cap}
+		\begin{algorithmic}
+			\Require $n \geq 0$
+			\Ensure $y = x^n$
+			\State $y \gets 1$
+			\State $X \gets x$
+			\State $N \gets n$
+			\While{$N \neq 0$}
+			\If{$N$ is even}
+			\State $X \gets X \times X$
+			\State $N \gets \frac{N}{2}$  \Comment{This is a comment}
+			\ElsIf{$N$ is odd}
+			\State $y \gets y \times X$
+			\State $N \gets N - 1$
+			\EndIf
+			\EndWhile
+		\end{algorithmic}
+	\end{algorithm}
+	
+	
+	\section{Linguagem Python}
+	
+	\subsection{Funções}
+	
+	\begin{itemize}
+		\item \textbf{Modularidade:} As funções permitem dividir um programa em blocos de código independentes e reutilizáveis. Isso facilita a compreensão e organização do código, além de promover a reutilização de código em diferentes partes do programa.
+		
+		\item \textbf{Reutilização de código:} Ao definir uma função, você pode chamá-la quantas vezes for necessário em diferentes partes do programa. Isso evita a duplicação de código e torna as atualizações e correções mais fáceis, já que você só precisa fazer as alterações em um único lugar.
+		
+		\item \textbf{Legibilidade e manutenção:} Utilizar funções ajuda a melhorar a legibilidade do código, pois as funções podem ter nomes descritivos que indicam sua funcionalidade. Além disso, ao dividir o código em funções menores e mais focadas, é mais fácil entender, testar e corrigir problemas específicos.
+		
+		\item \textbf{Abstração:} Funções permitem abstrair detalhes de implementação complexos em um nível mais alto de abstração. Isso significa que você pode usar uma função sem precisar saber todos os detalhes internos de como ela funciona, tornando o código mais fácil de entender e usar.
+		
+		\item \textbf{Testabilidade:} Funções isoladas podem ser testadas de forma independente, o que facilita a identificação de erros e o desenvolvimento de testes automatizados. Isso também contribui para a qualidade e confiabilidade do código.
+		
+		\item \textbf{Encapsulamento:} As funções permitem encapsular um conjunto de instruções em um bloco único, fornecendo um contexto claro para a execução das ações contidas. Isso ajuda a evitar interferências indesejadas entre partes diferentes do código.
+		
+		\item \textbf{Modularidade do desenvolvimento em equipe:} Ao trabalhar em equipe, as funções facilitam a divisão de tarefas entre os membros e a integração posterior do trabalho realizado. Cada membro pode desenvolver funções independentes e, posteriormente, combiná-las para construir um programa completo.
+	\end{itemize}
+	
+	
+\end{document}

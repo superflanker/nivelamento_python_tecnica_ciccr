@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		\PYG{n}{Início}
+			\PYG{n}{Ler} \PYG{n}{valor1}
+			\PYG{n}{Ler} \PYG{n}{valor2}
+			\PYG{n}{Soma} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n}{valor1} \PYG{o}{+} \PYG{n}{valor2}
+			\PYG{n}{Escrever} \PYG{n}{Soma}
+		\PYG{n}{Fim}
+\end{Verbatim}
