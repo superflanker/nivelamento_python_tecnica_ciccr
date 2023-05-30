@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{if} \PYG{n}{x} \PYG{o}{\PYGZgt{}} \PYG{l+m+mi}{5}\PYG{p}{:}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}x é maior que 5\PYGZdq{}}\PYG{p}{)}
+\PYG{k}{else}\PYG{p}{:}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}x é menor ou igual a 5\PYGZdq{}}\PYG{p}{)}
+
+\end{Verbatim}

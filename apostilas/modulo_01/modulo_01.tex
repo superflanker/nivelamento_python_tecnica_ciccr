@@ -30,6 +30,7 @@
 \usepackage{tikz}
 \usepackage{subcaption}
 \usepackage{minted}
+\definecolor{LightGray}{gray}{0.9}
 \usepackage[left=2cm, right=2cm, bottom=2cm, top=2cm]{geometry} 
 \usepackage{makecell}
 \usepackage{pdfpages}
@@ -184,7 +185,8 @@
 	
 	Além desses, existem outros paradigmas de programação, como programação procedural, programação orientada a eventos, programação concorrente, entre outros. Cada paradigma tem suas próprias vantagens e é mais adequado para determinados tipos de problemas. Muitas linguagens de programação permitem a combinação de paradigmas, permitindo ao programador escolher a abordagem mais adequada para cada situação.
 	
-	\subparagraph{Programação Estruturada} A programação estruturada é um paradigma de programação que se baseia na organização do código em estruturas lógicas bem definidas. Nesse estilo de programação, o programa é dividido em blocos de código chamados de procedimentos ou funções, que contêm uma sequência lógica de instruções para executar uma determinada tarefa.
+	\subparagraph{Programação Estruturada}
+	\label{programacao_estruturada} A programação estruturada é um paradigma de programação que se baseia na organização do código em estruturas lógicas bem definidas. Nesse estilo de programação, o programa é dividido em blocos de código chamados de procedimentos ou funções, que contêm uma sequência lógica de instruções para executar uma determinada tarefa.
 	
 	A programação estruturada segue alguns princípios-chave:
 	\begin{itemize}
@@ -383,7 +385,123 @@
 	
 	\section{Linguagem Python}
 	
-	\subsection{Funções}
+	\textbf{\textit{Python}} é uma linguagem de programação de alto nível, interpretada e de propósito geral. Foi criada por \textit{Guido van Rossum} e lançada pela primeira vez em 1991. \textbf{\textit{Python}} se destaca por sua simplicidade e legibilidade de código, tornando-a uma linguagem acessível para iniciantes, ao mesmo tempo em que oferece recursos avançados para desenvolvedores experientes.
+	
+	Algumas características distintas do \textbf{\textit{Python}} incluem:
+	\begin{itemize}
+		\item 	\textbf{\textit{Sintaxe clara e concisa:}} \textbf{\textit{Python}} enfatiza a legibilidade do código, utilizando uma sintaxe limpa e de fácil compreensão. Isso torna o desenvolvimento mais rápido e menos propenso a erros.
+		
+		\item \textbf{\textit{Tipagem dinâmica:}} \textbf{\textit{Python}} é uma linguagem de tipagem dinâmica, o que significa que as variáveis não precisam ser declaradas com um tipo específico. Os tipos são inferidos em tempo de execução, proporcionando flexibilidade ao programador.
+		
+		\item \textbf{\textit{Amplas bibliotecas e módulos:}} \textbf{\textit{Python}} possui uma vasta biblioteca padrão que abrange uma ampla gama de áreas, desde processamento de texto e manipulação de arquivos até desenvolvimento web e científico. Além disso, existem inúmeras bibliotecas de terceiros disponíveis, como o NumPy, Pandas e TensorFlow, que estendem ainda mais as funcionalidades do Python.
+		
+		\item \textbf{\textit{Suporte multiplataforma:}} \textbf{\textit{Python}} é executado em diferentes plataformas, incluindo \textit{Windows}, \textit{macOS} e várias distribuições de Linux. Isso permite que os programas escritos em \textit{Python} sejam facilmente portados entre diferentes sistemas operacionais.
+		
+		\item \textbf{\textit{Orientação a objetos:}} \textbf{\textit{Python}} suporta programação orientada a objetos, permitindo a definição de classes e objetos, encapsulamento de dados e reutilização de código.
+		
+	\end{itemize}
+	
+	O \textbf{\textit{Python}} é uma linguagem de programação em alta principalmente porque possui todos os elementos certos para o tipo de desenvolvimento de software que impulsiona o mundo do desenvolvimento de software nos dias de hoje. A aprendizagem de máquina, a robótica, a inteligência artificial e a ciência de dados são as principais tecnologias atualmente e para o futuro previsível. O \textbf{\textit{Python}} é popular principalmente porque já possui muitas capacidades nessas áreas, enquanto muitas linguagens mais antigas ficam para trás nessas tecnologias.
+	
+	Assim como existem diferentes marcas de pasta de dente, xampu, carros e praticamente qualquer outro produto que você possa comprar, existem diferentes marcas de linguagens de programação com nomes como \textit{Java}, \textit{C}, \textit{C++} (pronunciado C plus plus) e \textit{C\#} (pronunciado C sharp). Todas são linguagens de programação, assim como todas as marcas de pasta de dente são pastas de dente. As principais razões citadas para a atual popularidade do \textbf{\textit{Python}} são:
+	\begin{enumerate}
+		\item O \textbf{\textit{Python}} é relativamente fácil de aprender.
+		\item Tudo o que você precisa aprender (e fazer) em \textbf{\textit{Python}} é gratuito.
+		\item O \textbf{\textit{Python}} oferece mais ferramentas prontas para as tecnologias atuais mais populares, como ciência de dados, aprendizagem de máquina, inteligência artificial e robótica, do que a maioria das outras linguagens.
+	\end{enumerate}
+	
+	\subsection{Sintaxe do \textit{Python}}
+	Sintaxe é um conjunto de regras e estruturas gramaticais que definem a forma correta de escrever um determinado código ou linguagem. Na programação, a sintaxe é fundamental para que o código seja compreensível e interpretado corretamente pelo compilador ou interpretador.
+	
+	Cada linguagem de programação tem sua própria sintaxe, com regras específicas que determinam como as instruções devem ser escritas e organizadas. Essas regras geralmente incluem elementos como palavras-chave, operadores, símbolos, estruturas de controle e convenções de formatação.
+	
+	A sintaxe define a estrutura básica do código, como a ordem das instruções, a maneira como os blocos de código são delimitados e a forma como os elementos do código são combinados. Ela também define como os elementos individuais do código devem ser escritos, como a sintaxe correta para declarar variáveis, chamar funções, criar loops, realizar operações matemáticas, entre outros.
+	
+	Quando a sintaxe de um código está incorreta, ocorrem erros de sintaxe que impedem o compilador ou interpretador de entender o código. Esses erros são geralmente indicados por mensagens de erro que informam onde ocorreu o problema e qual é a natureza do erro.
+	
+	A sintaxe do \textbf{\textit{Python}} é conhecida por ser clara e legível. Algumas características principais da sintaxe do Python incluem:
+	\begin{itemize}
+		\item \textbf{\textit{Indentação significativa:}} \textbf{\textit{Python}} utiliza a indentação para delimitar blocos de código em vez de usar chaves ou palavras-chave especiais. Isso significa que a consistência na indentação é fundamental para a correta estruturação do código.
+
+\begin{listing}[!ht]
+	\begin{minted}[
+			frame=lines,
+			framesep=2mm,
+			baselinestretch=1.2,
+			bgcolor=LightGray,
+			fontsize=\footnotesize,
+			linenos
+			]{python}
+if x > 5:
+	print("x é maior que 5")
+else:
+	print("x é menor ou igual a 5")
+
+	\end{minted}
+	\label{exemplo_curto_identacao}
+	\caption{Exemplo de código em \textbf{\textit{python}} enfatizando a indentação}
+\end{listing}
+	\item \textbf{\textit{Comentários:}} Comentários são trechos de texto que explicam o código e são ignorados pelo interpretador do \textit{\textbf{Python}}. Eles são precedidos pelo caractere ``\#'' e ajudam a documentar o código para facilitar a compreensão. Nos comentários multilinha, o comentário deve estar entre três aspas simples ou duplas.
+	\begin{listing}
+		\begin{minted}[
+			frame=lines,
+			framesep=2mm,
+			baselinestretch=1.2,
+			bgcolor=LightGray,
+			fontsize=\footnotesize,
+			linenos
+			]{python}
+"""
+Introdução ao Python - CICCR - Exemplo de Comentário Multilinha
+@author Augusto Mathias Adams <augusto.mathias@sesp.pr.gov.br>
+MIT License
+..........
+"""
+
+# Esta é uma linha de comentário
+
+		\end{minted}
+	\label{exemplo_curto_comentário}
+	\caption{Exemplo de comentários simples e multilinha}
+	\end{listing}
+	\end{itemize}
+
+	
+	\subsubsection{Estruturas de Controle}
+	
+	\paragraph{Estruturas Condicionais}
+	
+	\paragraph{Estruturas de Repetição}
+	
+	\paragraph{Controle de \textit{Loop}}
+	
+	\subsubsection{Operadores da Linguagem}
+	
+	\subsubsection{Estrutura De Dados}
+	
+	\subsubsection{Funções}
+	
+	Em \textbf{\textit{Python}}, as funções são blocos de código reutilizáveis que executam uma tarefa específica. Elas são usadas para agrupar um conjunto de instruções relacionadas e podem receber argumentos (valores de entrada) e retornar resultados (valores de saída).
+	
+	As funções em \textbf{\textit{Python}} possuem as seguintes características:
+	
+	\begin{itemize}
+	
+	\item \textbf{\textit{Definição:}} Uma função é definida usando a palavra-chave \texttt{def}, seguida pelo nome da função e parênteses contendo os argumentos, se houver.
+	
+	\item \textbf{\textit{Parâmetros:}} Os parâmetros são variáveis que recebem os valores passados para a função quando ela é chamada. Eles são opcionais e podem ser de qualquer tipo de dado válido em Python.
+	
+	\item \textbf{\textit{Corpo da função:}} O corpo da função é um bloco de código indentado que contém as instruções a serem executadas quando a função é chamada. Pode conter qualquer número de instruções ou até mesmo outras chamadas de função.
+	
+	\item \textbf{\textit{Retorno de valores:}} Uma função pode retornar um valor usando a palavra-chave \texttt{``return''}. Isso permite que a função forneça um resultado para o código que a chamou.
+	
+	\end{itemize}
+	
+	Para executar o código contido em uma função, você precisa chamá-la pelo nome, seguido de parênteses contendo os argumentos, se houver. A chamada da função faz com que o código dentro dela seja executado.
+	
+	As funções em \textbf{\textit{Python}} são uma maneira eficiente de organizar e reutilizar o código, pois permitem que você divida um programa em tarefas menores e mais gerenciáveis. Além disso, elas ajudam a melhorar a legibilidade do código e facilitam a manutenção e depuração. \textbf{\textit{Python}} também fornece várias funções embutidas, como \texttt{print()}, \texttt{len()}, \texttt{range()}, entre outras, que podem ser usadas diretamente sem a necessidade de definição.
+	
+	Em \textbf{\textit{Python}}, assim como em outras linguagens, utilizar funções em programação traz várias vantagens, que incluem:
 	
 	\begin{itemize}
 		\item \textbf{Modularidade:} As funções permitem dividir um programa em blocos de código independentes e reutilizáveis. Isso facilita a compreensão e organização do código, além de promover a reutilização de código em diferentes partes do programa.
@@ -398,8 +516,9 @@
 		
 		\item \textbf{Encapsulamento:} As funções permitem encapsular um conjunto de instruções em um bloco único, fornecendo um contexto claro para a execução das ações contidas. Isso ajuda a evitar interferências indesejadas entre partes diferentes do código.
 		
-		\item \textbf{Modularidade do desenvolvimento em equipe:} Ao trabalhar em equipe, as funções facilitam a divisão de tarefas entre os membros e a integração posterior do trabalho realizado. Cada membro pode desenvolver funções independentes e, posteriormente, combiná-las para construir um programa completo.
 	\end{itemize}
+
+	Além do mais, o uso de funções é largamente empregado quando utilizamos o paradigma de \textit{programação estruturada}, conforme visto na seção \ref{programacao_estruturada}.
 	
 	
 \end{document}
