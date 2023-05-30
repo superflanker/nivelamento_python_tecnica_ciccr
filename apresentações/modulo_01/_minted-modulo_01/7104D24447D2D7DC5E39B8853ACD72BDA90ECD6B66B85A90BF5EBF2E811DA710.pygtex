@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+				
+	\PYG{n}{x} \PYG{o}{=} \PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{]}
+	\PYG{n}{y} \PYG{o}{=} \PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{]}
+	\PYG{n}{z} \PYG{o}{=} \PYG{n}{x}
+	
+	\PYG{c+c1}{\PYGZsh{} Operador is}
+	\PYG{n}{resultado\PYGZus{}is} \PYG{o}{=} \PYG{n}{x} \PYG{o+ow}{is} \PYG{n}{y}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{resultado\PYGZus{}is}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Output: False}
+	
+	\PYG{n}{resultado\PYGZus{}is\PYGZus{}not} \PYG{o}{=} \PYG{n}{x} \PYG{o+ow}{is} \PYG{o+ow}{not} \PYG{n}{y}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{resultado\PYGZus{}is\PYGZus{}not}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Output: True}
+	
+	\PYG{c+c1}{\PYGZsh{} Operador is}
+	\PYG{n}{resultado\PYGZus{}is\PYGZus{}z} \PYG{o}{=} \PYG{n}{x} \PYG{o+ow}{is} \PYG{n}{z}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{resultado\PYGZus{}is\PYGZus{}z}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Output: True}
+
+\end{Verbatim}

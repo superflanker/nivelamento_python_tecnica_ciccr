@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	
+	
+	\PYG{n}{a} \PYG{o}{=} \PYG{l+m+mi}{10}
+	\PYG{n}{b} \PYG{o}{=} \PYG{l+m+mi}{3}
+	
+	\PYG{c+c1}{\PYGZsh{} Soma}
+	\PYG{n}{soma} \PYG{o}{=} \PYG{n}{a} \PYG{o}{+} \PYG{n}{b}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{soma}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Output: 13}
+	
+	\PYG{c+c1}{\PYGZsh{} Subtração}
+	\PYG{n}{subtracao} \PYG{o}{=} \PYG{n}{a} \PYG{o}{\PYGZhy{}} \PYG{n}{b}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{subtracao}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Output: 7}
+	
+	\PYG{c+c1}{\PYGZsh{} Multiplicação}
+	\PYG{n}{multiplicacao} \PYG{o}{=} \PYG{n}{a} \PYG{o}{*} \PYG{n}{b}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{multiplicacao}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Output: 30}
+	
+\end{Verbatim}

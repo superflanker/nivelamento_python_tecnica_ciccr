@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+				
+	\PYG{n}{a} \PYG{o}{=} \PYG{l+m+mi}{5}
+	\PYG{n}{b} \PYG{o}{=} \PYG{l+m+mi}{3}
+	
+	\PYG{c+c1}{\PYGZsh{} Igual a}
+	\PYG{n}{igual} \PYG{o}{=} \PYG{p}{(}\PYG{n}{a} \PYG{o}{==} \PYG{n}{b}\PYG{p}{)}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{igual}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Output: False}
+	
+	\PYG{c+c1}{\PYGZsh{} Diferente de}
+	\PYG{n}{diferente} \PYG{o}{=} \PYG{p}{(}\PYG{n}{a} \PYG{o}{!=} \PYG{n}{b}\PYG{p}{)}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{diferente}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Output: True}
+	
+	\PYG{c+c1}{\PYGZsh{} Maior que}
+	\PYG{n}{maior} \PYG{o}{=} \PYG{p}{(}\PYG{n}{a} \PYG{o}{\PYGZgt{}} \PYG{n}{b}\PYG{p}{)}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{maior}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Output: True}
+				
+\end{Verbatim}

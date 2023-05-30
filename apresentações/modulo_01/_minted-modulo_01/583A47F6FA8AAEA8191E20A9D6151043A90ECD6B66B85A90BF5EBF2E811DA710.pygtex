@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	
+	\PYG{c+c1}{\PYGZsh{} Divisão}
+	\PYG{n}{divisao} \PYG{o}{=} \PYG{n}{a} \PYG{o}{/} \PYG{n}{b}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{divisao}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Output: 3.3333333333333335}
+
+	\PYG{c+c1}{\PYGZsh{} Resto da divisão}
+	\PYG{n}{resto} \PYG{o}{=} \PYG{n}{a} \PYG{o}{\PYGZpc{}} \PYG{n}{b}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{resto}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Output: 1}
+	
+	\PYG{c+c1}{\PYGZsh{} Exponenciação}
+	\PYG{n}{exponenciacao} \PYG{o}{=} \PYG{n}{a} \PYG{o}{**} \PYG{n}{b}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{exponenciacao}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Output: 1000}
+	
+	\PYG{c+c1}{\PYGZsh{} Divisão inteira}
+	\PYG{n}{divisao\PYGZus{}inteira} \PYG{o}{=} \PYG{n}{a} \PYG{o}{//} \PYG{n}{b}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{divisao\PYGZus{}inteira}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Output: 3}
+	
+\end{Verbatim}

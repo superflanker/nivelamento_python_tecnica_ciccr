@@ -81,55 +81,95 @@
 \headcommand {\beamer@framepages {30}{30}}
 \headcommand {\slideentry {3}{3}{10}{31/31}{Estruturas de Controle}{0}}
 \headcommand {\beamer@framepages {31}{31}}
-\headcommand {\beamer@subsectionpages {22}{31}}
-\headcommand {\beamer@subsectionentry {0}{3}{4}{32}{Estruturas de Dados}}
-\headcommand {\slideentry {3}{4}{1}{32/32}{Estruturas de Dados}{0}}
+\headcommand {\slideentry {3}{3}{11}{32/32}{Estruturas de Controle}{0}}
 \headcommand {\beamer@framepages {32}{32}}
-\headcommand {\slideentry {3}{4}{2}{33/33}{Estruturas de Dados}{0}}
+\headcommand {\slideentry {3}{3}{12}{33/33}{Estruturas de Controle}{0}}
 \headcommand {\beamer@framepages {33}{33}}
-\headcommand {\slideentry {3}{4}{3}{34/34}{Estruturas de Dados}{0}}
+\headcommand {\slideentry {3}{3}{13}{34/34}{Estruturas de Controle}{0}}
 \headcommand {\beamer@framepages {34}{34}}
-\headcommand {\slideentry {3}{4}{4}{35/35}{Estruturas de Dados}{0}}
+\headcommand {\slideentry {3}{3}{14}{35/35}{Estruturas de Controle}{0}}
 \headcommand {\beamer@framepages {35}{35}}
-\headcommand {\slideentry {3}{4}{5}{36/36}{Estruturas de Dados}{0}}
+\headcommand {\slideentry {3}{3}{15}{36/36}{Estruturas de Controle}{0}}
 \headcommand {\beamer@framepages {36}{36}}
-\headcommand {\slideentry {3}{4}{6}{37/37}{Estruturas de Dados}{0}}
+\headcommand {\slideentry {3}{3}{16}{37/37}{Estruturas de Controle}{0}}
 \headcommand {\beamer@framepages {37}{37}}
-\headcommand {\beamer@subsectionpages {32}{37}}
-\headcommand {\beamer@subsectionentry {0}{3}{5}{38}{Funções em Python}}
-\headcommand {\slideentry {3}{5}{1}{38/38}{Funções em Python}{0}}
+\headcommand {\slideentry {3}{3}{17}{38/38}{Estruturas de Controle}{0}}
 \headcommand {\beamer@framepages {38}{38}}
-\headcommand {\slideentry {3}{5}{2}{39/39}{Funções em Python}{0}}
+\headcommand {\slideentry {3}{3}{18}{39/39}{Estruturas de Controle}{0}}
 \headcommand {\beamer@framepages {39}{39}}
-\headcommand {\slideentry {3}{5}{3}{40/40}{Funções em Python}{0}}
+\headcommand {\slideentry {3}{3}{19}{40/40}{Estruturas de Controle}{0}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\slideentry {3}{5}{4}{41/41}{Funções em Python}{0}}
+\headcommand {\slideentry {3}{3}{20}{41/41}{Estruturas de Controle}{0}}
 \headcommand {\beamer@framepages {41}{41}}
-\headcommand {\slideentry {3}{5}{5}{42/42}{Funções em Python}{0}}
+\headcommand {\beamer@subsectionpages {22}{41}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{42}{Estruturas de Dados}}
+\headcommand {\slideentry {3}{4}{1}{42/42}{Estruturas de Dados}{0}}
 \headcommand {\beamer@framepages {42}{42}}
-\headcommand {\slideentry {3}{5}{6}{43/43}{Funções em Python}{0}}
+\headcommand {\slideentry {3}{4}{2}{43/43}{Estruturas de Dados}{0}}
 \headcommand {\beamer@framepages {43}{43}}
-\headcommand {\beamer@subsectionpages {38}{43}}
-\headcommand {\beamer@subsectionentry {0}{3}{6}{44}{Aplicativo em \textit {Python}}}
-\headcommand {\slideentry {3}{6}{1}{44/44}{Aplicativo em \textit {Python}}{0}}
+\headcommand {\slideentry {3}{4}{3}{44/44}{Estruturas de Dados}{0}}
 \headcommand {\beamer@framepages {44}{44}}
-\headcommand {\beamer@sectionpages {15}{44}}
-\headcommand {\beamer@subsectionpages {44}{44}}
-\headcommand {\sectionentry {4}{Exercícios}{45}{Exercícios}{0}}
-\headcommand {\slideentry {4}{0}{1}{45/45}{}{0}}
+\headcommand {\slideentry {3}{4}{4}{45/45}{Estruturas de Dados}{0}}
 \headcommand {\beamer@framepages {45}{45}}
-\headcommand {\slideentry {4}{0}{2}{46/46}{}{0}}
+\headcommand {\slideentry {3}{4}{5}{46/46}{Estruturas de Dados}{0}}
 \headcommand {\beamer@framepages {46}{46}}
-\headcommand {\slideentry {4}{0}{3}{47/47}{}{0}}
+\headcommand {\slideentry {3}{4}{6}{47/47}{Estruturas de Dados}{0}}
 \headcommand {\beamer@framepages {47}{47}}
-\headcommand {\slideentry {4}{0}{4}{48/48}{}{0}}
+\headcommand {\beamer@subsectionpages {42}{47}}
+\headcommand {\beamer@subsectionentry {0}{3}{5}{48}{Funções em Python}}
+\headcommand {\slideentry {3}{5}{1}{48/48}{Funções em Python}{0}}
 \headcommand {\beamer@framepages {48}{48}}
-\headcommand {\slideentry {4}{0}{5}{49/49}{}{0}}
+\headcommand {\slideentry {3}{5}{2}{49/49}{Funções em Python}{0}}
 \headcommand {\beamer@framepages {49}{49}}
-\headcommand {\slideentry {4}{0}{6}{50/50}{}{0}}
+\headcommand {\slideentry {3}{5}{3}{50/50}{Funções em Python}{0}}
 \headcommand {\beamer@framepages {50}{50}}
-\headcommand {\beamer@partpages {1}{50}}
-\headcommand {\beamer@subsectionpages {45}{50}}
-\headcommand {\beamer@sectionpages {45}{50}}
-\headcommand {\beamer@documentpages {50}}
-\headcommand {\gdef \inserttotalframenumber {50}}
+\headcommand {\slideentry {3}{5}{4}{51/51}{Funções em Python}{0}}
+\headcommand {\beamer@framepages {51}{51}}
+\headcommand {\slideentry {3}{5}{5}{52/52}{Funções em Python}{0}}
+\headcommand {\beamer@framepages {52}{52}}
+\headcommand {\slideentry {3}{5}{6}{53/53}{Funções em Python}{0}}
+\headcommand {\beamer@framepages {53}{53}}
+\headcommand {\beamer@subsectionpages {48}{53}}
+\headcommand {\beamer@subsectionentry {0}{3}{6}{54}{Aplicativo em \textit {Python}}}
+\headcommand {\slideentry {3}{6}{1}{54/54}{Aplicativo em \textit {Python}}{0}}
+\headcommand {\beamer@framepages {54}{54}}
+\headcommand {\beamer@sectionpages {15}{54}}
+\headcommand {\beamer@subsectionpages {54}{54}}
+\headcommand {\sectionentry {4}{Exercícios}{55}{Exercícios}{0}}
+\headcommand {\slideentry {4}{0}{1}{55/55}{}{0}}
+\headcommand {\beamer@framepages {55}{55}}
+\headcommand {\slideentry {4}{0}{2}{56/56}{}{0}}
+\headcommand {\beamer@framepages {56}{56}}
+\headcommand {\slideentry {4}{0}{3}{57/57}{}{0}}
+\headcommand {\beamer@framepages {57}{57}}
+\headcommand {\slideentry {4}{0}{4}{58/58}{}{0}}
+\headcommand {\beamer@framepages {58}{58}}
+\headcommand {\slideentry {4}{0}{5}{59/59}{}{0}}
+\headcommand {\beamer@framepages {59}{59}}
+\headcommand {\slideentry {4}{0}{6}{60/60}{}{0}}
+\headcommand {\beamer@framepages {60}{60}}
+\headcommand {\slideentry {4}{0}{7}{61/61}{}{0}}
+\headcommand {\beamer@framepages {61}{61}}
+\headcommand {\slideentry {4}{0}{8}{62/62}{}{0}}
+\headcommand {\beamer@framepages {62}{62}}
+\headcommand {\slideentry {4}{0}{9}{63/63}{}{0}}
+\headcommand {\beamer@framepages {63}{63}}
+\headcommand {\slideentry {4}{0}{10}{64/64}{}{0}}
+\headcommand {\beamer@framepages {64}{64}}
+\headcommand {\slideentry {4}{0}{11}{65/65}{}{0}}
+\headcommand {\beamer@framepages {65}{65}}
+\headcommand {\slideentry {4}{0}{12}{66/66}{}{0}}
+\headcommand {\beamer@framepages {66}{66}}
+\headcommand {\slideentry {4}{0}{13}{67/67}{}{0}}
+\headcommand {\beamer@framepages {67}{67}}
+\headcommand {\slideentry {4}{0}{14}{68/68}{}{0}}
+\headcommand {\beamer@framepages {68}{68}}
+\headcommand {\slideentry {4}{0}{15}{69/69}{}{0}}
+\headcommand {\beamer@framepages {69}{69}}
+\headcommand {\slideentry {4}{0}{16}{70/70}{}{0}}
+\headcommand {\beamer@framepages {70}{70}}
+\headcommand {\beamer@partpages {1}{70}}
+\headcommand {\beamer@subsectionpages {55}{70}}
+\headcommand {\beamer@sectionpages {55}{70}}
+\headcommand {\beamer@documentpages {70}}
+\headcommand {\gdef \inserttotalframenumber {70}}
