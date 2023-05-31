@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	
+\PYG{c+c1}{\PYGZsh{} Exemplo Simples de Loop for \PYGZhy{} itera sob uma lista de números}
+\PYG{c+c1}{\PYGZsh{} consecutivos fornecida pela função range()}
+\PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{):}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{i}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Exemplo Simples de loop while}
+\PYG{c+c1}{\PYGZsh{} utilizado somente quando a variável da condição é alterada dentro do loop}
+\PYG{n}{x} \PYG{o}{=} \PYG{l+m+mi}{10}
+\PYG{k}{while} \PYG{n}{x} \PYG{o}{\PYGZgt{}} \PYG{l+m+mi}{0}\PYG{p}{:}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}
+	\PYG{n}{x} \PYG{o}{\PYGZhy{}=} \PYG{l+m+mi}{1}
+
+	
+\end{Verbatim}

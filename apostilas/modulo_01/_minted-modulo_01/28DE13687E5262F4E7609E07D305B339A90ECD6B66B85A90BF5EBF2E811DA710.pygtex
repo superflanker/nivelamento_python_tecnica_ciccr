@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+			
+\PYG{n}{x} \PYG{o}{=} \PYG{l+m+mi}{10}
+\PYG{n}{nome} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}Maria\PYGZdq{}}
+			
+\end{Verbatim}

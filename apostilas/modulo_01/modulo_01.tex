@@ -420,7 +420,9 @@
 	Quando a sintaxe de um código está incorreta, ocorrem erros de sintaxe que impedem o compilador ou interpretador de entender o código. Esses erros são geralmente indicados por mensagens de erro que informam onde ocorreu o problema e qual é a natureza do erro.
 	
 	A sintaxe do \textbf{\textit{Python}} é conhecida por ser clara e legível. Algumas características principais da sintaxe do Python incluem:
+	
 	\begin{itemize}
+		
 		\item \textbf{\textit{Indentação significativa:}} \textbf{\textit{Python}} utiliza a indentação para delimitar blocos de código em vez de usar chaves ou palavras-chave especiais. Isso significa que a consistência na indentação é fundamental para a correta estruturação do código.
 
 \begin{listing}[!ht]
@@ -432,6 +434,7 @@
 			fontsize=\footnotesize,
 			linenos
 			]{python}
+			
 if x > 5:
 	print("x é maior que 5")
 else:
@@ -441,16 +444,19 @@ else:
 	\label{exemplo_curto_identacao}
 	\caption{Exemplo de código em \textbf{\textit{python}} enfatizando a indentação}
 \end{listing}
+
 	\item \textbf{\textit{Comentários:}} Comentários são trechos de texto que explicam o código e são ignorados pelo interpretador do \textit{\textbf{Python}}. Eles são precedidos pelo caractere ``\#'' e ajudam a documentar o código para facilitar a compreensão. Nos comentários multilinha, o comentário deve estar entre três aspas simples ou duplas.
-	\begin{listing}
-		\begin{minted}[
-			frame=lines,
-			framesep=2mm,
-			baselinestretch=1.2,
-			bgcolor=LightGray,
-			fontsize=\footnotesize,
-			linenos
-			]{python}
+	
+\begin{listing}[!ht]
+	\begin{minted}[
+		frame=lines,
+		framesep=2mm,
+		baselinestretch=1.2,
+		bgcolor=LightGray,
+		fontsize=\footnotesize,
+		linenos
+		]{python}
+			
 """
 Introdução ao Python - CICCR - Exemplo de Comentário Multilinha
 @author Augusto Mathias Adams <augusto.mathias@sesp.pr.gov.br>
@@ -460,17 +466,165 @@ MIT License
 
 # Esta é uma linha de comentário
 
-		\end{minted}
-	\label{exemplo_curto_comentário}
-	\caption{Exemplo de comentários simples e multilinha}
-	\end{listing}
-	\end{itemize}
+	\end{minted}
+\label{exemplo_curto_comentário}
+\caption{Exemplo de comentários simples e multilinha}
+\end{listing}
+	\pagebreak
+	\item \textbf{\textit{Variáveis e Atribuição:}} As variáveis em \textbf{\textit{Python}} são usadas para armazenar valores. Em Python, as variáveis são criadas atribuindo valores a elas. Não é necessário declarar explicitamente o tipo da variável, pois a tipagem é dinâmica. A atribuição de valores às variáveis é feita usando o sinal de igual \texttt{'='}.
+\begin{listing}[!ht]
+	\begin{minted}[
+		frame=lines,
+		framesep=2mm,
+		baselinestretch=1.2,
+		bgcolor=LightGray,
+		fontsize=\footnotesize,
+		linenos
+		]{python}
+			
+x = 10
+nome = "Maria"
+			
+	\end{minted}
+	\label{exemplo_curto_atribuição}
+	\caption{Exemplo de atribuição a variáveis}
+\end{listing}
+	\item \textbf{\textit{Estruturas de Controle:}} As estruturas de controle em \textbf{\textit{Python}} são usadas para controlar o fluxo de execução de um programa. Elas permitem que você tome decisões com base em condições e repita a execução de um bloco de código várias vezes. As estruturas de controle em \textbf{\textit{Python}} são:
+	\begin{itemize}
+		\item 	Estruturas Condicionais:
+			\subitem \textbf{if:} Executa um bloco de código se uma condição for verdadeira.
+			\subitem \textbf{\textit{elif}}: Permite testar condições adicionais se as condições anteriores forem falsas.
+			\subitem \textbf{\textit{else:}} Executa um bloco de código se todas as condições anteriores forem falsas.
+		\pagebreak
+\begin{listing}[!ht]
+\begin{minted}[
+	frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize,
+	linenos
+	]{python}
+x = 5
+if x > 0:
+	print("x é positivo")
+elif x == 0:
+	print("x é igual a zero")
+else:
+	print("x é negativo")
+
+\end{minted}
+\label{exemplo_estruturas_condicionais}
+\caption{Estruturas Condicionais}
+\end{listing}
+		\item \textbf{\textit{Estruturas de Repetição:}}
+		
+			\subitem \textbf{\textit{for:}} Itera sobre uma sequência (como uma lista, tupla ou string) ou um objeto iterável por um número específico de vezes.
+			\subitem \textbf{\textit{while:}} Executa um bloco de código repetidamente enquanto uma condição for verdadeira.
+\begin{listing}[!ht]
+\begin{minted}[
+	frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize,
+	linenos
+	]{python}
+	
+# Exemplo Simples de Loop for - itera sob uma lista de números
+# consecutivos fornecida pela função range()
+for i in range(5):
+	print(i)
+
+# Exemplo Simples de loop while
+# utilizado somente quando a variável da condição é alterada dentro do loop
+x = 10
+while x > 0:
+	print(x)
+	x -= 1
 
 	
+\end{minted}
+\label{exemplo_estruturas_de_repeticao}
+\caption{Estruturas de Repetição}
+\end{listing}
+	\item \textbf{\textit{Controle de Loop:}}
+	
+	\subitem \textbf{\textit{break:}} Encerra imediatamente o loop em que está sendo executado.
+	\subitem \textbf{\textit{continue:}} Pula para a próxima iteração do loop, ignorando o restante do código dentro do bloco do loop.
+	\pagebreak
+\begin{listing}[!ht]
+	\begin{minted}[
+		frame=lines,
+		framesep=2mm,
+		baselinestretch=1.2,
+		bgcolor=LightGray,
+		fontsize=\footnotesize,
+		linenos
+		]{python}
+
+# Exemplo Simples de loop for com break
+
+for i in range(10):
+	if i == 5:
+		break
+	print(i)
+
+# Exemplo Simples de loop for com continue
+for i in range(10):
+	if i % 2 == 0:
+		continue
+	print(i)
+		
+	\end{minted}
+	\label{exemplo_estruturas_de_controle_de_loop}
+	\caption{Controle de \textit{Loop}}
+\end{listing}
+	
+	\end{itemize}
+	\item \textbf{\textit{Funções:}} Como mencionado anteriormente, as funções são blocos de código reutilizáveis que realizam tarefas específicas. A sintaxe básica para definir uma função é usando a palavra-chave \texttt{def}, seguida pelo nome da função, parênteses contendo os parâmetros (opcional) e dois pontos (:). O corpo da função é identado.
+	
+	\begin{listing}[!ht]
+		\begin{minted}[
+			frame=lines,
+			framesep=2mm,
+			baselinestretch=1.2,
+			bgcolor=LightGray,
+			fontsize=\footnotesize,
+			linenos
+			]{python}
+			
+# definição de uma função simples		
+def saudacao():
+	# o corpo da função é sempre indentado
+	print("Olá, mundo!")
+
+# Chamando a função
+saudacao()
+
+		\end{minted}
+		\label{exemplo_funcoes}
+		\caption{Exemplo de Função}
+	\end{listing}
+	
+	\end{itemize}
+
 	\subsubsection{Estruturas de Controle}
 	
 	\paragraph{Estruturas Condicionais}
+	A estrutura condicional é uma parte do código que permite definir condições para a execução de determinados blocos de comandos. Em vez de executar tudo de uma vez, o programa faz uma verificação e decide qual caminho seguir com base em uma análise ou comparação.
 	
+	É como uma bifurcação, um momento crucial para tomar uma decisão. Essa decisão é o resultado de uma avaliação ou comparação. Funciona da seguinte forma: se uma condição \textit{X} for satisfeita, um bloco de comandos é executado; caso contrário, outro bloco de comandos é executado. Pressupõe-se que o bloco do \textit{else} seja diferente e oposto ao bloco do \textit{if}.
+	
+	Dessa forma, é possível direcionar o fluxo de execução, pulando blocos e executando apenas o necessário.
+	
+	Em um fluxograma, é fácil entender o funcionamento do \textit{if-else}: o \textit{IF} é o elemento que realiza o teste, com ramificações para a direita e esquerda. Após o teste, o \textit{IF} direciona para um lado do fluxograma se o teste for verdadeiro e para o outro lado se for falso.
+	
+	Esse teste pode envolver diferentes tipos de dados. É possível fazer um teste lógico para analisar se uma variável é verdadeira ou falsa, um teste de comparação numérica para verificar se uma variável é maior que um número, ou verificar a igualdade entre variáveis, entre outras possibilidades.
+	
+	O tipo de teste utilizado varia de acordo com a lógica e as necessidades do programa. A estrutura condicional \textit{if-else} em Python é mais completa. O \textit{ELSE} complementa o \textit{IF} para fornecer ainda mais robustez ao código (como será visto posteriormente). No entanto, é possível ter apenas o \textit{IF}, ou seja, uma estrutura condicional simples.
+	
+	\subparagraph{Como Usar }
 	\paragraph{Estruturas de Repetição}
 	
 	\paragraph{Controle de \textit{Loop}}
