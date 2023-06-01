@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+
+\PYG{c+c1}{\PYGZsh{} usando o for pra dar um olá para o pessoal da Técnica}
+
+\PYG{n}{nomes} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}Sargento Franco\PYGZdq{}}\PYG{p}{,}
+         \PYG{l+s+s2}{\PYGZdq{}Soldado Prisse\PYGZdq{}}\PYG{p}{,}
+         \PYG{l+s+s2}{\PYGZdq{}Soldado Aguayo\PYGZdq{}}\PYG{p}{,}
+         \PYG{l+s+s2}{\PYGZdq{}Soldado Erivelton\PYGZdq{}}\PYG{p}{,}
+         \PYG{l+s+s2}{\PYGZdq{}Jean\PYGZdq{}}\PYG{p}{,}
+         \PYG{l+s+s2}{\PYGZdq{}Augusto\PYGZdq{}}\PYG{p}{]}
+		
+\PYG{k}{for} \PYG{n}{nome} \PYG{o+ow}{in} \PYG{n}{nomes}\PYG{p}{:}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Olá,\PYGZdq{}}\PYG{p}{,} \PYG{n}{nome}\PYG{p}{)}
+		
+\end{Verbatim}

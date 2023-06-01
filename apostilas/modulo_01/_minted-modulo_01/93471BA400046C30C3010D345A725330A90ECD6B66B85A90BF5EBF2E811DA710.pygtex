@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+
+\PYG{c+c1}{\PYGZsh{} fazendo um contador com loop while	}
+\PYG{n}{contador} \PYG{o}{=} \PYG{l+m+mi}{0}
+\PYG{k}{while} \PYG{n}{contador} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{5}\PYG{p}{:}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Contador:\PYGZdq{}}\PYG{p}{,} \PYG{n}{contador}\PYG{p}{)}
+	\PYG{n}{contador} \PYG{o}{+=} \PYG{l+m+mi}{1}
+
+		
+\end{Verbatim}

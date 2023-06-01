@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		
+\PYG{k}{if} \PYG{n}{nota} \PYG{o}{\PYGZgt{}=} \PYG{l+m+mi}{90}\PYG{p}{:}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Você obteve uma nota A.\PYGZdq{}}\PYG{p}{)}
+\PYG{k}{elif} \PYG{n}{nota} \PYG{o}{\PYGZgt{}=} \PYG{l+m+mi}{80}\PYG{p}{:}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Você obteve uma nota B.\PYGZdq{}}\PYG{p}{)}
+\PYG{k}{elif} \PYG{n}{nota} \PYG{o}{\PYGZgt{}=} \PYG{l+m+mi}{70}\PYG{p}{:}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Você obteve uma nota C.\PYGZdq{}}\PYG{p}{)}
+\PYG{k}{else}\PYG{p}{:}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Você obteve uma nota abaixo de C.\PYGZdq{}}\PYG{p}{)}
+	
+\end{Verbatim}

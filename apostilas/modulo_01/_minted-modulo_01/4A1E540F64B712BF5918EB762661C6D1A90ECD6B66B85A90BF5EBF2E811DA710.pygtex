@@ -1,0 +1,37 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+
+\PYG{n}{a} \PYG{o}{=} \PYG{l+m+mi}{5}
+
+\PYG{c+c1}{\PYGZsh{} Atribuição simples}
+\PYG{n}{b} \PYG{o}{=} \PYG{n}{a}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{b}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Output: 5}
+
+\PYG{c+c1}{\PYGZsh{} Atribuição com soma}
+\PYG{n}{a} \PYG{o}{+=} \PYG{l+m+mi}{2}  \PYG{c+c1}{\PYGZsh{} Equivalente a: a = a + 2}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{a}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Output: 7}
+
+\PYG{c+c1}{\PYGZsh{} Atribuição com subtração}
+\PYG{n}{a} \PYG{o}{\PYGZhy{}=} \PYG{l+m+mi}{3}  \PYG{c+c1}{\PYGZsh{} Equivalente a: a = a \PYGZhy{} 3}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{a}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Output: 4}
+
+\PYG{c+c1}{\PYGZsh{} Atribuição com multiplicação}
+\PYG{n}{a} \PYG{o}{*=} \PYG{l+m+mi}{2}  \PYG{c+c1}{\PYGZsh{} Equivalente a: a = a * 2}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{a}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Output: 8}
+				
+\PYG{c+c1}{\PYGZsh{} Atribuição com divisão}
+\PYG{n}{a} \PYG{o}{/=} \PYG{l+m+mi}{4}  \PYG{c+c1}{\PYGZsh{} Equivalente a: a = a / 4}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{a}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Output: 2.0}
+
+\PYG{c+c1}{\PYGZsh{} Atribuição com resto da divisão}
+\PYG{n}{a} \PYG{o}{\PYGZpc{}=} \PYG{l+m+mi}{3}  \PYG{c+c1}{\PYGZsh{} Equivalente a: a = a \PYGZpc{} 3}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{a}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Output: 2.0}
+
+\PYG{c+c1}{\PYGZsh{} Atribuição com exponenciação}
+\PYG{n}{a} \PYG{o}{**=} \PYG{l+m+mi}{3}  \PYG{c+c1}{\PYGZsh{} Equivalente a: a = a ** 3}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{a}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Output: 8.0}
+
+\PYG{c+c1}{\PYGZsh{} Atribuição com divisão inteira}
+\PYG{n}{a} \PYG{o}{//=} \PYG{l+m+mi}{2}  \PYG{c+c1}{\PYGZsh{} Equivalente a: a = a // 2}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{a}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Output: 4.0}
+
+\end{Verbatim}

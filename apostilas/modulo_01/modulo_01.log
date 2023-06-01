@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.30)  31 MAY 2023 13:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.30)  1 JUN 2023 13:55
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1297,47 +1297,47 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.02399pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.02399pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-3.02399pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [2]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.02399pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.02399pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-3.02399pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [3]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.02399pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.02399pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-3.02399pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [4]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.02399pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.02399pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-3.02399pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [5]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.02399pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.02399pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-3.02399pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [6]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
@@ -1353,20 +1353,20 @@ e es-tru-tu-ras de con-trole con-di-ci-o-nais, como o \T1/cmtt/m/n/12 ``if-else
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.02399pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.02399pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-3.02399pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [7]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.02399pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.02399pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-3.02399pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [8]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
@@ -1378,38 +1378,38 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.02399pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.02399pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-3.02399pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [9]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.02399pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.02399pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-3.02399pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [10]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.02399pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.02399pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-3.02399pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [11]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.02399pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.02399pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-3.02399pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [12]
 \openout4 = `modulo_01.pyg'.
@@ -1419,11 +1419,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 1DA710.pygtex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.02399pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.02399pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-3.02399pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [13])
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
@@ -1431,20 +1431,20 @@ put line 366.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.02399pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.02399pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-3.02399pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [14]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.02399pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.02399pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-3.02399pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [15]
 \openout4 = `modulo_01.pyg'.
@@ -1464,11 +1464,11 @@ t line 445.
 1DA710.pygtex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.02399pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.02399pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-3.02399pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [16]
 \openout4 = `modulo_01.pyg'.
@@ -1483,11 +1483,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 1DA710.pygtex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.02399pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.02399pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-3.02399pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [17]
 \openout4 = `modulo_01.pyg'.
@@ -1502,11 +1502,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 1DA710.pygtex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.02399pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.02399pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-3.02399pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [18]
 \openout4 = `modulo_01.pyg'.
@@ -1514,69 +1514,302 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (./_minted-modulo_01/CDED47796527DCD1908E91B4876661E4A90ECD6B66B85A90BF5EBF2E81
 1DA710.pygtex)
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 617.
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/E450E685E097C32D771BD1C771EA6885A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.02399pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.02399pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-3.02399pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [19]
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/CBA3A07A1255D5B78A60850FF4017BB1A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/B878A6C950163FED8DBC2E7071716823A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.02399pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.02399pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-3.02399pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [20]
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/93471BA400046C30C3010D345A725330A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+Overfull \hbox (7.93686pt too wide) in paragraph at lines 728--729
+[]\T1/ptm/m/n/12 Nesse exem-plo, o bloco de có-digo den-tro do \T1/ptm/m/it/12 
+loop \T1/cmtt/m/n/12 while \T1/ptm/m/n/12 será re-pe-tido en-quanto a va-riá-ve
+l \T1/cmtt/m/n/12 contador
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.02399pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.02399pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-3.02399pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [21]
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/4E6CFFCB91CB78ACB5F25E4AC9C60424A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/90CD1A26D5EB85717DA268722275380CA90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.02399pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.02399pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-3.02399pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[22] (./modulo_01.aux)
+[22]
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/E1400CAF7D5B4EC16A654977C9795086A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[23]
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/C3D94E2A6AD2E081A3C0E0D50400562BA90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/5BBF32C4CF514F54261EA002B3F15A1BA90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[24]
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/F58F8787B76BC16AA044F5605C148D61A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[25]
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/4A1E540F64B712BF5918EB762661C6D1A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[26]
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/1E577FE55F9DF7710260DBC42B1ECA26A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[27]
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/58300CA53DC16FD1BEC0067FC0781DC2A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[28]
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/137FD32D5BEC66DCF5D511914F5965A6A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+\openout4 = `modulo_01.pyg'.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[29]
+(./_minted-modulo_01/ABCA0CB5F99495B1064C044445205853A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+\openout4 = `modulo_01.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
+tripnl=False -o _minted-modulo_01/A3DFEF829E40CD2A80C98CEF11BF8385A90ECD6B66B85
+A90BF5EBF2E811DA710.pygtex modulo_01.pyg)...executed.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[30]
+(./_minted-modulo_01/A3DFEF829E40CD2A80C98CEF11BF8385A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
+5.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
+File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+))
+\openout4 = `modulo_01.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
+tripnl=False -o _minted-modulo_01/97786851650AEB968EF052F689B2198BA90ECD6B66B85
+A90BF5EBF2E811DA710.pygtex modulo_01.pyg)...executed.
+
+
+(./_minted-modulo_01/97786851650AEB968EF052F689B2198BA90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[31]
+\openout4 = `modulo_01.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
+tripnl=False -o _minted-modulo_01/FD3837DF92BB78E162CED44A38EA547BA90ECD6B66B85
+A90BF5EBF2E811DA710.pygtex modulo_01.pyg)...executed.
+
+
+(./_minted-modulo_01/FD3837DF92BB78E162CED44A38EA547BA90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+\openout4 = `modulo_01.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
+tripnl=False -o _minted-modulo_01/DD1FCDDAC00E2586F56400E13D5D1555A90ECD6B66B85
+A90BF5EBF2E811DA710.pygtex modulo_01.pyg)...executed.
+
+
+(./_minted-modulo_01/DD1FCDDAC00E2586F56400E13D5D1555A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[32]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[33]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[34] (./modulo_01.aux)
 Package rerunfilecheck Info: File `modulo_01.out' has not changed.
-(rerunfilecheck)             Checksum: 26FF38D27B863951D90723F62E0D4778;1407.
+(rerunfilecheck)             Checksum: BFAD1E379420475669EC9AA654C8AEF5;1353.
 runsystem(rm modulo_01.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 39836 strings out of 478287
- 894926 string characters out of 5849289
- 1302158 words of memory out of 5000000
- 57229 multiletter control sequences out of 15000+600000
- 544223 words of font info for 141 fonts, out of 8000000 for 9000
+ 40018 strings out of 478287
+ 905968 string characters out of 5849289
+ 1304005 words of memory out of 5000000
+ 57311 multiletter control sequences out of 15000+600000
+ 544818 words of font info for 143 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,131p,833b,904s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
-e/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfit1000.pf
-b></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/
-fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
-utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on modulo_01.pdf (22 pages, 236772 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf
+/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/
+enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb></usr/share/texmf/fonts/type1/public/cm-super/sfit1000.pfb></usr/share/texmf
+/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/
+cm-super/sftt1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb
+8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on modulo_01.pdf (34 pages, 275208 bytes).
 PDF statistics:
- 234 PDF objects out of 1000 (max. 8388607)
- 188 compressed objects within 2 object streams
- 58 named destinations out of 1000 (max. 500000)
+ 325 PDF objects out of 1000 (max. 8388607)
+ 264 compressed objects within 3 object streams
+ 96 named destinations out of 1000 (max. 500000)
  85 words of extra memory for PDF output out of 10000 (max. 10000000)
 

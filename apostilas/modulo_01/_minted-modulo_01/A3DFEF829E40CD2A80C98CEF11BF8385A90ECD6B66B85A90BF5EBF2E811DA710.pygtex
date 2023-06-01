@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+
+\PYG{c+c1}{\PYGZsh{} exemplo de lista}
+
+\PYG{n}{frutas} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}maçã\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}banana\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}laranja\PYGZsq{}}\PYG{p}{]}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{frutas}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{])}  \PYG{c+c1}{\PYGZsh{} saída: \PYGZsq{}maçã\PYGZsq{}}
+
+\end{Verbatim}

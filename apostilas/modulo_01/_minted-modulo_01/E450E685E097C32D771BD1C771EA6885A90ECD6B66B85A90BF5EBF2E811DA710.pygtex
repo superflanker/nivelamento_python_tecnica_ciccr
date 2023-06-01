@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		
+\PYG{c+c1}{\PYGZsh{} conferindo se a idade é maior ou igual a 18}
+
+\PYG{k}{if} \PYG{n}{idade} \PYG{o}{\PYGZgt{}=} \PYG{l+m+mi}{18}\PYG{p}{:}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Você é maior de idade.\PYGZdq{}}\PYG{p}{)}
+		
+\end{Verbatim}
