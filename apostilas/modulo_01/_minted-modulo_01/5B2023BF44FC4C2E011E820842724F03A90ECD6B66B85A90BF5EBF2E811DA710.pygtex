@@ -1,0 +1,40 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		
+\PYG{c+c1}{\PYGZsh{} lista de frutas \PYGZhy{} deixei em inglês pois é mais merchant}
+
+\PYG{n}{fruits} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}orange\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}apple\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}pear\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}banana\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}kiwi\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}apple\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}banana\PYGZsq{}}\PYG{p}{]}
+
+\PYG{c+c1}{\PYGZsh{} contagem de elementos \PYGZhy{} maçã}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{fruits}\PYG{o}{.}\PYG{n}{count}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}apple\PYGZsq{}}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} output: 2}
+
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{fruits}\PYG{o}{.}\PYG{n}{count}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}tangerine\PYGZsq{}}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} output: 0}
+
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{fruits}\PYG{o}{.}\PYG{n}{index}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}banana\PYGZsq{}}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{} output: 3}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{fruits}\PYG{o}{.}\PYG{n}{index}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}banana\PYGZsq{}}\PYG{p}{,} \PYG{l+m+mi}{4}\PYG{p}{))}  \PYG{c+c1}{\PYGZsh{} Find next banana starting at position 4}
+\PYG{c+c1}{\PYGZsh{} output: 6}
+\PYG{c+c1}{\PYGZsh{} reverte a lista}
+
+\PYG{n}{fruits}\PYG{o}{.}\PYG{n}{reverse}\PYG{p}{()}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{fruits}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{}: output: [\PYGZsq{}banana\PYGZsq{}, \PYGZsq{}apple\PYGZsq{}, \PYGZsq{}kiwi\PYGZsq{}, \PYGZsq{}banana\PYGZsq{}, \PYGZsq{}pear\PYGZsq{}, \PYGZsq{}apple\PYGZsq{}, \PYGZsq{}orange\PYGZsq{}]}
+
+\PYG{c+c1}{\PYGZsh{} adicionando elementos}
+\PYG{n}{fruits}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}grape\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{fruits}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} output: [\PYGZsq{}banana\PYGZsq{}, \PYGZsq{}apple\PYGZsq{}, \PYGZsq{}kiwi\PYGZsq{}, \PYGZsq{}banana\PYGZsq{}, \PYGZsq{}pear\PYGZsq{}, \PYGZsq{}apple\PYGZsq{}, \PYGZsq{}orange\PYGZsq{}, \PYGZsq{}grape\PYGZsq{}]}
+
+\PYG{c+c1}{\PYGZsh{} ordenando}
+\PYG{n}{fruits}\PYG{o}{.}\PYG{n}{sort}\PYG{p}{()}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{fruits}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} output: [\PYGZsq{}apple\PYGZsq{}, \PYGZsq{}apple\PYGZsq{}, \PYGZsq{}banana\PYGZsq{}, \PYGZsq{}banana\PYGZsq{}, \PYGZsq{}grape\PYGZsq{}, \PYGZsq{}kiwi\PYGZsq{}, \PYGZsq{}orange\PYGZsq{}, \PYGZsq{}pear\PYGZsq{}]}
+
+\PYG{c+c1}{\PYGZsh{} tirando um elemento da lista}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{fruits}\PYG{o}{.}\PYG{n}{pop}\PYG{p}{())} \PYG{c+c1}{\PYGZsh{} output: \PYGZsq{}pear\PYGZsq{}}
+
+\end{Verbatim}

@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	\PYG{n}{Imprimir} \PYG{l+s+s2}{\PYGZdq{}Pressione qualquer tecla para continuar, q para sair\PYGZdq{}}
+	\PYG{n}{Ler} \PYG{n}{q}
+\end{Verbatim}

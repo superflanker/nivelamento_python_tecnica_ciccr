@@ -1,0 +1,39 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+
+\PYG{c+c1}{\PYGZsh{} Criando um dicionário}
+\PYG{n}{dicionario} \PYG{o}{=} \PYG{p}{\PYGZob{}}\PYG{l+s+s2}{\PYGZdq{}nome\PYGZdq{}}\PYG{p}{:} \PYG{l+s+s2}{\PYGZdq{}João\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}idade\PYGZdq{}}\PYG{p}{:} \PYG{l+m+mi}{30}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}cidade\PYGZdq{}}\PYG{p}{:} \PYG{l+s+s2}{\PYGZdq{}São Paulo\PYGZdq{}}\PYG{p}{\PYGZcb{}}
+
+\PYG{c+c1}{\PYGZsh{} Acessando elementos do dicionário}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{dicionario}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}nome\PYGZdq{}}\PYG{p}{])}   \PYG{c+c1}{\PYGZsh{} Saída: João}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{dicionario}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}idade\PYGZdq{}}\PYG{p}{])}  \PYG{c+c1}{\PYGZsh{} Saída: 30}
+
+\PYG{c+c1}{\PYGZsh{} Iterando sobre um dicionário}
+\PYG{k}{for} \PYG{n}{chave}\PYG{p}{,} \PYG{n}{valor} \PYG{o+ow}{in} \PYG{n}{dicionario}\PYG{o}{.}\PYG{n}{items}\PYG{p}{():}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{chave}\PYG{p}{,} \PYG{n}{valor}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Verificando se uma chave está presente no dicionário}
+\PYG{k}{if} \PYG{l+s+s2}{\PYGZdq{}cidade\PYGZdq{}} \PYG{o+ow}{in} \PYG{n}{dicionario}\PYG{p}{:}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}A chave \PYGZsq{}cidade\PYGZsq{} está presente no dicionário\PYGZdq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Adicionando um novo par chave\PYGZhy{}valor ao dicionário}
+\PYG{n}{dicionario}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}profissao\PYGZdq{}}\PYG{p}{]} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}Engenheiro\PYGZdq{}}
+
+\PYG{c+c1}{\PYGZsh{} Atualizando o valor de uma chave no dicionário}
+\PYG{n}{dicionario}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}idade\PYGZdq{}}\PYG{p}{]} \PYG{o}{=} \PYG{l+m+mi}{31}
+
+\PYG{c+c1}{\PYGZsh{} Removendo um par chave\PYGZhy{}valor do dicionário}
+\PYG{k}{del} \PYG{n}{dicionario}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}cidade\PYGZdq{}}\PYG{p}{]}
+
+\PYG{c+c1}{\PYGZsh{} Obtendo o número de pares chave\PYGZhy{}valor no dicionário}
+\PYG{n}{tamanho} \PYG{o}{=} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{dicionario}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{tamanho}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Saída: 3}
+
+\PYG{c+c1}{\PYGZsh{} Obtendo uma lista das chaves do dicionário}
+\PYG{n}{chaves} \PYG{o}{=} \PYG{n+nb}{list}\PYG{p}{(}\PYG{n}{dicionario}\PYG{o}{.}\PYG{n}{keys}\PYG{p}{())}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{chaves}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Saída: [\PYGZsq{}nome\PYGZsq{}, \PYGZsq{}idade\PYGZsq{}, \PYGZsq{}profissao\PYGZsq{}]}
+
+\PYG{c+c1}{\PYGZsh{} Obtendo uma lista dos valores do dicionário}
+\PYG{n}{valores} \PYG{o}{=} \PYG{n+nb}{list}\PYG{p}{(}\PYG{n}{dicionario}\PYG{o}{.}\PYG{n}{values}\PYG{p}{())}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{valores}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Saída: [\PYGZsq{}João\PYGZsq{}, 31, \PYGZsq{}Engenheiro\PYGZsq{}]}
+
+\end{Verbatim}

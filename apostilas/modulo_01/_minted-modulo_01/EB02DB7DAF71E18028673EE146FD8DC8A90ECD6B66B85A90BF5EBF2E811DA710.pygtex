@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		
+	\PYG{c+c1}{\PYGZsh{} Variável de controle do loop \PYGZhy{} quando o usuário quiser sair, basta digitar \PYGZsq{}q\PYGZsq{}}
+	\PYG{c+c1}{\PYGZsh{} após o loop exibir o resultado da operação}
+	\PYG{n}{q} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{l+s+s1}{\PYGZsq{}a\PYGZsq{}} \PYG{c+c1}{\PYGZsh{} atribuição inicial com valor diferente de \PYGZsq{}q\PYGZsq{}}
+	
+\end{Verbatim}

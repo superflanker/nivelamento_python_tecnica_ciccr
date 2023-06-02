@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	
+\PYG{n}{Função} \PYG{n}{divide}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{b}\PYG{p}{)}
+	\PYG{n}{Tentar}
+		\PYG{n}{s} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n}{a} \PYG{o}{/} \PYG{n}{b}
+		\PYG{n}{Retornar} \PYG{n}{s}
+	\PYG{n}{Capturar} \PYG{n}{erro} \PYG{n}{de} \PYG{n}{divisão} \PYG{n}{por} \PYG{n}{zero}
+		\PYG{n}{Imprimir} \PYG{l+s+s2}{\PYGZdq{}Não é possível divisão por zero\PYGZdq{}}
+	
+\end{Verbatim}

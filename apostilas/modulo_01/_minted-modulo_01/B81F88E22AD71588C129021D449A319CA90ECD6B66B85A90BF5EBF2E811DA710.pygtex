@@ -1,0 +1,63 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+
+\PYG{k}{def} \PYG{n+nf}{main}\PYG{p}{()} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{k+kc}{None}\PYG{p}{:}
+\PYG{+w}{	}\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+sd}{	Executa o loop principal da calculadora de açougueiro}
+\PYG{l+s+sd}{	Args:}
+\PYG{l+s+sd}{		None}
+\PYG{l+s+sd}{	Returns:}
+\PYG{l+s+sd}{		None}
+\PYG{l+s+sd}{	\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+	
+	\PYG{c+c1}{\PYGZsh{} variável  de controle do loop \PYGZhy{} quando o usuário quiser sair}
+	\PYG{c+c1}{\PYGZsh{} basta digitar q após o loop exibir o resultado da operação}
+	\PYG{n}{q} \PYG{o}{=} \PYG{n+nb}{ord}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}a\PYGZsq{}}\PYG{p}{)}
+	
+	\PYG{k}{while} \PYG{n}{q} \PYG{o}{!=} \PYG{l+s+s1}{\PYGZsq{}q\PYGZsq{}}\PYG{p}{:}
+	\PYG{c+c1}{\PYGZsh{} entrada de operandos e a operação \PYGZhy{} Notação Polonesa}
+	
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Digite o primeiro operando: \PYGZdq{}}\PYG{p}{)}
+	\PYG{k}{try}\PYG{p}{:}
+		\PYG{n}{opa} \PYG{o}{=} \PYG{n+nb}{float}\PYG{p}{(}\PYG{n+nb}{input}\PYG{p}{())}
+	\PYG{k}{except} \PYG{n+ne}{ValueError} \PYG{k}{as} \PYG{n}{e}\PYG{p}{:}
+		\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Somente números são permitidos\PYGZdq{}}\PYG{p}{)}
+		\PYG{k}{continue}
+	
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Digite o segundo operando: \PYGZdq{}}\PYG{p}{)}
+	\PYG{k}{try}\PYG{p}{:}
+		\PYG{n}{opb} \PYG{o}{=} \PYG{n+nb}{float}\PYG{p}{(}\PYG{n+nb}{input}\PYG{p}{())}
+	\PYG{k}{except} \PYG{n+ne}{ValueError} \PYG{k}{as} \PYG{n}{e}\PYG{p}{:}
+		\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Somente números são permitidos\PYGZdq{}}\PYG{p}{)}
+		\PYG{k}{continue}
+	
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Informe o tipo de operação(0 \PYGZhy{} Soma; 1 \PYGZhy{} Subtração. \PYGZdq{}} \PYG{o}{+}\PYGZbs{}
+	\PYG{l+s+s2}{\PYGZdq{}2 \PYGZhy{} Multiplicação; 3 \PYGZhy{} Divisão): \PYGZdq{}}\PYG{p}{)}
+	\PYG{k}{try}\PYG{p}{:}
+		\PYG{n}{op} \PYG{o}{=} \PYG{n+nb}{int}\PYG{p}{(}\PYG{n+nb}{input}\PYG{p}{())}
+	\PYG{k}{except} \PYG{n+ne}{ValueError} \PYG{k}{as} \PYG{n}{e}\PYG{p}{:}
+		\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Somente números inmteiros são permitidos\PYGZdq{}}\PYG{p}{)}
+		\PYG{k}{continue}
+	
+	\PYG{c+c1}{\PYGZsh{} análise e execução de operação}
+	
+	\PYG{k}{if} \PYG{n}{op} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{:}
+		\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{soma}\PYG{p}{(}\PYG{n}{opa}\PYG{p}{,} \PYG{n}{opb}\PYG{p}{))}
+	\PYG{k}{elif} \PYG{n}{op} \PYG{o}{==} \PYG{l+m+mi}{1}\PYG{p}{:}
+		\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{subtrai}\PYG{p}{(}\PYG{n}{opa}\PYG{p}{,} \PYG{n}{opb}\PYG{p}{))}
+	\PYG{k}{elif} \PYG{n}{op} \PYG{o}{==} \PYG{l+m+mi}{2}\PYG{p}{:}
+		\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{multiplica}\PYG{p}{(}\PYG{n}{opa}\PYG{p}{,} \PYG{n}{opb}\PYG{p}{))}
+	\PYG{k}{elif} \PYG{n}{op} \PYG{o}{==} \PYG{l+m+mi}{3}\PYG{p}{:}
+		\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{divide}\PYG{p}{(}\PYG{n}{opa}\PYG{p}{,} \PYG{n}{opb}\PYG{p}{))}
+	\PYG{k}{else}\PYG{p}{:}
+		\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Operação sem Suporte\PYGZdq{}}\PYG{p}{)}
+	
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Pressione qualquer tecla para continuar, q para sair\PYGZdq{}}\PYG{p}{)}
+	
+	\PYG{n}{q} \PYG{o}{=} \PYG{n+nb}{input}\PYG{p}{()}
+
+\PYG{c+c1}{\PYGZsh{} usando a função main para controlar a execução da calculadora}
+
+\PYG{k}{if} \PYG{n+nv+vm}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}} \PYG{o}{==} \PYG{l+s+s2}{\PYGZdq{}\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}\PYGZdq{}}\PYG{p}{:}
+	\PYG{n}{main}\PYG{p}{()}
+
+\end{Verbatim}

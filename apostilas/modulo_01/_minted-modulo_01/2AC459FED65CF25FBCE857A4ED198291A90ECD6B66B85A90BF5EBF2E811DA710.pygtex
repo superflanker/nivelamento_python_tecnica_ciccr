@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	
+\PYG{k}{try}\PYG{p}{:}
+	\PYG{c+c1}{\PYGZsh{} Código que pode gerar uma exceção}
+	\PYG{c+c1}{\PYGZsh{} ...}
+\PYG{k}{except} \PYG{n}{TipoDeExcecao}\PYG{p}{:}
+	\PYG{c+c1}{\PYGZsh{} Código a ser executado em caso de exceção do tipo TipoDeExcecao}
+	\PYG{c+c1}{\PYGZsh{} ...}
+
+\end{Verbatim}

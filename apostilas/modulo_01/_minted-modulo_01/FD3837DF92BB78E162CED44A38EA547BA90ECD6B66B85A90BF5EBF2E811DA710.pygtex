@@ -1,8 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-
-\PYG{c+c1}{\PYGZsh{} exemplo de tupla}
-
-\PYG{n}{ponto} \PYG{o}{=} \PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{4}\PYG{p}{)}
-\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{ponto}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{])}  \PYG{c+c1}{\PYGZsh{} saída: 3}
-
-\end{Verbatim}

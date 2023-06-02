@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+
+\PYG{n}{Função} \PYG{n}{soma}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{b}\PYG{p}{)}
+	\PYG{n}{s} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n}{a} \PYG{o}{+} \PYG{n}{b}
+	\PYG{n}{Retornar} \PYG{n}{s}
+	
+\end{Verbatim}

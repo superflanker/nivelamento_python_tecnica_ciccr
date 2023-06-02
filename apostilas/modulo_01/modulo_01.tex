@@ -38,6 +38,8 @@
 \usepackage{fancyhdr}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
+\usepackage{tikz}
+\usetikzlibrary{matrix,calc,shapes}
 \renewcommand{\headrulewidth}{1pt}
 \renewcommand{\footrulewidth}{0.5pt}
 \fancyhf{} % limpa os cabecalhos e rodapés
@@ -84,6 +86,7 @@
 	\maketitle
 	
 	\section{Objetivos}
+	\label{objetivos}
 	
 	O Nivelamento de \textbf{\textit{Conceitos de Programação - Introdução ao Python }}tem como objetivo introduzir os participantes à linguagem de programação \textit{Python}, fornecendo as habilidades básicas para escrever programas funcionais, compreender conceitos fundamentais e promover a resolução de problemas. Ao final do nivelamento, os alunos estarão preparados para aplicar seus conhecimentos em projetos pessoais ou profissionais.
 	
@@ -95,7 +98,7 @@
 		
 		\item \textbf{O que significa o termo algoritmo}: Um algoritmo é uma sequência de passos ou instruções lógicas bem definidas para resolver um problema ou realizar uma tarefa. É um conjunto de regras que descreve uma série de etapas para obter um resultado desejado.
 		
-		\item \textbf{Onde encontrar informações sobre como instalar o \textit{Python}}: Para obter informações sobre como instalar o \textbf{\textit{Python}}, você pode visitar o site oficial do \textbf{\textit{Python}} em \textit{python.org}. Lá você encontrará documentação detalhada, tutoriais e guias de instalação para diferentes plataformas. Para um guia de consulta rápida, acesso \href{Guia_Instalacao_Python.pdf}{\textbf{Guia de Instalação do \textit{\textbf{Python}}}}.
+		\item \textbf{Onde encontrar informações sobre como instalar o \textit{Python}}: Para obter informações sobre como instalar o \textbf{\textit{Python}}, você pode visitar o site oficial do \textbf{\textit{Python}} em \textit{python.org}. Lá você encontrará documentação detalhada, tutoriais e guias de instalação para diferentes plataformas. Para um guia de consulta rápida, acesse \href{Guia_Instalacao_Python.pdf}{\textbf{Guia de Instalação do \textit{\textbf{Python}}}}.
 		
 		\item \textbf{Sintaxe e Estrutura de Dados}: A sintaxe em programação se refere às regras e convenções que determinam como o código fonte deve ser escrito em uma determinada linguagem de programação. A estrutura de dados se refere às formas de organizar e armazenar dados em um programa, como listas, tuplas, conjuntos, dicionários, entre outros.
 		
@@ -108,49 +111,50 @@
 	\end{itemize}
 	
 	\section{Introdução Ao Python}
-	
+	\label{intro_python}
 	\subsection{Programação e Algoritmos}
+	\label{programacao_e_algoritmos}
 	
-	\paragraph{O que é programar} Programar é o ato de escrever um conjunto de instruções ou algoritmos que um computador pode executar para realizar uma tarefa específica. Envolve a criação de código em uma linguagem de programação que segue uma sintaxe e estrutura definidas. A programação permite que os desenvolvedores criem software, aplicativos, sites e sistemas que automatizam processos, resolvam problemas e forneçam funcionalidades úteis. Programar requer habilidades lógicas e analíticas para que as instruções sejam escritas de forma clara e precisa, permitindo que o computador execute as tarefas conforme especificado. É uma habilidade essencial no mundo da tecnologia e desempenha um papel fundamental no avanço da computação e da inovação tecnológica.
+	\paragraph{O que é programar} \label{o_que_e_programar} Programar é o ato de escrever um conjunto de instruções ou algoritmos que um computador pode executar para realizar uma tarefa específica. Envolve a criação de código em uma linguagem de programação que segue uma sintaxe e estrutura definidas. A programação permite que os desenvolvedores criem software, aplicativos, sites e sistemas que automatizam processos, resolvam problemas e forneçam funcionalidades úteis. Programar requer habilidades lógicas e analíticas para que as instruções sejam escritas de forma clara e precisa, permitindo que o computador execute as tarefas conforme especificado. É uma habilidade essencial no mundo da tecnologia e desempenha um papel fundamental no avanço da computação e da inovação tecnológica.
 	
 	Programar refere-se ao processo de criar um conjunto de instruções ou algoritmos para serem executados por um computador ou outro dispositivo eletrônico. É a arte de escrever código, que consiste em uma série de comandos precisos e lógicos, para que o computador execute tarefas específicas.
 	
 	A programação permite que os desenvolvedores criem programas de software, aplicativos móveis, sites, jogos e uma ampla gama de soluções tecnológicas. É por meio da programação que os computadores são capazes de realizar diversas tarefas, desde cálculos complexos até a execução de operações de processamento de dados.
 	
-	Ao programar, os desenvolvedores utilizam linguagens de programação, como Python, Java, C++, JavaScript, entre outras. Essas linguagens fornecem uma sintaxe específica e um conjunto de regras que permitem aos programadores expressar suas instruções de forma clara e precisa para que o computador as execute corretamente.
+	Ao programar, os desenvolvedores utilizam linguagens de programação, como \textbf{\textit{Python}}, \textit{Java}, \textit{C++}, \textit{JavaScript}, entre outras. Essas linguagens fornecem uma sintaxe específica e um conjunto de regras que permitem aos programadores expressar suas instruções de forma clara e precisa para que o computador as execute corretamente.
 	
 	A programação requer habilidades lógicas, criatividade e resolução de problemas. Os programadores devem entender o problema que desejam resolver, projetar uma solução eficiente e implementar o código necessário para alcançar o resultado desejado. Além disso, a depuração e o teste do código são partes essenciais do processo de programação para garantir que o programa funcione corretamente e produza os resultados esperados.
 	
 	A programação é uma área em constante evolução, impulsionada pelo avanço da tecnologia e das demandas da sociedade. A capacidade de programar é uma habilidade valiosa em muitos setores, como desenvolvimento de software, ciência de dados, inteligência artificial, engenharia de software e muitos outros. Ela permite que as pessoas criem soluções inovadoras e automatizem tarefas para melhorar a eficiência e a produtividade em diversos campos de atuação.
 	
-	\subparagraph{O que é uma linguagem de Programação} Uma linguagem de programação é uma forma de comunicação entre um programador e um computador. É um conjunto de regras e símbolos que permitem escrever instruções para que o computador execute tarefas específicas. Essas linguagens são projetadas para serem compreensíveis tanto para os seres humanos quanto para as máquinas.
+	\subparagraph{O que é uma linguagem de Programação} \label{o_que_e_linguagem_de_programacao} Uma linguagem de programação é uma forma de comunicação entre um programador e um computador. É um conjunto de regras e símbolos que permitem escrever instruções para que o computador execute tarefas específicas. Essas linguagens são projetadas para serem compreensíveis tanto para os seres humanos quanto para as máquinas.
 	
 	As linguagens de programação fornecem um conjunto de palavras-chave, símbolos, estruturas gramaticais e regras semânticas que permitem aos programadores expressar suas instruções de forma estruturada e lógica. Elas permitem que os programadores escrevam algoritmos, que são sequências de passos que o computador deve seguir para resolver um determinado problema.
 	
-	Existem muitas linguagens de programação disponíveis, cada uma com suas próprias características e finalidades. Algumas linguagens são de uso geral, como Python, Java, C++ e JavaScript, e podem ser usadas para uma ampla variedade de aplicações. Outras são mais especializadas e foram projetadas para fins específicos, como linguagens para desenvolvimento web, análise de dados, inteligência artificial, entre outros.
+	Existem muitas linguagens de programação disponíveis, cada uma com suas próprias características e finalidades. Algumas linguagens são de uso geral, como \textbf{\textit{Python}}, \textit{Java}, \textit{C++} e \textit{JavaScript}, e podem ser usadas para uma ampla variedade de aplicações. Outras são mais especializadas e foram projetadas para fins específicos, como linguagens para desenvolvimento \textit{web}, análise de dados, inteligência artificial, entre outros.
 	
 	As linguagens de programação podem ser classificadas em diferentes níveis de abstração. Linguagens de baixo nível, como \textit{\textbf{Assembly}}, estão mais próximas da linguagem de máquina e requerem um conhecimento mais detalhado do hardware do computador. Por outro lado, linguagens de alto nível, como \textbf{\textit{Python}}, permitem que os programadores expressem suas instruções de maneira mais próxima da linguagem humana, sendo menos dependentes dos detalhes de implementação.
 	
 	Cada linguagem de programação tem suas próprias regras e características, mas todas compartilham o objetivo de permitir que os programadores desenvolvam soluções e criem programas que possam ser executados em um computador. O conhecimento de diferentes linguagens de programação permite aos programadores escolher a linguagem mais adequada para o problema em questão e expandir suas habilidades no desenvolvimento de software.
 	
-	\subparagraph{Estrutura de uma linguagem de programação} A estrutura de uma linguagem de programação é composta por diversos elementos que definem como o código deve ser organizado e como as instruções devem ser escritas. Os principais elementos de estrutura de uma linguagem de programação são:
+	\subparagraph{Estrutura de uma linguagem de programação} \label{estrutura_da_linguagem_de_programacao} A estrutura de uma linguagem de programação é composta por diversos elementos que definem como o código deve ser organizado e como as instruções devem ser escritas. Os principais elementos de estrutura de uma linguagem de programação são:
 	
 	\begin{itemize}
 		\item \textbf{\textit{Sintaxe:}} A sintaxe é o conjunto de regras que define a estrutura correta das instruções na linguagem. Ela determina como as palavras-chave, operadores, variáveis e outros elementos devem ser combinados para formar instruções válidas. A sintaxe define a ordem e a forma correta de escrever o código.
 		
-		\item \textbf{\textit{Palavras-chave:}} As palavras-chave são termos reservados pela linguagem de programação que possuem um significado específico. Elas são usadas para definir estruturas de controle, declaração de variáveis, operações matemáticas e outras funcionalidades da linguagem. Exemplos de palavras-chave incluem "if", "for", "while", "function", "class", entre outras.
+		\item \textbf{\textit{Palavras-chave:}} As palavras-chave são termos reservados pela linguagem de programação que possuem um significado específico. Elas são usadas para definir estruturas de controle, declaração de variáveis, operações matemáticas e outras funcionalidades da linguagem. Exemplos de palavras-chave incluem \texttt{if}, \texttt{for}, \texttt{while}, \texttt{function}, \texttt{class}, entre outras.
 		
-		\item \textbf{\textit{Tipos de dados:}} As linguagens de programação possuem diferentes tipos de dados, como números, texto, booleanos, arrays, objetos, entre outros. Os tipos de dados definem o tipo de valor que uma variável pode armazenar e as operações que podem ser realizadas com esses valores.
+		\item \textbf{\textit{Tipos de dados:}} As linguagens de programação possuem diferentes tipos de dados, como números, texto, booleanos, \texttt{arrays}, objetos, entre outros. Os tipos de dados definem o tipo de valor que uma variável pode armazenar e as operações que podem ser realizadas com esses valores.
 		
 		\item \textbf{\textit{Variáveis:}} As variáveis são utilizadas para armazenar valores na memória durante a execução do programa. Elas possuem um nome e um tipo de dados associado. As variáveis podem ser usadas para armazenar informações temporárias, realizar cálculos e representar dados em geral.
 		
-		\item \textbf{\textit{Estruturas de controle:}} As estruturas de controle permitem que o fluxo de execução do programa seja controlado. Elas incluem estruturas condicionais (como "if" e "else") que permitem executar diferentes blocos de código dependendo de uma condição, e estruturas de repetição (como "for" e "while") que permitem executar um bloco de código várias vezes.
+		\item \textbf{\textit{Estruturas de controle:}} As estruturas de controle permitem que o fluxo de execução do programa seja controlado. Elas incluem estruturas condicionais (como \texttt{if} e \texttt{else}) que permitem executar diferentes blocos de código dependendo de uma condição, e estruturas de repetição (como \texttt{for} e \texttt{while}) que permitem executar um bloco de código várias vezes.
 		
 		\item \textbf{\textit{Funções e procedimentos:}} As funções e procedimentos são blocos de código que podem ser definidos e chamados em diferentes partes do programa. Eles permitem agrupar um conjunto de instruções em uma unidade lógica e reutilizável. As funções podem receber parâmetros e retornar valores.
 		
 		\item \textbf{\textit{Bibliotecas e módulos:}} Muitas linguagens de programação possuem bibliotecas ou módulos que são conjuntos de código pré-existente que fornecem funcionalidades adicionais. Essas bibliotecas podem conter funções, classes e outras estruturas que podem ser importadas e utilizadas em um programa. Elas permitem estender as capacidades da linguagem de programação e facilitam o desenvolvimento de soluções complexas.
 		
-		\item \textbf{\textit{Estruturas de dados:}} As estruturas de dados são formas organizadas de armazenar e manipular conjuntos de dados. Elas incluem \textit{arrays}, listas, conjuntos, dicionários, entre outros. Cada estrutura de dados tem suas próprias características e métodos para realizar operações específicas, como adicionar, remover, buscar ou modificar elementos.
+		\item \textbf{\textit{Estruturas de dados:}} As estruturas de dados são formas organizadas de armazenar e manipular conjuntos de dados. Elas incluem \texttt{arrays}, listas, conjuntos, dicionários, entre outros. Cada estrutura de dados tem suas próprias características e métodos para realizar operações específicas, como adicionar, remover, buscar ou modificar elementos.
 		
 		\item \textbf{\textit{Orientação a objetos:}} Muitas linguagens de programação são orientadas a objetos, o que significa que elas permitem a criação de classes e objetos. A programação orientada a objetos organiza o código em torno de objetos que possuem atributos (dados) e métodos (ações). Essa abordagem permite encapsular a lógica do programa e promover a reutilização de código.
 		
@@ -158,7 +162,7 @@
 		
 	\end{itemize}
 	
-	\subparagraph{Paradigmas de Programação} Um paradigma, no contexto da programação de computadores, refere-se a um conjunto de conceitos, princípios e abordagens que definem a forma como os programas são estruturados, organizados e desenvolvidos. É uma forma de pensar e abordar a resolução de problemas na programação.
+	\subparagraph{Paradigmas de Programação} \label{paradigmas_de_programacao} Um paradigma, no contexto da programação de computadores, refere-se a um conjunto de conceitos, princípios e abordagens que definem a forma como os programas são estruturados, organizados e desenvolvidos. É uma forma de pensar e abordar a resolução de problemas na programação.
 	
 	Cada paradigma de programação possui suas próprias regras, diretrizes e estilo de escrita de código. Ele define a estrutura básica do programa, as técnicas de solução de problemas e os padrões de design a serem seguidos.
 	
@@ -204,7 +208,10 @@
 	
 	Ao seguir os princípios da programação estruturada, é possível escrever programas mais eficientes, modulares e robustos. No entanto, ela possui algumas limitações em lidar com problemas complexos, especialmente quando se trata de lidar com grandes volumes de dados ou lógicas mais avançadas. Nesses casos, paradigmas como a programação orientada a objetos podem ser mais adequados.
 	
-	\subparagraph{Programação Procedural} A programação procedural é um paradigma de programação que se concentra em estruturar o código em procedimentos ou funções. Ela se baseia na ideia de que um programa é composto por uma sequência de instruções que são executadas em ordem, e o controle do fluxo do programa é realizado por meio de estruturas de controle, como loops e condicionais.
+	\subparagraph{Programação Procedural}
+    \label{programacao_procedural}
+    
+    A programação procedural é um paradigma de programação que se concentra em estruturar o código em procedimentos ou funções. Ela se baseia na ideia de que um programa é composto por uma sequência de instruções que são executadas em ordem, e o controle do fluxo do programa é realizado por meio de estruturas de controle, como loops e condicionais.
 	
 	Na programação procedural, o foco está na decomposição do programa em procedimentos ou funções menores e mais gerenciáveis, que podem ser reutilizados em diferentes partes do programa. Cada procedimento é uma sequência de instruções que realiza uma tarefa específica e pode receber argumentos (parâmetros) e retornar um valor.
 	
@@ -215,6 +222,8 @@
 	Linguagens de programação como C, Pascal e Fortran são exemplos de linguagens que suportam a programação procedural. No entanto, muitas linguagens modernas combinam elementos da programação procedural com outros paradigmas, como a programação orientada a objetos, permitindo uma abordagem mais flexível e modular na construção de programas.
 	
 	\subparagraph{Programação Orientada a Objetos}
+	\label{programacao_orientada_a_objetos}
+	
 	A programação orientada a objetos (\textit{POO}) é um paradigma de programação que organiza o código em torno de objetos, que são instâncias de classes. Na \textit{POO}, um objeto é uma entidade que contém dados e comportamentos relacionados.
 	
 	O paradigma da programação orientada a objetos baseia-se em quatro princípios fundamentais:
@@ -237,7 +246,8 @@
 	
 	Linguagens de programação como \textit{Java}, \textit{C++}, \textit{Python} e \textit{C\#} são exemplos de linguagens que suportam a programação orientada a objetos. A \textit{POO} é amplamente utilizada devido à sua capacidade de modelar problemas complexos de forma mais clara, modular e reutilizável, facilitando o desenvolvimento e a manutenção de software.
 	
-	\paragraph{O que são algoritmos} O estudo e uso de algoritmos remonta a milhares de anos. A palavra \textit{``algoritmo''} deriva do nome de um matemático persa do século IX, \textit{Al-Khwarizmi}, que foi um dos primeiros a sistematizar métodos de resolução de equações lineares e quadráticas. No entanto, a ideia de algoritmo e seu uso prático são anteriores a \textit{Al-Khwarizmi}.
+	\paragraph{O que são algoritmos}
+	 \label{o_que_sao_algoritmos} O estudo e uso de algoritmos remonta a milhares de anos. A palavra \textit{``algoritmo''} deriva do nome de um matemático persa do século IX, \textit{Al-Khwarizmi}, que foi um dos primeiros a sistematizar métodos de resolução de equações lineares e quadráticas. No entanto, a ideia de algoritmo e seu uso prático são anteriores a \textit{Al-Khwarizmi}.
 	
 	Antes do advento dos computadores, os algoritmos eram resolvidos manualmente por matemáticos e cientistas. Grandes avanços foram feitos por matemáticos notáveis, como \textit{\textbf{Euclides}}, que desenvolveu o algoritmo para encontrar o maior divisor comum de dois números (Algoritmo de Euclides), e \textbf{\textit{\textit{Isaac Newton}}}, que desenvolveu algoritmos para cálculo diferencial e integral.
 	
@@ -285,6 +295,7 @@
 	\textit{Lembre-se de que a criação de um algoritmo requer prática e experiência. À medida que você ganha mais familiaridade com a programação e a resolução de problemas, se tornará mais fácil criar algoritmos eficazes e eficientes.}
 	
 	\subparagraph{Representação de Algoritmos}
+	\label{representacao_de_algoritmos}
 	
 	Um algoritmo pode ser apresentado de diversas formas, dependendo do contexto em que está sendo utilizado. Aqui estão algumas das maneiras mais comuns de representar um algoritmo:
 	
@@ -302,6 +313,7 @@
 	Independentemente da forma de apresentação escolhida, um algoritmo deve ser claro, preciso e completo. Deve descrever em detalhes os passos necessários para resolver um problema, indicando a sequência de ações, as condições de controle e os dados envolvidos. A escolha da forma de apresentação depende do público-alvo e do contexto em que o algoritmo será utilizado.
 	
 	\subparagraph{Fluxogramas}
+	\label{fluxogramas}
 	Fluxogramas são diagramas visuais que representam a sequência de passos ou fluxo de um processo, algoritmo ou sistema. Eles são amplamente utilizados na programação e em outras áreas para representar de forma clara e visual as etapas e decisões envolvidas em um processo.
 	
 	Os fluxogramas permitem visualizar a lógica e a estrutura de um processo, tornando mais fácil entender e comunicar o fluxo das operações. Eles são ferramentas valiosas para projetar, documentar e depurar algoritmos e sistemas complexos, além de facilitar a colaboração entre membros de uma equipe.
@@ -340,7 +352,7 @@
 	\end{itemize}
 
 	\subparagraph{Pseudocódigo}
-	
+	\label{pseudocodigo}
 	Pseudocódigo é uma forma de representação textual de um algoritmo, utilizando uma linguagem simplificada e próxima da linguagem natural. É uma forma de escrever instruções de forma mais clara e compreensível, antes de serem traduzidas para uma linguagem de programação específica.
 	
 	O pseudocódigo não segue uma estrutura rígida como uma linguagem de programação real, mas geralmente utiliza palavras-chave simples e convenções para indicar as instruções e estruturas de controle. Ele é usado para expressar a lógica de um algoritmo de forma genérica, sem se preocupar com a sintaxe de uma linguagem de programação específica.
@@ -384,7 +396,7 @@
 	
 	
 	\section{Linguagem Python}
-	
+	\label{linguagem_python}
 	\textbf{\textit{Python}} é uma linguagem de programação de alto nível, interpretada e de propósito geral. Foi criada por \textit{Guido van Rossum} e lançada pela primeira vez em 1991. \textbf{\textit{Python}} se destaca por sua simplicidade e legibilidade de código, tornando-a uma linguagem acessível para iniciantes, ao mesmo tempo em que oferece recursos avançados para desenvolvedores experientes.
 	
 	Algumas características distintas do \textbf{\textit{Python}} incluem:
@@ -411,6 +423,7 @@
 	\end{enumerate}
 	
 	\subsection{Sintaxe do \textit{Python}}
+	\label{sintaxe_python}
 	Sintaxe é um conjunto de regras e estruturas gramaticais que definem a forma correta de escrever um determinado código ou linguagem. Na programação, a sintaxe é fundamental para que o código seja compreensível e interpretado corretamente pelo compilador ou interpretador.
 	
 	Cada linguagem de programação tem sua própria sintaxe, com regras específicas que determinam como as instruções devem ser escritas e organizadas. Essas regras geralmente incluem elementos como palavras-chave, operadores, símbolos, estruturas de controle e convenções de formatação.
@@ -421,11 +434,12 @@
 	
 	A sintaxe do \textbf{\textit{Python}} é conhecida por ser clara e legível. Algumas características principais da sintaxe do Python incluem:
 	
+	Exemplo:
+	
 	\begin{itemize}
 		
 		\item \textbf{\textit{Indentação significativa:}} \textbf{\textit{Python}} utiliza a indentação para delimitar blocos de código em vez de usar chaves ou palavras-chave especiais. Isso significa que a consistência na indentação é fundamental para a correta estruturação do código.
 
-\begin{listing}[!ht]
 	\begin{minted}[
 			frame=lines,
 			framesep=2mm,
@@ -442,12 +456,11 @@ else:
 
 	\end{minted}
 	\label{exemplo_curto_identacao}
-	\caption{Exemplo de código em \textbf{\textit{python}} enfatizando a indentação}
-\end{listing}
 
 	\item \textbf{\textit{Comentários:}} Comentários são trechos de texto que explicam o código e são ignorados pelo interpretador do \textit{\textbf{Python}}. Eles são precedidos pelo caractere ``\#'' e ajudam a documentar o código para facilitar a compreensão. Nos comentários multilinha, o comentário deve estar entre três aspas simples ou duplas.
 	
-\begin{listing}[!ht]
+	Exemplo:
+	
 	\begin{minted}[
 		frame=lines,
 		framesep=2mm,
@@ -468,11 +481,11 @@ MIT License
 
 	\end{minted}
 \label{exemplo_curto_comentário}
-\caption{Exemplo de comentários simples e multilinha}
-\end{listing}
-	\pagebreak
+
 	\item \textbf{\textit{Variáveis e Atribuição:}} As variáveis em \textbf{\textit{Python}} são usadas para armazenar valores. Em Python, as variáveis são criadas atribuindo valores a elas. Não é necessário declarar explicitamente o tipo da variável, pois a tipagem é dinâmica. A atribuição de valores às variáveis é feita usando o sinal de igual \texttt{'='}.
-\begin{listing}[!ht]
+	
+	Exemplo:
+	
 	\begin{minted}[
 		frame=lines,
 		framesep=2mm,
@@ -487,17 +500,17 @@ nome = "Maria"
 			
 	\end{minted}
 	\label{exemplo_curto_atribuição}
-	\caption{Exemplo de atribuição a variáveis}
-\end{listing}
+	
 	\item \textbf{\textit{Estruturas de Controle:}} As estruturas de controle em \textbf{\textit{Python}} são usadas para controlar o fluxo de execução de um programa. Elas permitem que você tome decisões com base em condições e repita a execução de um bloco de código várias vezes. As estruturas de controle em \textbf{\textit{Python}} são:
 	\begin{itemize}
 		\item 	Estruturas Condicionais:
 			\subitem \textbf{if:} Executa um bloco de código se uma condição for verdadeira.
 			\subitem \textbf{\textit{elif}}: Permite testar condições adicionais se as condições anteriores forem falsas.
 			\subitem \textbf{\textit{else:}} Executa um bloco de código se todas as condições anteriores forem falsas.
-		\pagebreak
-\begin{listing}[!ht]
-\begin{minted}[
+	
+	Exemplo:
+	
+	\begin{minted}[
 	frame=lines,
 	framesep=2mm,
 	baselinestretch=1.2,
@@ -515,13 +528,12 @@ else:
 
 \end{minted}
 \label{exemplo_estruturas_condicionais}
-\caption{Estruturas Condicionais}
-\end{listing}
+
 		\item \textbf{\textit{Estruturas de Repetição:}}
 		
 			\subitem \textbf{\textit{for:}} Itera sobre uma sequência (como uma lista, tupla ou string) ou um objeto iterável por um número específico de vezes.
 			\subitem \textbf{\textit{while:}} Executa um bloco de código repetidamente enquanto uma condição for verdadeira.
-\begin{listing}[!ht]
+			Exemplo: 
 \begin{minted}[
 	frame=lines,
 	framesep=2mm,
@@ -546,14 +558,14 @@ while x > 0:
 	
 \end{minted}
 \label{exemplo_estruturas_de_repeticao}
-\caption{Estruturas de Repetição}
-\end{listing}
+
 	\item \textbf{\textit{Controle de Loop:}}
 	
 	\subitem \textbf{\textit{break:}} Encerra imediatamente o loop em que está sendo executado.
 	\subitem \textbf{\textit{continue:}} Pula para a próxima iteração do loop, ignorando o restante do código dentro do bloco do loop.
-	\pagebreak
-\begin{listing}[!ht]
+
+	Exemplo:
+
 	\begin{minted}[
 		frame=lines,
 		framesep=2mm,
@@ -578,13 +590,12 @@ for i in range(10):
 		
 	\end{minted}
 	\label{exemplo_estruturas_de_controle_de_loop}
-	\caption{Controle de \textit{Loop}}
-\end{listing}
 	
 	\end{itemize}
-	\item \textbf{\textit{Funções:}} Como mencionado anteriormente, as funções são blocos de código reutilizáveis que realizam tarefas específicas. A sintaxe básica para definir uma função é usando a palavra-chave \texttt{def}, seguida pelo nome da função, parênteses contendo os parâmetros (opcional) e dois pontos (:). O corpo da função é identado.
+	\item \textbf{\textit{Funções:}} Como mencionado anteriormente, as funções são blocos de código reutilizáveis que realizam tarefas específicas. A sintaxe básica para definir uma função é usando a palavra-chave \texttt{def}, seguida pelo nome da função, parênteses contendo os parâmetros (opcional) e dois pontos (:). O corpo da função é indentado.
 	
-	\begin{listing}[!ht]
+	Exemplo:
+	
 		\begin{minted}[
 			frame=lines,
 			framesep=2mm,
@@ -604,19 +615,20 @@ saudacao()
 
 		\end{minted}
 		\label{exemplo_funcoes}
-		\caption{Exemplo de Função}
-	\end{listing}
 	
 	\end{itemize}
 
 	\subsubsection{Estruturas de Controle}
-	
+	\label{estruturas_de_controle}
 	\paragraph{Estruturas Condicionais}
+	\label{estruturas_condicionais}
 As estruturas condicionais em \textbf{\textit{Python}} são usadas para controlar o fluxo de execução do programa com base em certas condições. Elas permitem que um trecho específico de código seja executado somente se uma condição for atendida. Existem duas estruturas condicionais principais em \textbf{\textit{Python}}: o \texttt{if} e o \texttt{if-else}.
 	
 	\subparagraph{Cláusula \texttt{if}:}
+	\label{python_clausula_if}
 	O \texttt{if} é a estrutura condicional básica em Python. Ela verifica uma condição e, se a condição for avaliada como verdadeira, o bloco de código indentado abaixo do \texttt{if} é executado. Caso contrário, o bloco de código é ignorado.
-\begin{listing}[!ht]
+	
+	Exemplo:
 	\begin{minted}[
 		frame=lines,
 		framesep=2mm,
@@ -632,15 +644,13 @@ if idade >= 18:
 	print("Você é maior de idade.")
 		
 	\end{minted}
-	\label{clausula_if}
-	\caption{Uso do \texttt{if}}
-\end{listing}	
 
 	Nesse exemplo, se a variável \texttt{idade} for igual ou maior que 18, a mensagem \textit{``Você é maior de idade''} será exibida.
 	
-	\subparagraph{Cláusula \texttt{if-else}:} O \texttt{if-else} é uma estrutura condicional que permite especificar um bloco de código para ser executado quando a condição é verdadeira e outro bloco de código para ser executado quando a condição é falsa.
+	\subparagraph{Cláusula \texttt{if-else}:} 
+	\label{python_clausula_if_else}
+	O \texttt{if-else} é uma estrutura condicional que permite especificar um bloco de código para ser executado quando a condição é verdadeira e outro bloco de código para ser executado quando a condição é falsa.
 	
-\begin{listing}[!ht]
 	\begin{minted}[
 		frame=lines,
 		framesep=2mm,
@@ -662,16 +672,17 @@ else:
 		
 	\end{minted}
 	\label{clausula_if_else}
-	\caption{Uso do \texttt{if-else}}
-\end{listing}
-
+	
 Nesse exemplo, se a variável \texttt{idade} for igual ou maior que 18, a mensagem \textit{``Você é maior de idade''} será exibida. Caso contrário, a mensagem \textit{``Você é menor de idade''} será exibida.
 
 	\subparagraph{Cláusula \texttt{elif}}
-	
+	\label{python_clausula_elif}
 	O \texttt{elif} é uma abreviação de \texttt{else if} e permite verificar múltiplas condições em sequência. Ele é usado quando existem mais de duas possibilidades de resultados.
 	
-\begin{listing}[!ht]
+	
+	Exemplo:
+	
+	
 	\begin{minted}[
 		frame=lines,
 		framesep=2mm,
@@ -692,18 +703,61 @@ else:
 	
 	\end{minted}
 	\label{clausula_elif}
-	\caption{Uso do \texttt{elif}}
-\end{listing}
+	
+	
 Nesse exemplo, dependendo do valor da variável \texttt{nota}, uma mensagem correspondente será exibida.
 
 É importante observar que a indentação é fundamental na estruturação correta das estruturas condicionais em \textbf{\textit{Python}}. A indentação define os blocos de código que devem ser executados em determinadas condições.
+	
+	\subparagraph{Bônus: cláusula \texttt{match}} 
+	\label{python_clausula_match}
+	Uma declaração \texttt{match} recebe uma expressão e compara o seu valor com padrões sucessivos fornecidos em um ou mais blocos de casos (\texttt{case blocks}). Isso é superficialmente semelhante a uma declaração \texttt{switch} em \textit{C}, \textit{Java} ou \textit{JavaScript} (e muitas outras linguagens), mas é mais semelhante a correspondência de padrões em linguagens como \textit{Rust} ou \textit{Haskell}. Apenas o primeiro padrão que corresponde é executado e também é possível extrair componentes (elementos de sequência ou atributos de objeto) do valor em variáveis.
+	
+	Exemplo:
+	
+	
+	\begin{minted}[
+		frame=lines,
+		framesep=2mm,
+		baselinestretch=1.2,
+		bgcolor=LightGray,
+		fontsize=\footnotesize,
+		linenos
+		]{python}
 
+# função exemplo que usa match como estrutura condicional
+
+def process_data(data):
+	match data:
+		case 1:
+			print("O valor é 1")
+		case 2:
+			print("O valor é 2")
+		case 3:
+			print("O valor é 3")
+		case _:
+			print("O valor não corresponde a nenhum caso")
+
+# Exemplo de uso
+process_data(2)
+
+
+	\end{minted}
+	
+	Neste exemplo, a função \texttt{process\_data} recebe um argumento \texttt{data}. A declaração de correspondência é usada para comparar o valor de \texttt{data} com diferentes casos. Se \texttt{data} corresponder a algum caso específico, a instrução correspondente será executada. Se não houver correspondência, o caso padrão (\texttt{case \_:}) será executado.
+	
+	No exemplo acima, se chamarmos \texttt{process\_data(2)}, a saída será "O valor é 2", pois o valor fornecido corresponde ao caso 2. Se chamarmos \texttt{process\_data(5)}, a saída será "O valor não corresponde a nenhum caso", pois não há um caso correspondente para o valor 5.
+	
 	\paragraph{Estruturas de Repetição}
+	\label{estruturas_de_repeticao}
 	As estruturas de repetição em \textbf{\textit{Python}} são usadas para executar um bloco de código repetidamente com base em determinadas condições. Elas permitem que você execute uma sequência de comandos várias vezes até que uma condição seja atendida ou enquanto uma condição for verdadeira. Existem duas principais estruturas de repetição em \textbf{\textit{Python}}: \texttt{while} e \texttt{for}.
 	
-	\subparagraph{Loop \texttt{while}:}O \texttt{while} é uma estrutura de repetição que executa um bloco de código repetidamente enquanto uma condição específica for verdadeira. A condição é verificada antes de cada iteração do loop.
+	\subparagraph{Loop \texttt{while}:}
+	\label{python_loop_while}
+	O \texttt{while} é uma estrutura de repetição que executa um bloco de código repetidamente enquanto uma condição específica for verdadeira. A condição é verificada antes de cada iteração do loop.
 	
-\begin{listing}[!ht]
+	Exemplo:
+	
 	\begin{minted}[
 		frame=lines,
 		framesep=2mm,
@@ -722,13 +776,15 @@ while contador < 5:
 		
 	\end{minted}
 	\label{loop_while}
-	\caption{Uso do \texttt{while}}
-\end{listing}
 
 	Nesse exemplo, o bloco de código dentro do \textit{loop} \texttt{while} será repetido enquanto a variável \texttt{contador} for menor que 5. A cada iteração, o valor do contador é incrementado em 1 e impresso na tela.
 
-	\subparagraph{Loop \texttt{for}: }O \texttt{for} é uma estrutura de repetição que percorre um iterável, como uma lista, uma string ou um intervalo de números. Ele executa um bloco de código para cada elemento no iterável.
-\begin{listing}[!ht]
+	\subparagraph{Loop \texttt{for}: }
+	\label{python_loop_for}
+	O \texttt{for} é uma estrutura de repetição que percorre um iterável, como uma lista, uma string ou um intervalo de números. Ele executa um bloco de código para cada elemento no iterável.
+	
+	Exemplo:
+	
 	\begin{minted}[
 		frame=lines,
 		framesep=2mm,
@@ -752,14 +808,14 @@ for nome in nomes:
 		
 	\end{minted}
 	\label{loop_for}
-	\caption{Uso do \texttt{for}}
-\end{listing}
 
 Nesse exemplo, o bloco de código dentro do \textit{loop} \texttt{for} será executado para cada elemento da lista \texttt{nomes}. A cada iteração, o valor do elemento é atribuído à variável \texttt{nome} e uma saudação é impressa na tela.
 
-Além disso, a função embutida \texttt{range()} é frequentemente utilizada para gerar uma sequência de números a serem percorridos no \textit{loop} \texttt{for}.
+Além disso, a função embutida \texttt{range()} é frequentemente utilizada para gerar uma sequência de números a serem 
+percorridos no \textit{loop} \texttt{for}.
 
-\begin{listing}[!ht]
+Exemplo:
+
 	\begin{minted}[
 		frame=lines,
 		framesep=2mm,
@@ -776,20 +832,23 @@ for i in range(1, 5):
 	
 	\end{minted}
 	\label{loop_for_range}
-	\caption{Uso do \texttt{for} com \texttt{range()}}
-\end{listing}
 
 Nesse exemplo, o \textit{loop} \texttt{for} percorre os números de 1 a 4 (o último valor não é incluído) e imprime cada número na tela.
 
 As estruturas de repetição são úteis quando você precisa executar um bloco de código repetidamente até que uma condição seja atendida ou enquanto uma condição for verdadeira. Elas permitem automatizar tarefas e processar coleções de dados de forma eficiente. A escolha entre o uso de um \textit{loop} \texttt{while} ou \texttt{for} depende da situação específica e das necessidades do seu programa.
 
-	\paragraph{Controle de \textit{Loop}} As estruturas de controle de \textit{loop} são recursos em programação que permitem controlar o fluxo de execução dentro de um \textit{loop}. Elas fornecem mecanismos para interromper a execução do loop antes de sua conclusão normal, avançar para a próxima iteração ou pular para uma parte específica do \textit{loop}.
+	\paragraph{Controle de \textit{Loop}} 
+	\label{python_controle_loop}
+	As estruturas de controle de \textit{loop} são recursos em programação que permitem controlar o fluxo de execução dentro de um \textit{loop}. Elas fornecem mecanismos para interromper a execução do loop antes de sua conclusão normal, avançar para a próxima iteração ou pular para uma parte específica do \textit{loop}.
 	
 	Existem três principais estruturas de controle de loop que podem ser usadas em \textbf{\textit{Python}}: \texttt{break}, \texttt{continue} e \texttt{pass}.
 	
-	\subparagraph{Cláusula \texttt{break}:} A declaração \texttt{break} é usada para interromper a execução do \textit{loop} imediatamente, mesmo que a condição de repetição ainda seja verdadeira. Quando o programa encontra a instrução \texttt{break}, ele sai do \textit{loop} e continua a execução do código após o \textit{loop}.
+	\subparagraph{Cláusula \texttt{break}:}
+	\label{python_clausula_break}
+	 A declaração \texttt{break} é usada para interromper a execução do \textit{loop} imediatamente, mesmo que a condição de repetição ainda seja verdadeira. Quando o programa encontra a instrução \texttt{break}, ele sai do \textit{loop} e continua a execução do código após o \textit{loop}.
 	
-\begin{listing}[!ht]
+	Exemplo:
+	
 	\begin{minted}[
 		frame=lines,
 		framesep=2mm,
@@ -806,15 +865,15 @@ for i in range(1, 10):
 		
 	\end{minted}
 	\label{clausula_break}
-	\caption{Uso do \texttt{break}}
-\end{listing}
 	
 	Nesse exemplo, o \textit{loop} \texttt{for} é interrompido quando a variável \texttt{i} é igual a 5. Portanto, apenas os números de 1 a 4 serão impressos na tela.
 	
-	\subparagraph{Cláusula \texttt{continue}:}A declaração \texttt{continue} é usada para pular para a próxima iteração do \textit{loop}, ignorando o restante do bloco de código para aquela iteração específica. Quando o programa encontra a instrução \texttt{continue}, ele volta para o início do \textit{loop} e verifica a condição de repetição novamente.
-	\pagebreak
+	\subparagraph{Cláusula \texttt{continue}:}
+	\label{python_clausula_continue}
+	A declaração \texttt{continue} é usada para pular para a próxima iteração do \textit{loop}, ignorando o restante do bloco de código para aquela iteração específica. Quando o programa encontra a instrução \texttt{continue}, ele volta para o início do \textit{loop} e verifica a condição de repetição novamente.
 	
-\begin{listing}[!ht]
+	Exemplo:
+	
 	\begin{minted}[
 		frame=lines,
 		framesep=2mm,
@@ -831,14 +890,15 @@ for i in range(1, 6):
 	
 	\end{minted}
 	\label{clausula_continue}
-	\caption{Uso do \texttt{continue}}
-\end{listing}
-
+	
 Nesse exemplo, o número 3 será pulado e não será impresso na tela. O \textit{loop} continuará para as próximas iterações e imprimirá os números restantes.
 
-	\subparagraph{Cláusula \texttt{pass}:}A declaração \texttt{pass} é uma instrução vazia que não faz nada. Ela é usada quando é necessário ter uma instrução válida sintaticamente, mas não se deseja executar nenhum código. Geralmente é usado como um espaço reservado temporário ou para evitar erros de sintaxe quando um bloco de código está vazio.
+	\subparagraph{Cláusula \texttt{pass}:}
+	\label{python_clausula_pass}
+	A declaração \texttt{pass} é uma instrução vazia que não faz nada. Ela é usada quando é necessário ter uma instrução válida sintaticamente, mas não se deseja executar nenhum código. Geralmente é usado como um espaço reservado temporário ou para evitar erros de sintaxe quando um bloco de código está vazio.
 	
-\begin{listing}[!ht]
+	Exemplo:
+	
 	\begin{minted}[
 		frame=lines,
 		framesep=2mm,
@@ -856,18 +916,18 @@ for i in range(1, 5):
 	
 	\end{minted}
 	\label{clausula_pass}
-	\caption{Uso do \texttt{pass}}
-\end{listing}
 
 Nesse exemplo, a instrução \texttt{pass} é usada para indicar que não há ação específica a ser tomada quando o valor de \texttt{i} é igual a 3. O \textit{loop} continuará normalmente e imprimirá os outros números.
 
 As estruturas de controle de \textit{loop} oferecem flexibilidade e controle adicional sobre a execução dos \textit{loops} em um programa \textbf{\textit{Python}}. Elas permitem que você manipule o comportamento padrão do loop e faça decisões com base em determinadas condições. A escolha adequada entre \texttt{break}, \texttt{continue} e \texttt{pass} depende dos requisitos específicos do seu programa e da lógica desejada para controlar o \textit{loop}.
 	
 	\subsubsection{Operadores da Linguagem}
+	\label{operadores_da_linguagem}
 	
 Operadores em \textbf{\textit{Python}} são símbolos especiais que permitem realizar operações entre valores ou variáveis. Eles são usados para manipular e combinar dados, realizar cálculos matemáticos, comparar valores e realizar operações lógicas. Existem vários tipos de operadores em \textbf{\textit{Python}}, incluindo operadores aritméticos, operadores de atribuição, operadores de comparação, operadores lógicos e operadores de pertinência.
 
 	\subparagraph{Operadores Aritméticos}
+	\label{python_operadores_aritmeticos}
 	Os operadores aritméticos são usados para realizar operações matemáticas básicas. Os operadores aritméticos em \textbf{\textit{Python}} incluem:
 	
 	\begin{itemize}
@@ -926,7 +986,7 @@ print(divisao_inteira)  # Output: 3
 \label{operadores_aritmeticos}
 
 	\subparagraph{Operadores de Atribuição} 
-	
+	\label{python_operadores_atribuicao}
 	Os operadores de atribuição são usados para atribuir valores a variáveis. O operador de atribuição mais comum é o sinal de igual (=), que atribui o valor à variável. Os operadores de atribuição incluem:
 	
 	\begin{itemize}
@@ -986,7 +1046,7 @@ print(a)  # Output: 4.0
 \label{operadores_de_atribuicao}
 	
 	\subparagraph{Operadores de Comparação}
-	
+	\label{python_operadores_comparacao}
 	Os operadores de comparação são usados para comparar dois valores e retornar um valor \textit{booleano} (Verdadeiro ou Falso) com base na comparação. Os operadores de comparação em \textbf{\textit{Python}} incluem:
 	
 	\begin{itemize}
@@ -1037,6 +1097,7 @@ print(menor_igual)  # Output: False
 
 \end{minted}
 	\subparagraph{Operadores Lógicos}
+	\label{python_operadores_logicos}
 	Os operadores lógicos são usados para combinar condições e realizar operações lógicas. Os operadores lógicos em \textbf{\textit{Python}} incluem:
 	
 	\begin{itemize}
@@ -1077,6 +1138,7 @@ print(resultado_not_b)  # Output: True
 
 
 	\subparagraph{Operadores de Pertencimento}
+	\label{python_operadores_pertencimento}
 	Os operadores de pertencimento são usados para verificar se um valor está presente em uma sequência. Os operadores de pertencimento em \textbf{\textit{Python}} incluem:
 
 	\begin{itemize}
@@ -1106,7 +1168,7 @@ print(resultado_not_in)  # Output: False
 \end{minted}
 	
 	\subparagraph{Operadores de Identidade}
-	
+	\label{python_operadores_identidade}
 	Em \textbf{\textit{Python}}, os operadores de identidade são usados para comparar a identidade de dois objetos. Eles avaliam se os objetos se referem ao mesmo local de memória. Os operadores de identidade em \textbf{\textit{Python}} são os seguintes:
 	
 	\begin{itemize}
@@ -1146,9 +1208,12 @@ print(resultado_is_z)  # Output: True
 	\textbf{\textcolor{red}{Lembre-se}:} Os operadores em \textbf{\textit{Python}} são fundamentais para realizar diversas operações e manipulações de dados. Eles permitem que você realize cálculos, compare valores, atribua valores a variáveis e controle o fluxo do programa com base em condições. Combinando diferentes operadores, você pode criar expressões complexas e efetuar diversas tarefas em seus programas \textbf{\textit{Python}}.
 	
 	\subsubsection{Estruturas De Dados}
+	\label{python_estruturas_de_dados}
 	Em \textbf{\textit{Python}}, as estruturas de dados são formas de armazenar e organizar dados de maneira eficiente e conveniente. Existem várias estruturas de dados embutidas na linguagem, cada uma com suas próprias características e finalidades. Abaixo, descrevo algumas das principais estruturas de dados em \textbf{\textit{Python}}:
 	
-	\subparagraph{Listas (\textit{list})} coleção ordenada e mutável de elementos, que podem ser de diferentes tipos. Os elementos de uma lista são acessados através de índices, onde o primeiro elemento tem índice 0.
+	\subparagraph{Listas (\textit{list})}
+	\label{python_estrutura_listas}
+	 coleção ordenada e mutável de elementos, que podem ser de diferentes tipos. Os elementos de uma lista são acessados através de índices, onde o primeiro elemento tem índice 0.
 	
 	\textbf{Pontos importantes:}
 	\begin{itemize}
@@ -1167,14 +1232,51 @@ print(resultado_is_z)  # Output: True
 		fontsize=\footnotesize,
 		linenos
 		]{python}
+		
+# lista de frutas - deixei em inglês pois é mais merchant
 
-# exemplo de lista
+fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
 
-frutas = ['maçã', 'banana', 'laranja']
-print(frutas[0])  # saída: 'maçã'
+# contagem de elementos - maçã
+print(fruits.count('apple')) # output: 2
+
+
+print(fruits.count('tangerine')) # output: 0
+
+
+print(fruits.index('banana')) # output: 3
+
+print(fruits.index('banana', 4))  # Find next banana starting at position 4
+# output: 6
+# reverte a lista
+
+fruits.reverse()
+
+print(fruits) 
+#: output: ['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange']
+
+# adicionando elementos
+fruits.append('grape')
+
+print(fruits) 
+# output: ['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange', 'grape']
+
+# ordenando
+fruits.sort()
+
+print(fruits) 
+# output: ['apple', 'apple', 'banana', 'banana', 'grape', 'kiwi', 'orange', 'pear']
+
+# tirando um elemento da lista
+print(fruits.pop()) # output: 'pear'
 
 	\end{minted}
-	\subparagraph{Tuplas (\textit{tuple})} Semelhante a uma lista, uma tupla é uma coleção ordenada de elementos. A diferença é que as tuplas são imutáveis, ou seja, seus elementos não podem ser alterados após a criação.
+
+O exemplo manipula uma lista de frutas em Python. Ele conta o número de ocorrências de determinada fruta, encontra o índice da primeira ocorrência de uma fruta, inverte a ordem dos elementos na lista, adiciona novos elementos, ordena a lista e remove o último elemento. As operações demonstram funcionalidades básicas de manipulação de listas em Python.
+
+	\subparagraph{Tuplas (\textit{tuple})} 
+	\label{python_estrutura_tuplas}
+	Semelhante a uma lista, uma tupla é uma coleção ordenada de elementos. A diferença é que as tuplas são imutáveis, ou seja, seus elementos não podem ser alterados após a criação.
 	
 	\textbf{Pontos importantes:}
 	\begin{itemize}
@@ -1192,14 +1294,59 @@ print(frutas[0])  # saída: 'maçã'
 		linenos
 		]{python}
 		
-# exemplo de lista
+# Criando uma tupla
+tupla = (1, 2, 3, 4, 5)
 
-frutas = ['maçã', 'banana', 'laranja']
-print(frutas[0])  # saída: 'maçã'
+# Acessando elementos da tupla
+print(tupla[0])  # Saída: 1
+print(tupla[2])  # Saída: 3
 
+# Iterando sobre uma tupla
+for elemento in tupla:
+	print(elemento)
+
+# Obtendo o comprimento da tupla
+comprimento = len(tupla)
+print(comprimento)  # Saída: 5
+
+# Verificando se um elemento está presente na tupla
+if 3 in tupla:
+	print("O elemento 3 está presente na tupla")
+
+# Concatenando tuplas
+tupla2 = (6, 7, 8)
+tupla_concatenada = tupla + tupla2
+print(tupla_concatenada)  # Saída: (1, 2, 3, 4, 5, 6, 7, 8)
+
+# Desempacotando uma tupla
+a, b, c = tupla
+print(a)  # Saída: 1
+print(b)  # Saída: 2
+print(c)  # Saída: 3
+
+# Usando uma tupla como chave de dicionário
+dicionario = {(1, 2): "Valor da tupla"}
+print(dicionario[(1, 2)])  # Saída: Valor da tupla
+
+# Retornando múltiplos valores de uma função usando tupla
+def retorna_valores():
+	return 1, 2, 3
+
+valores = retorna_valores()
+print(valores)  # Saída: (1, 2, 3)
+
+# essa linha vai dar erro
+tupla = (1,2)
+
+tupla[1] = 3
+		
 	\end{minted}
 
-	\subparagraph{Dicionários (\textit{dict})} coleção de pares chave-valor, onde cada chave é única e mapeada a um valor correspondente. Os dicionários são úteis para armazenar informações relacionadas e acessá-las de forma eficiente através das chaves.
+Neste exemplo, criamos uma tupla contendo os números de 1 a 5. Demonstramos como acessar elementos da tupla usando índices, iterar sobre a tupla com um \textit{loop}, obter o comprimento da tupla, verificar a presença de um elemento na tupla e concatenar duas tuplas.
+
+Também mostramos como desempacotar os elementos de uma tupla em variáveis individuais, usar uma tupla como chave de um dicionário, e retornar múltiplos valores de uma função usando uma tupla.
+
+	\subparagraph{Dicionários (\textit{dict})} \label{python_estrutura_dict} coleção de pares chave-valor, onde cada chave é única e mapeada a um valor correspondente. Os dicionários são úteis para armazenar informações relacionadas e acessá-las de forma eficiente através das chaves.
 	
 	\textbf{Pontos importantes:}
 	\begin{itemize}
@@ -1218,14 +1365,48 @@ print(frutas[0])  # saída: 'maçã'
 		linenos
 		]{python}
 
-# exemplo de tupla
+# Criando um dicionário
+dicionario = {"nome": "João", "idade": 30, "cidade": "São Paulo"}
 
-ponto = (3, 4)
-print(ponto[0])  # saída: 3
+# Acessando elementos do dicionário
+print(dicionario["nome"])   # Saída: João
+print(dicionario["idade"])  # Saída: 30
+
+# Iterando sobre um dicionário
+for chave, valor in dicionario.items():
+print(chave, valor)
+
+# Verificando se uma chave está presente no dicionário
+if "cidade" in dicionario:
+print("A chave 'cidade' está presente no dicionário")
+
+# Adicionando um novo par chave-valor ao dicionário
+dicionario["profissao"] = "Engenheiro"
+
+# Atualizando o valor de uma chave no dicionário
+dicionario["idade"] = 31
+
+# Removendo um par chave-valor do dicionário
+del dicionario["cidade"]
+
+# Obtendo o número de pares chave-valor no dicionário
+tamanho = len(dicionario)
+print(tamanho)  # Saída: 3
+
+# Obtendo uma lista das chaves do dicionário
+chaves = list(dicionario.keys())
+print(chaves)  # Saída: ['nome', 'idade', 'profissao']
+
+# Obtendo uma lista dos valores do dicionário
+valores = list(dicionario.values())
+print(valores)  # Saída: ['João', 31, 'Engenheiro']
 
 	\end{minted}
+Neste exemplo, criamos um dicionário contendo informações sobre uma pessoa, como nome, idade e cidade. Demonstramos como acessar elementos do dicionário usando as chaves, iterar sobre o dicionário com um \textit{loop}, verificar a presença de uma chave no dicionário e adicionar, atualizar e remover pares chave-valor do dicionário.
 
-	\subparagraph{Conjuntos (\textit{sets})} coleção não ordenada de elementos únicos. Os conjuntos não permitem elementos duplicados e suportam operações como união, interseção e diferença.
+Também mostramos como obter o número de pares chave-valor no dicionário, obter uma lista das chaves do dicionário e obter uma lista dos valores do dicionário.
+
+	\subparagraph{Conjuntos (\textit{sets})}\label{python_estrutura_conjuntos} coleção não ordenada de elementos únicos. Os conjuntos não permitem elementos duplicados e suportam operações como união, interseção e diferença.
 	
 	\textbf{Pontos Importantes:}
 	\begin{itemize}
@@ -1242,20 +1423,66 @@ print(ponto[0])  # saída: 3
 		fontsize=\footnotesize,
 		linenos
 		]{python}
+
+# Criando um conjunto vazio
+my_set = set()
+
+# Adicionando elementos ao conjunto
+my_set.add(1)
+my_set.add(2)
+my_set.add(3)
+my_set.add(3)  # Não adiciona duplicatas
+
+print(my_set)  # output: {1, 2, 3}
+
+# Criando um conjunto com elementos iniciais
+my_set = {4, 5, 6, 6}  # Não adiciona duplicatas
+
+print(my_set)  # output: {4, 5, 6}
+
+# Verificando o pertencimento de um elemento
+print(3 in my_set)  # output: True
+print(7 in my_set)  # output: False
+
+# Removendo um elemento do conjunto
+my_set.remove(4)
+
+print(my_set)  # output: {5, 6}
+
+# Realizando operações de conjunto
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7, 8}
+
+# União de conjuntos
+union_set = set1.union(set2)
+print(union_set)  # output: {1, 2, 3, 4, 5, 6, 7, 8}
+
+# Interseção de conjuntos
+intersection_set = set1.intersection(set2)
+print(intersection_set)  # output: {4, 5}
+
+# Diferença entre conjuntos
+difference_set = set1.difference(set2)
+print(difference_set)  # output: {1, 2, 3}
+
+# Verificando se um conjunto é subconjunto de outro
+subset = {1, 2}
+print(subset.issubset(set1))  # output: True
+
+# Verificando se um conjunto é superconjunto de outro
+superset = {1, 2, 3, 4, 5, 6, 7, 8, 9}
+print(superset.issuperset(set1))  # output: True
 		
-# exemplo de conjunto
-
-numeros = {1, 2, 3, 4, 5}
-numeros.add(6)
-print(numeros)  # saída: {1, 2, 3, 4, 5, 6}
-
 	\end{minted}
 
-	Além dessas estruturas de dados, \textit{Python} também possui bibliotecas adicionais que oferecem estruturas de dados mais especializadas, como pilhas, filas, árvores, grafos, entre outros. Essas estruturas podem ser importadas e usadas quando necessário.
+	Nesse exemplo, criamos conjuntos, adicionamos elementos, verificamos a pertinência de elementos, removemos elementos, realizamos operações de conjunto como união, interseção e diferença, e verificamos se um conjunto é subconjunto ou superconjunto de outro.
+
+	Além dessas estruturas de dados, \textit{\textbf{Python}} também possui bibliotecas adicionais que oferecem estruturas de dados mais especializadas, como pilhas, filas, árvores, grafos, entre outros. Essas estruturas podem ser importadas e usadas quando necessário.
 	
-	Ao escolher uma estrutura de dados em \textit{Python}, é importante considerar a eficiência, a facilidade de uso e a adequação aos requisitos do problema. Cada estrutura de dados tem suas próprias vantagens e desvantagens, e a escolha correta pode influenciar no desempenho e na eficiência do código.
+	Ao escolher uma estrutura de dados em \textit{\textbf{Python}}, é importante considerar a eficiência, a facilidade de uso e a adequação aos requisitos do problema. Cada estrutura de dados tem suas próprias vantagens e desvantagens, e a escolha correta pode influenciar no desempenho e na eficiência do código.
 	
 	\subsubsection{Funções}
+	\label{python_funcoes}
 	
 	Em \textbf{\textit{Python}}, as funções são blocos de código reutilizáveis que executam uma tarefa específica. Elas são usadas para agrupar um conjunto de instruções relacionadas e podem receber argumentos (valores de entrada) e retornar resultados (valores de saída).
 	
@@ -1296,5 +1523,899 @@ print(numeros)  # saída: {1, 2, 3, 4, 5, 6}
 
 	Além do mais, o uso de funções é largamente empregado quando utilizamos o paradigma de \textit{programação estruturada}, conforme visto na seção \ref{programacao_estruturada}.
 	
+	Exemplo:
 	
+	\begin{minted}[frame=lines,
+		framesep=2mm,
+		baselinestretch=1.2,
+		bgcolor=LightGray,
+		fontsize=\footnotesize,
+		linenos
+		]{python}
+# Definindo uma função para calcular a área de um círculo
+def calcular_area_circulo(raio):
+	area = 3.14159 * raio ** 2
+	return area
+
+# Chamando a função e armazenando o resultado em uma variável
+resultado = calcular_area_circulo(5)
+
+# Imprimindo o resultado
+print("A área do círculo é:", resultado)
+		
+	\end{minted}
+
+	Nesse exemplo, temos uma função chamada \texttt{calcular\_area\_circulo} que recebe o raio de um círculo como parâmetro. Dentro da função, calculamos a área do círculo utilizando a fórmula matemática $\pi \times r^2$ e armazenamos o resultado na variável \texttt{area}. Em seguida, utilizamos a instrução \texttt{return} para retornar o valor da área.
+	
+	Na parte principal do código, chamamos a função \texttt{calcular\_area\_circulo} passando o valor 5 como argumento e armazenamos o resultado retornado pela função na variável resultado. Por fim, imprimimos o resultado utilizando a função \texttt{print}.
+	
+	O resultado final será a área do círculo com raio 5.
+	
+	\paragraph{Funções aninhadas} \label{python_funcoes_aninhadas} Funções aninhadas são funções definidas dentro de outras funções. Elas permitem que você crie funções que são localmente acessíveis e relevantes apenas dentro do escopo da função externa. Essas funções internas podem acessar variáveis e parâmetros da função externa, tornando-as úteis para encapsular lógica específica e reutilizá-la apenas onde for necessário.
+	
+	As funções aninhadas podem ser definidas dentro de qualquer função em \textbf{\textit{Python}}, e elas têm acesso a todas as variáveis locais e argumentos da função externa. Isso significa que as funções internas podem usar e manipular os valores dessas variáveis e até mesmo retornar valores.
+	
+	Uma vantagem das funções aninhadas é que elas podem ajudar a evitar a poluição do espaço global de nomes, já que estão limitadas ao escopo da função externa. Além disso, as funções aninhadas também podem ser usadas para fornecer um encapsulamento lógico mais limpo e organizado, tornando o código mais legível e fácil de manter.
+	
+	Aqui está um exemplo simples de uma função aninhada em \textbf{\textit{Python}}:
+
+	\begin{minted}[frame=lines,
+		framesep=2mm,
+		baselinestretch=1.2,
+		bgcolor=LightGray,
+		fontsize=\footnotesize,
+		linenos
+		]{python}
+		
+# definição da função principal - no caso, a função externa
+def funcao_externa():
+	# definição da função aninhada - só vale dentro do escopo da função
+	def funcao_interna():
+		print("Esta é uma função interna.")
+
+	print("Esta é uma função externa.")
+	funcao_interna()
+
+funcao_externa()
+		
+	\end{minted}
+
+	Neste exemplo, temos uma função externa chamada \texttt{funcao\_externa} que define uma função interna chamada \texttt{funcao\_interna}. Quando chamamos a função externa \texttt{funcao\_externa}, ela imprime uma mensagem e, em seguida, chama a função interna \texttt{funcao\_interna}, que também imprime uma mensagem. Dessa forma, as funções internas estão aninhadas dentro da função externa e podem ser acessadas apenas dentro do escopo dessa função externa.
+	
+	Um exemplo mais prático:
+	\begin{minted}[frame=lines,
+		framesep=2mm,
+		baselinestretch=1.2,
+		bgcolor=LightGray,
+		fontsize=\footnotesize,
+		linenos
+		]{python}
+
+def funcao_externa(x):
+	def funcao_interna(y):
+		return y * 2
+
+	resultado = funcao_interna(x)
+	return resultado
+
+valor = 5
+resultado_final = funcao_externa(valor)
+
+print("O resultado final é:", resultado_final)
+
+	\end{minted}
+Neste exemplo, temos uma função chamada \texttt{funcao\_externa} que recebe um parâmetro x. Dentro dessa função, definimos uma função interna chamada \texttt{funcao\_interna}, que recebe um parâmetro y e retorna o dobro desse valor.
+
+Em seguida, chamamos a função \texttt{funcao\_interna} dentro da função \texttt{funcao\_externa}, passando o parâmetro \texttt{x} como argumento, e armazenamos o resultado na variável resultado.
+
+Por fim, fora das funções, atribuímos um valor de 5 à variável valor e chamamos a função \textit{funcao\_externa} passando esse valor como argumento. O resultado retornado pela função é armazenado na variável \textit{resultado\_final}.
+
+O resultado final será o valor 10, que é o resultado de chamar a função interna \texttt{funcao\_interna} com o argumento 5 dentro da função externa \texttt{funcao\_externa}.
+
+	\paragraph{Funções anônimas}
+	\label{python_funcoes_anonimas}
+	Funções anônimas, também conhecidas como funções \texttt{lambda}, são funções sem nome que podem ser definidas de forma concisa em uma única linha de código. Elas são usadas quando você precisa de uma função simples e de curta duração, sem a necessidade de definir uma função separada com um nome específico.
+	
+	As funções anônimas são definidas usando a palavra-chave \textit{lambda} seguida dos parâmetros da função, dois pontos (:) e a expressão que será retornada pela função. A sintaxe básica de uma função \textit{lambda} é a seguinte:
+	
+	\begin{minted}[frame=lines,
+		framesep=2mm,
+		baselinestretch=1.2,
+		bgcolor=LightGray,
+		fontsize=\footnotesize
+		]{python}
+
+lambda argumentos: expressão
+
+	\end{minted}
+
+A principal diferença entre uma função \texttt{lambda} e uma função normal é que as funções \texttt{lambda} não precisam de um bloco de código separado com instruções ou declarações adicionais. Elas são expressões compactas e retornam automaticamente o resultado da expressão.
+
+As funções anônimas são frequentemente usadas como argumentos de outras funções, como \texttt{map()}, \texttt{filter()} e \texttt{reduce()}, ou em situações em que você precisa de uma função rápida para uma operação simples.
+
+Aqui está um exemplo de uma função lambda que calcula o quadrado de um número:
+
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize
+	]{python}
+
+quadrado = lambda x: x**2
+
+\end{minted}
+
+Neste exemplo, a função \texttt{lambda} recebe um argumento \texttt{x} e retorna o valor de \texttt{x} elevado ao quadrado. Podemos chamar essa função \texttt{lambda} da seguinte forma:
+
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize
+	]{python}
+	
+resultado = quadrado(5)
+print(resultado)  # Output: 25
+
+\end{minted}
+
+	A função \texttt{lambda} pode ser usada em qualquer lugar onde você normalmente usaria uma função definida explicitamente. Elas são especialmente úteis quando você precisa de uma função simples e de curta duração, evitando a necessidade de definir uma função separada com um nome específico.
+	
+	No entanto, é importante notar que as funções anônimas têm suas limitações. Como são expressões curtas e não têm um nome associado, podem ser menos legíveis em comparação com funções nomeadas tradicionais. Além disso, as funções \texttt{lambda} não podem realizar tarefas complexas que exigem múltiplas instruções ou estruturas de controle.
+
+	\paragraph{Decoradores (\textit{decorators})} \label{python_decorators} \texttt{decorators} são recursos avançados da linguagem \textit{\textbf{Python}} que permitem modificar ou estender o comportamento de uma função ou classe sem precisar alterar o código fonte original. Eles fornecem uma maneira elegante de envolver ou decorar uma função, adicionando funcionalidades extras antes, depois ou em torno da execução da função.
+	
+	Em termos simples, um \texttt{decorator} é uma função que recebe outra função como argumento e retorna uma nova função modificada. Ele é usado para envolver a função original com lógica adicional, sem precisar modificar diretamente a implementação da função original.
+	
+	A sintaxe básica para definir e usar um \texttt{decorator} é a seguinte:
+	
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize
+	]{python}
+	
+def decorator(funcao):
+	def funcao_decorada(*args, **kwargs):
+		# Código adicional antes da execução da função
+		resultado = funcao(*args, **kwargs)
+		# Código adicional depois da execução da função
+		return resultado
+	return funcao_decorada
+
+@decorator
+def funcao_original():
+	# Implementação da função original
+	pass
+
+\end{minted}
+
+Nesse exemplo, o \texttt{decorator} é definido como uma função chamada \texttt{decorator}. Ele recebe a função original como argumento e define uma nova função chamada \texttt{funcao\_decorada}. Dentro da função \texttt{funcao\_decorada}, você pode adicionar código adicional antes e depois da chamada da função original. Em seguida, o \texttt{decorator} retorna a função \textit{funcao\_decorada}.
+
+Ao usar o \texttt{decorator}, você simplesmente coloca o símbolo \texttt{@} seguido pelo nome do \texttt{decorator} antes da definição da função original. Isso informa ao \textbf{\textit{Python}} que a função original deve ser envolvida pelo \texttt{decorator} durante a execução.
+
+Os \texttt{decorators} são amplamente usados para implementar recursos como \texttt{logging}, controle de acesso, medição de tempo, tratamento de erros e muito mais. Eles ajudam a manter o código limpo, modular e reutilizável, separando as preocupações adicionais do código principal da função.
+
+É importante destacar que os \texttt{decorators} podem ser empilhados, ou seja, você pode aplicar vários \texttt{decorators} em uma mesma função, resultando em um encadeamento de funcionalidades extras.
+
+Em resumo, os \texttt{decorators} são recursos avançados do \textit{\textbf{Python}} que permitem modificar o comportamento de uma função ou classe sem alterar o código fonte original. Eles envolvem a função original com lógica adicional, adicionando funcionalidades extras antes, depois ou em torno da execução da função. Os \texttt{decorators} são amplamente usados para implementar recursos adicionais de forma modular e reutilizável.
+
+Um exemplo prático (não se preocupe com o django, veremos detalhadamente do que se trata este \textit{framework} em outro módulo):
+
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize,
+	linenos
+	]{python}
+from django.http import HttpResponse
+
+# Definição do decorator
+def verifica_autenticacao(view_func):
+	def wrapper(request, *args, **kwargs):
+		# Verifica se o usuário está autenticado
+		if request.user.is_authenticated:
+			# Se estiver autenticado, chama a view original
+			return view_func(request, *args, **kwargs)
+		else:
+			# Caso contrário, redireciona para a página de login
+			return HttpResponse("Acesso negado. Faça login para continuar.")
+
+	return wrapper
+
+# Exemplo de uso do decorator em uma view
+@verifica_autenticacao
+def minha_view(request):
+	return HttpResponse("Conteúdo da view protegida")
+\end{minted}
+
+Neste exemplo, temos um \texttt{decorator} chamado \texttt{verifica\_autenticacao} que verifica se o usuário está autenticado antes de permitir o acesso a uma determinada \texttt{view}. O \texttt{decorator} envolve a função \texttt{wrapper}, que realiza a verificação de autenticação e redireciona o usuário para a página de \textit{login} se não estiver autenticado. Caso contrário, a \texttt{view} original é chamada.
+
+No exemplo de uso do \texttt{decorator}, a função \texttt{minha\_view} é decorada com \texttt{@verifica\_autenticacao}. Isso significa que, sempre que essa \texttt{view} for acessada, o \texttt{decorator} será aplicado automaticamente, verificando a autenticação do usuário antes de executar o código da \texttt{view}.
+
+Dessa forma, o \texttt{decorator} permite adicionar funcionalidades extras a uma \texttt{view}, como a verificação de autenticação, sem modificar diretamente o código da \texttt{view} em si. Isso ajuda a manter o código organizado, reutilizável e facilita a implementação de recursos comuns em várias \texttt{views}.
+
+	\subsubsection{Tratamento de Exceções - bloco \texttt{try ... except}}
+	
+	\label{python_try_except}
+
+O tratamento de exceções no Python é feito utilizando os blocos \texttt{try} (tentar) e \texttt{except} (capturar). O objetivo do tratamento de exceções é lidar com possíveis erros ou situações excepcionais que possam ocorrer durante a execução do código.
+
+O formato básico do tratamento de exceções é o seguinte:
+
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize
+	]{python}
+	
+try:
+	# Código que pode gerar uma exceção
+	# ...
+except TipoDeExcecao:
+	# Código a ser executado em caso de exceção do tipo TipoDeExcecao
+	# ...
+
+\end{minted}
+Vamos analisar os principais componentes do tratamento de exceções:
+
+\begin{itemize}
+	\item O bloco \texttt{try} contém o código onde pode ocorrer uma exceção. Esse bloco é executado normalmente até que uma exceção seja lançada.
+	
+	\item O bloco \texttt{except} é utilizado para capturar e tratar uma exceção específica. É dentro desse bloco que você pode escrever o código que será executado caso a exceção ocorra. O tipo de exceção que você deseja capturar é especificado após a palavra-chave \texttt{except}.
+	
+	\item É possível ter múltiplos blocos \texttt{except} para lidar com diferentes tipos de exceções. Você pode capturar exceções específicas e tratá-las de forma adequada em cada bloco \texttt{except} correspondente.
+	
+	\item Além do bloco \texttt{except}, você também pode usar os blocos \texttt{else} e \texttt{finally}:
+	
+	\begin{itemize}
+		
+		\item O bloco \texttt{else} é opcional e é executado somente se nenhum erro ocorrer dentro do bloco \texttt{try}. É útil para executar código adicional quando não há exceções.
+		
+		\item O bloco \texttt{finally} também é opcional e é executado sempre, independentemente se ocorreu uma exceção ou não. É usado para realizar ações de limpeza, como fechar arquivos ou liberar recursos, independentemente de qualquer exceção que tenha ocorrido.
+		
+	\end{itemize}
+	
+\end{itemize}
+
+Para capturar exceções genéricas, você pode usar a palavra-chave \texttt{except} sem especificar o tipo de exceção. No entanto, é recomendável capturar exceções específicas sempre que possível, para que você possa tratar cada tipo de exceção adequadamente.
+
+Aqui está um exemplo de tratamento de exceção no \textbf{\textit{Python}}:
+
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize
+	]{python}
+
+try:
+	# Código que pode gerar uma exceção
+	resultado = dividir(10, 0)
+except ZeroDivisionError:
+	# Código a ser executado caso ocorra uma divisão por zero
+	print("Não é possível divisão por zero")
+
+\end{minted}
+Neste exemplo, o código dentro do bloco \texttt{try} chama uma função \texttt{dividir(10, 0)} que realiza uma divisão por zero. Como isso gera uma exceção do tipo \texttt{ZeroDivisionError}, a exceção é capturada pelo bloco \texttt{except ZeroDivisionError} e o código dentro desse bloco é executado, exibindo a mensagem \textit{"Não é possível divisão por zero"}.
+
+É importante tratar exceções de forma apropriada em seu código para garantir que erros inesperados sejam tratados de maneira adequada e que seu programa continue funcionando corretamente, mesmo em situações excepcionais.
+
+	\section{Mão na Massa}
+
+	\textbf{\textit{Desafio: }} Tendo como base o conhecimento adquirido até agora, vamos implementar uma calculadora com as 4 operações básicas:
+\begin{itemize}
+	\item Implemente uma função para cada uma das 4 operações da calculadora (soma, subtração, multiplicação e divisão)
+	\item implemente o \textit{loop} principal utilizando a função \texttt{input} nativa do \textbf{\textit{Python}} e um \textit{loop \texttt{while}} com a condição sempre verdadeira. É um \textit{loop} infinito, porém, não se preocupe com isto agora.
+\end{itemize}
+
+	Não sabe como fazer? temos uma sugestão. Continue lendo.
+	
+	A primeira coisa a se fazer é ter uma ideia de como estruturar o programa de forma clara e precisa (seguindo os passos de criação de algoritmos descrito na seção \ref{o_que_sao_algoritmos}):
+	
+	\begin{itemize}
+	
+	\item \textbf{\textit{Compreenda o problema:}} O problema se trata de fazer uma calculadora simples de 4 operações em \textbf{\textit{Python}}.
+	
+	\item \textbf{\textit{Divida o problema em etapas menores:}} o próprio enunciado sugere que você implemente 4 funções para executar as operações da calculadora, mais uma função contendo o \textit{loop} principal. Vamos ser bons meninos, não inventar moda e atribuir a cada uma destas funcionalidades os nomes de \texttt{soma}, \texttt{subtrai}, \texttt{multiplica}, \texttt{divide} e \texttt{main}.
+	
+	\item \textbf{\textit{Identifique as entradas e saídas:}} as funções que executam as operações aritméticas recebem dois operandos (entradas) e devolvem um resultado (saída). A função principal não recebe nem devolve nada (sem entrada e saída), porém lê do teclado 2 operandos e uma operação, imprimindo o resultado da operação na tela.
+	
+	\begin{itemize}
+		\item função \textit{soma}: deve somar os operandos e devolver o resultado da soma.
+		\item função \textit{subtrai}: deve subtrair os operandos e devolver o resultado da subtração.
+		\item função \texttt{multiplica}: deve multiplicar os operandos e devolver o resultado da multiplicação.
+		\item função \texttt{divide}: deve dividir os operandos e devolver o resultado da divisão.
+		\item função \texttt{main}: deve requisitar ao usuário dois operandos numéricos, em ordem (\texttt{a} e \texttt{b}), requisitar ao usuário o tipo de operação (soma, subtração, multiplicação ou divisão - por economia de tempo utilizei notação polonesa [operando, operando, operação]), deve analisar qual o tipo de operação e executar a função correspondente.
+	\end{itemize}
+	
+	\textbf{\textit{\textcolor{red}{Nota:} }} podem ocorrer exceções ou erros na entrada do usuário. Por padrão, o programa \textcolor{red}{\textbf{\textit{NUNCA}}} deve confiar cegamente na entrada do usuário. Faremos uma estratégia para evitar estes erros e ter somente operandos e operação essencialmente numéricos. 
+	
+	\end{itemize}
+
+	A princípio, o pseudocódigo define as operações da calculadora como funções. A seguir, uma explicação exaustiva, porém necessária, para os iniciantes na \textit{arte de transformar café em código}, ou seja, programar.
+	
+	\paragraph{Função \texttt{soma}} A primeira função definida é a função \texttt{soma}, que recebe dois parâmetros, $a$ e $b$, e retorna a soma desses dois valores:
+	
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize
+	]{python}
+
+Função soma(a, b)
+	s <- a + b
+	Retornar s
+	
+\end{minted}
+
+\begin{itemize}
+	\item A função \texttt{soma} é definida com os parâmetros $a$ e $b$.
+	\item A variável $s$ é inicializada com o valor da soma de $a$ e $b$, ou seja, $s$ recebe o resultado da operação de adição de $a$ e $b$.
+	\item O valor de $s$ é retornado como resultado da função.
+	\item O fluxo de execução retorna para o ponto em que a função foi chamada, e o resultado da soma pode ser usado conforme necessário.
+\end{itemize}
+
+	\paragraph{Função \texttt{subtrai}} A função \texttt{subtrai} recebe dois parâmetros, $a$ e $b$, e retorna a subtração ($a-b$) desses dois valores:
+
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize
+	]{python}
+	
+Função subtrai(a, b)
+	s <- a - b
+	Retornar s
+	
+\end{minted}
+
+\begin{itemize}
+	\item A função \texttt{subtrai} é definida com os parâmetros $a$ e $b$.
+	\item A variável $s$ é inicializada com o valor da subtração de $a$ e $b$, ou seja, $s$ recebe o resultado da operação de subtração de $a$ por $b$.
+	\item O valor de $s$ é retornado como resultado da função.
+	\item O fluxo de execução retorna para o ponto em que a função foi chamada, e o resultado da subtração pode ser usado conforme necessário.
+\end{itemize}
+
+
+\paragraph{Função \texttt{multiplica}} A função \texttt{multiplica} recebe dois parâmetros, $a$ e $b$, e retorna a multiplicação ($a \times b$) desses dois valores:
+
+
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize
+	]{python}
+	
+Função multiplica(a, b)
+	s <- a * b
+	Retornar s
+	
+\end{minted}
+
+\begin{itemize}
+	\item A função \texttt{multiplica} é definida com dois parâmetros, $a$ e $b$.
+	\item A variável $s$ recebe o resultado da multiplicação de $a$ e $b$, ou seja, $s$ é atribuído o valor da expressão $a \times b$.
+	\item O valor de $s$ é retornado como resultado da função.
+\end{itemize}
+
+\paragraph{Função \texttt{divide}} A função \texttt{divide} recebe dois parâmetros, $a$ e $b$, e retorna a divisão ($a/b$) desses dois valores:
+
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize
+	]{python}
+	
+Função divide(a, b)
+	Tentar
+		s <- a / b
+		Retornar s
+	Capturar erro de divisão por zero
+		Imprimir "Não é possível divisão por zero"
+	
+\end{minted}
+
+\begin{itemize}
+	\item A função \textbf{divide} é definida com os parâmetros $a$ e $b$.
+	\item Tenta-se executar o bloco de código dentro do comando \textbf{Tentar}.
+	\item Dentro do bloco, a variável $s$ é inicializada com o resultado da divisão de $a$ por $b$.
+	\item O valor de $s$ é retornado como resultado da função.
+	\item Se ocorrer um erro de divisão por zero, o fluxo de execução será interrompido e passará para o bloco \textbf{Capturar erro de divisão por zero}.
+	\item Dentro desse bloco, a mensagem "Não é possível divisão por zero" é impressa.
+\end{itemize}
+
+\paragraph{Função \texttt{main}} a função \texttt{main} é um tanto extensa, o que torna necessário sua explicação passo a passo:
+
+\begin{itemize}
+	\item A função \texttt{main()} é definida, que será responsável pela execução principal do programa.
+
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize
+	]{python}
+		
+	Função main()
+	
+\end{minted}
+
+	\item A variável \texttt{q} é inicializada com o valor 'a'. Essa variável será usada como uma condição de controle para o \textit{loop} principal.
+	
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize
+	]{python}
+		
+	# Variável de controle do loop - quando o usuário quiser sair, basta digitar 'q'
+	# após o loop exibir o resultado da operação
+	q <- 'a' # atribuição inicial com valor diferente de 'q'
+	
+\end{minted}
+	
+	\item Entra em um \textit{loop} enquanto \texttt{q} for diferente de 'q', o que significa que o usuário ainda não digitou 'q' para sair do programa.
+
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize
+	]{python}
+	
+	Enquanto q diferente de 'q' faça
+	# Entrada de operandos e operação - Notação Polonesa
+
+	
+\end{minted}
+
+	\item Solicita ao usuário que digite o primeiro operando e tenta ler o valor como um número decimal (\texttt{float}).
+	\begin{itemize}
+		\item Se o valor digitado for válido, ele é armazenado na variável \texttt{opa}.
+		\item Caso contrário, captura o erro de valor inválido e imprime a mensagem "Somente números são permitidos". Em seguida, continua para a próxima iteração do \textit{loop}.
+	\end{itemize}
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize
+	]{python}
+
+		Imprimir "Digite o primeiro operando: "
+		Tentar
+			Ler opa como float
+		Capturar erro de valor inválido
+			Imprimir "Somente números são permitidos"
+			Continuar para próxima iteração
+	
+\end{minted}
+	\item Solicita ao usuário que digite o segundo operando e tenta ler o valor como um número decimal (\texttt{float}).
+	\begin{itemize}
+		\item Se o valor digitado for válido, ele é armazenado na variável \texttt{opb}.
+		\item Caso contrário, captura o erro de valor inválido e imprime a mensagem "Somente números são permitidos". Em seguida, continua para a próxima iteração do \textit{loop}.
+	\end{itemize}
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize
+	]{python}
+	
+		Imprimir "Digite o segundo operando: "
+		Tentar
+			Ler opb como float
+		Capturar erro de valor inválido
+			Imprimir "Somente números são permitidos"
+			Continuar para próxima iteração
+			
+\end{minted}
+	\item Solicita ao usuário que informe o tipo de operação desejada: 0 para soma, 1 para subtração, 2 para multiplicação ou 3 para divisão. Tenta ler o valor como um número inteiro.
+	\begin{itemize}
+		\item Se o valor digitado for válido, ele é armazenado na variável \texttt{op}.
+		\item Caso contrário, captura o erro de valor inválido e imprime a mensagem "Somente números inteiros são permitidos". Em seguida, continua para a próxima iteração do \textit{loop}.
+	\end{itemize}
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize
+	]{python}
+
+		Imprimir "Informe o tipo de operação (0 - Soma; 1 - Subtração; 
+			2 - Multiplicação; 3 - Divisão): "
+		Tentar
+			Ler op como inteiro
+		Capturar erro de valor inválido
+			Imprimir "Somente números inteiros são permitidos"
+			Continuar para próxima iteração
+		
+\end{minted}
+	\item Analisa o valor de \texttt{op} para determinar a operação a ser executada.
+	\begin{itemize}
+		\item Se \texttt{op} for igual a 0, chama a função \texttt{soma(opa, opb)} e imprime o resultado.
+		\item Se \texttt{op} for igual a 1, chama a função \texttt{subtrai(opa, opb)} e imprime o resultado.
+		\item Se \texttt{op} for igual a 2, chama a função \texttt{multiplica(opa, opb)} e imprime o resultado.
+		\item Se \texttt{op} for igual a 3, chama a função \texttt{divide(opa, opb)} e imprime o resultado.
+		\item Se \texttt{op} não corresponder a nenhum dos valores anteriores, imprime a mensagem "Operação sem suporte".
+	\end{itemize}
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize
+	]{python}
+	
+	# Análise e execução da operação escolhida
+	Se op igual a 0 então
+		Imprimir soma(opa, opb)
+	Senão, se op igual a 1 então
+		Imprimir subtrai(opa, opb)
+	Senão, se op igual a 2 então
+		Imprimir multiplica(opa, opb)
+	Senão, se op igual a 3 então
+		Imprimir divide(opa, opb)
+	Senão
+		Imprimir "Operação sem suporte"
+	
+\end{minted}
+	\item Solicita ao usuário que pressione qualquer tecla para continuar ou 'q' para sair.
+	\begin{itemize}
+		\item Lê o valor digitado e o armazena em \texttt{q}. O \texttt{loop} continuará se \texttt{q} for diferente de 'q', caso contrário, o programa irá sair do \texttt{loop} e encerrar.
+	\end{itemize}
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize
+	]{python}
+	Imprimir "Pressione qualquer tecla para continuar, q para sair"
+	Ler q
+\end{minted}
+	\item Após sair do \texttt{loop}, o programa termina sua execução.
+\end{itemize}
+
+\paragraph{Chamada à função \texttt{main}} por fim, o pseudocódigo chama a função \texttt{main} para executar o loop principal do programa:
+
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize
+	]{python}
+# Chamada da função principal para iniciar a execução da calculadora
+main()
+
+Fim do programa
+\end{minted}
+
+O algoritmo geral do programa \textit{calculadora} em pseudocódigo é apresentado a seguir:
+
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize,
+	linenos
+	]{python}
+Algoritmo Calculadora Simples
+
+# Definição das funções de operação
+Função soma(a, b)
+	s <- a + b
+	Retornar s
+
+Função subtrai(a, b)
+	s <- a - b
+	Retornar s
+
+Função multiplica(a, b)
+	s <- a * b
+	Retornar s
+
+Função divide(a, b)
+	Tentar
+		s <- a / b
+		Retornar s
+	Capturar erro de divisão por zero
+		Imprimir "Não é possível divisão por zero"
+
+Função main()
+	# Variável de controle do loop - quando o usuário quiser sair, basta digitar 'q'
+	# após o loop exibir o resultado da operação
+	q <- 'a' # atribuição inicial com valor diferente de q
+	
+	Enquanto q diferente de 'q' faça
+		# Entrada de operandos e operação - Notação Polonesa
+		
+		Imprimir "Digite o primeiro operando: "
+		Tentar
+			Ler opa como float
+		Capturar erro de valor inválido
+			Imprimir "Somente números são permitidos"
+			Continuar para próxima iteração
+		
+		Imprimir "Digite o segundo operando: "
+		Tentar
+			Ler opb como float
+		Capturar erro de valor inválido
+			Imprimir "Somente números são permitidos"
+			Continuar para próxima iteração
+		
+		Imprimir "Informe o tipo de operação (0 - Soma; 1 - Subtração; 
+		2 - Multiplicação; 3 - Divisão): "
+		Tentar
+			Ler op como inteiro
+		Capturar erro de valor inválido
+			Imprimir "Somente números inteiros são permitidos"
+			Continuar para próxima iteração
+		
+		# Análise e execução da operação escolhida
+		Se op igual a 0 então
+			Imprimir soma(opa, opb)
+		Senão, se op igual a 1 então
+			Imprimir subtrai(opa, opb)
+		Senão, se op igual a 2 então
+			Imprimir multiplica(opa, opb)
+		Senão, se op igual a 3 então
+			Imprimir divide(opa, opb)
+		Senão
+			Imprimir "Operação sem suporte"
+		
+		Imprimir "Pressione qualquer tecla para continuar, q para sair"
+		Ler q
+
+# Chamada da função principal para iniciar a execução da calculadora
+main()
+
+Fim do programa
+	
+\end{minted}
+
+Enfim, começaremos a codificar o código em \textit{Python}, utilizando as convenções estudadas nesta apostila. Pe tradicionalmente aceito que acima de qualquer código tenha um grande comentário apresentando o software, o que ele faz, a autoria e o \textit{copyright}:
+
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize
+	]{python}
+"""
+Calculadora simples para exemplificar os conceitos vistos no módulo 01
+@author Augusto Mathias Adams <augusto.mathias@sesp.pr.gov.br>
+
+MIT License
+
+Copyright (c) 2023 Augusto Mathias Adams
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN
+"""
+
+\end{minted}
+
+Isto vai do gosto pessoal ou de normas da empresa na qual se trabalha. Para fins educativos, todo o código exposto nesta apostila está sob a licença \textit{MIT}.
+
+As funções são implementadas logo em seguida. Ainda não falamos de \textit{pacotes}, mas seria logo após a apresentação do software que importaríamos os pacotes necessários para o funcionamento de nossas funções. Mas como não precisamos de nada de um pacotes específico, vamos logo para a definição das funções. Pacotes é assunto do módulo 2.
+
+As funções ficam assim definidas em \textit{Python}:
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize
+	]{python}
+
+# definição de operações da calculadora
+
+def soma(a, b) -> float:
+	"""
+	Efetua a Soma dos Números a e b
+	Args:
+		a (real): número a
+		b (real): número b
+	Returns:
+		real: a soma de a e b
+"""
+	s = a + b
+	return s
+
+def subtrai(a, b) -> float:
+	"""
+	Efetua a Subtração dos Números a e b
+	Args:
+		a (real): número a
+		b (real): número b
+	Returns:
+		real: a subtração de a e b
+	"""
+	s = a - b
+	return s
+
+def multiplica(a, b) -> float:
+	"""
+	Efetua a multiplicação dos Números a e b
+	Args:
+		a (real): número a
+		b (real): número b
+	Returns:
+		real: a multiplicação de a e b
+	"""
+	s = a * b
+	return s
+
+def divide(a, b) -> float:
+	"""
+	Efetua a divisão dos Números a e b
+	Args:
+		a (real): número a
+		b (real): número b
+	Returns:
+		real: a multiplicação de a e b
+	"""
+	try:
+		s = a / b
+		return s
+	except ZeroDivisionError as e:
+		print("Não é possível divisão por zero")
+
+\end{minted}
+
+Note a tradução do pseudocódigo para o \textit{\textit{Python}}: é praticamente uma tradução do português para o inglês, além da inserção de elementos de sintaxe e uso de uma função nativa do \textit{\textit{Python}} (\texttt{print}). Não é à toa que \textit{\textbf{Python}} é considerada uma linguagem compreensivel e fácil. Um pouco de prática e dedicação elevam você à categoria de programador mirim.
+
+O \textit{loop} principal, obviamente, é bastante semelhante ao pseudocódigo:
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize
+	]{python}
+
+def main() -> None:
+	"""
+	Executa o loop principal da calculadora de açougueiro
+	Args:
+		None
+	Returns:
+		None
+	"""
+	
+	# variável  de controle do loop - quando o usuário quiser sair
+	# basta digitar q após o loop exibir o resultado da operação
+	q = ord('a')
+	
+	while q != 'q':
+	# entrada de operandos e a operação - Notação Polonesa
+	
+	print("Digite o primeiro operando: ")
+	try:
+		opa = float(input())
+	except ValueError as e:
+		print("Somente números são permitidos")
+		continue
+	
+	print("Digite o segundo operando: ")
+	try:
+		opb = float(input())
+	except ValueError as e:
+		print("Somente números são permitidos")
+		continue
+	
+	print("Informe o tipo de operação(0 - Soma; 1 - Subtração. " +\
+	"2 - Multiplicação; 3 - Divisão): ")
+	try:
+		op = int(input())
+	except ValueError as e:
+		print("Somente números inmteiros são permitidos")
+		continue
+	
+	# análise e execução de operação
+	
+	if op == 0:
+		print(soma(opa, opb))
+	elif op == 1:
+		print(subtrai(opa, opb))
+	elif op == 2:
+		print(multiplica(opa, opb))
+	elif op == 3:
+		print(divide(opa, opb))
+	else:
+		print("Operação sem Suporte")
+	
+	print("Pressione qualquer tecla para continuar, q para sair")
+	
+	q = input()
+
+# usando a função main para controlar a execução da calculadora
+
+if __name__ == "__main__":
+	main()
+
+\end{minted}
+
+
+
+Fácil não? Relaxa, é brincadeira. Todo mundo que é programador e analista de sistemas já teve dificuldade (e ainda muitos tem) de elaborar algoritmos até mesmo simples de forma procedural como este da calculadora por não entender os princípios básicos da programação estruturada, descrito na seção \ref{programacao_estruturada} e da programação procedural, descrito na seção \ref{programacao_procedural}. Contudo, vale lembrar que:
+
+\begin{itemize}
+	\item Facilite sua vida entendendo o problema. Parece tempo perdido, mas não é. Elabore e pense em detalhes que parecem escondidos: o processador que irá executar pode ser o mais rápido do mundo, porém, é uma máquina desprovida de inteligência própria e é por este motivo que descrever algoritmos deve ser tão detalhado quanto humanamente possível. Não se furte de pegar uma folha de papel e anotar os requisitos necessários para o bom funcionamento do que quer que esteja fazendo em software.
+	
+	\item Quebre o problema em pequenas partes (análise): novamente, parece perda de tempo. Somente parece. Contudo, vale lembrar que muitos problemas são insolúveis em sua forma integral. Lembre-se de que até uma grande guerra é composta por pequenas batalhas. 
+	
+	\item Resolva um pequeno problema por vez. Teste. Reteste. Corrija os erros. Teste novamente, até que esteja funcionando para todos os casos de interesse.
+	
+	\item Por fim, faça a síntese de tudo que você resolveu até agora em um programa principal. Não ache que você não precisa de nada disto que foi feito até agora e comece escrevendo código \textit{``macarrônico''} em um \textit{script} somente. Dependendo do código, nem compensa fazer grande coisa, tal como o código simples de \textit{ping} a seguir:
+	
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize
+	]{python}
+import os
+import csv
+	
+def ping(file):
+	content = ""
+	with open(file) as file:
+		reader = csv.reader(file)
+	
+	next(reader)  # Advance past the header
+	
+	for row in reader:
+		print(row[0])
+		response = os.system("ping -c 1 " + row[0])
+	
+		# and then check the response...
+		if response == 0:
+			content += ",".join(row) + ",UP\n"
+			print(row[0] + " UP")
+		else:
+		
+			content += ",".join(row) + ",DOWN\n"
+			print(row[0] + " DOWN")
+	
+	with open("data/pingados.csv", "w") as f:
+		f.write(content)
+
+ping("data/ipping.csv")
+\end{minted}
+
+Este é um exemplo de um código feito às pressas para resolver rapidamente um problema. Embora funcional e tenha elementos de programação estruturada, é um tanto complicado adicionar funcionalidades pois, embora tenha uma função (\texttt{ping}), praticamente todo o \textit{loop} principal do \textit{script} está contido nela e se precisarmos de algo complexo, teremos problemas para colocar tudo neste \textit{loop} da mesma forma que colocamos tudo que precisávamos para resolver um pequeno, porém importante, problema. Defina quantas funções forem necessárias, desenhe um fluxograma (ou melhor vários) para todo e qualquer parte do algoritmo, refaça algoritmos se for necessário, inclusive os que estão descritos aqui.
+	\item Vale lembrar também que:
+	\begin{itemize}
+		\item Nenhum problema admite solução única.
+		\item O debate sobre soluções é sempre válido.
+		\item Programar é um mundo vasto, multidisciplinar, interessante, apaixonante e (dependendo do nível) bastante promissor.
+		\item Programar é uma arte que exige esforço, pensamento e muita fé: em várias situações, não se sabe qual o melhor caminho da solução. E para isto não há remédio, somente a experiência lhe indica o melhor a fazer. Mas confie em si, pois é você quem vai resolver o pepino.
+		\item O estudo e o esforço são os investimentos que rendem os melhores juros. \textbf{\textit{Lembre-se disto!!!}}
+	\end{itemize}
+
+\end{itemize}
+
+
+
 \end{document}

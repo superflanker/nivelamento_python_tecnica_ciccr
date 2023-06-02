@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	
+	\PYG{c+c1}{\PYGZsh{} Análise e execução da operação escolhida}
+	\PYG{n}{Se} \PYG{n}{op} \PYG{n}{igual} \PYG{n}{a} \PYG{l+m+mi}{0} \PYG{n}{então}
+		\PYG{n}{Imprimir} \PYG{n}{soma}\PYG{p}{(}\PYG{n}{opa}\PYG{p}{,} \PYG{n}{opb}\PYG{p}{)}
+	\PYG{n}{Senão}\PYG{p}{,} \PYG{n}{se} \PYG{n}{op} \PYG{n}{igual} \PYG{n}{a} \PYG{l+m+mi}{1} \PYG{n}{então}
+		\PYG{n}{Imprimir} \PYG{n}{subtrai}\PYG{p}{(}\PYG{n}{opa}\PYG{p}{,} \PYG{n}{opb}\PYG{p}{)}
+	\PYG{n}{Senão}\PYG{p}{,} \PYG{n}{se} \PYG{n}{op} \PYG{n}{igual} \PYG{n}{a} \PYG{l+m+mi}{2} \PYG{n}{então}
+		\PYG{n}{Imprimir} \PYG{n}{multiplica}\PYG{p}{(}\PYG{n}{opa}\PYG{p}{,} \PYG{n}{opb}\PYG{p}{)}
+	\PYG{n}{Senão}\PYG{p}{,} \PYG{n}{se} \PYG{n}{op} \PYG{n}{igual} \PYG{n}{a} \PYG{l+m+mi}{3} \PYG{n}{então}
+		\PYG{n}{Imprimir} \PYG{n}{divide}\PYG{p}{(}\PYG{n}{opa}\PYG{p}{,} \PYG{n}{opb}\PYG{p}{)}
+	\PYG{n}{Senão}
+		\PYG{n}{Imprimir} \PYG{l+s+s2}{\PYGZdq{}Operação sem suporte\PYGZdq{}}
+	
+\end{Verbatim}

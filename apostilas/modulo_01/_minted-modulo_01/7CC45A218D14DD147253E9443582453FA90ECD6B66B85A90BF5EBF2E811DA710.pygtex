@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+
+		\PYG{n}{Imprimir} \PYG{l+s+s2}{\PYGZdq{}Informe o tipo de operação (0 \PYGZhy{} Soma; 1 \PYGZhy{} Subtração;}
+			\PYG{l+m+mi}{2} \PYG{o}{\PYGZhy{}} \PYG{n}{Multiplicação}\PYG{p}{;} \PYG{l+m+mi}{3} \PYG{o}{\PYGZhy{}} \PYG{n}{Divisão}\PYG{p}{):} \PYG{l+s+s2}{\PYGZdq{}}
+		\PYG{n}{Tentar}
+			\PYG{n}{Ler} \PYG{n}{op} \PYG{n}{como} \PYG{n}{inteiro}
+		\PYG{n}{Capturar} \PYG{n}{erro} \PYG{n}{de} \PYG{n}{valor} \PYG{n}{inválido}
+			\PYG{n}{Imprimir} \PYG{l+s+s2}{\PYGZdq{}Somente números inteiros são permitidos\PYGZdq{}}
+			\PYG{n}{Continuar} \PYG{n}{para} \PYG{n}{próxima} \PYG{n}{iteração}
+		
+\end{Verbatim}

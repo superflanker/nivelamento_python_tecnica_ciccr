@@ -80,45 +80,61 @@ def divide(a, b) -> float:
 
 # loop principal
 
-q = ord('a')
+def main() -> None:
+    """
+    Executa o loop principal da calculadora de açougueiro
+    Args:
+        None
+    Returns:
+        None
+    """
 
-while q != 'q':
-    # entrada de operandos e a operação - Notação Polonesa
+    # variável  de controle do loop - quando o usuário quiser sair
+    # basta digitar q após o loop exibir o resultado da operação
+    q = ord('a')
 
-    print("Digite o primeiro operando: ")
-    try:
-        opa = float(input())
-    except ValueError as e:
-        print("Somente números são permitidos")
-        continue
+    while q != 'q':
+        # entrada de operandos e a operação - Notação Polonesa
 
-    print("Digite o segundo operando: ")
-    try:
-        opb = float(input())
-    except ValueError as e:
-        print("Somente números são permitidos")
-        continue
+        print("Digite o primeiro operando: ")
+        try:
+            opa = float(input())
+        except ValueError as e:
+            print("Somente números são permitidos")
+            continue
 
-    print("Informe o tipo de operação(0 - Soma; 1 - Subtração. 2 - Multiplicação; 3 - Divisão): ")
-    try:
-        op = int(input())
-    except ValueError as e:
-        print("Somente números inmteiros são permitidos")
-        continue
+        print("Digite o segundo operando: ")
+        try:
+            opb = float(input())
+        except ValueError as e:
+            print("Somente números são permitidos")
+            continue
 
-    # análise e execução de operação
+        print("Informe o tipo de operação(0 - Soma; 1 - Subtração. 2 - Multiplicação; 3 - Divisão): ")
+        try:
+            op = int(input())
+        except ValueError as e:
+            print("Somente números inmteiros são permitidos")
+            continue
 
-    if op == 0:
-        print(soma(opa, opb))
-    elif op == 1:
-        print(subtrai(opa, opb))
-    elif op == 2:
-        print(multiplica(opa, opb))
-    elif op == 3:
-        print(divide(opa, opb))
-    else:
-        print("Operação sem Suporte")
+        # análise e execução de operação
 
-    print("Pressione qualquer tecla para continuar, q para sair")
+        if op == 0:
+            print(soma(opa, opb))
+        elif op == 1:
+            print(subtrai(opa, opb))
+        elif op == 2:
+            print(multiplica(opa, opb))
+        elif op == 3:
+            print(divide(opa, opb))
+        else:
+            print("Operação sem Suporte")
 
-    q = input()
+        print("Pressione qualquer tecla para continuar, q para sair")
+
+        q = input()
+
+# usando a função main para controlar a execução da calculadora
+
+if __name__ == "__main__":
+    main()

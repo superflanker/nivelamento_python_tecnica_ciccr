@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		
+\PYG{c+c1}{\PYGZsh{} definição da função principal \PYGZhy{} no caso, a função externa}
+\PYG{k}{def} \PYG{n+nf}{funcao\PYGZus{}externa}\PYG{p}{():}
+	\PYG{c+c1}{\PYGZsh{} definição da função aninhada \PYGZhy{} só vale dentro do escopo da função}
+	\PYG{k}{def} \PYG{n+nf}{funcao\PYGZus{}interna}\PYG{p}{():}
+		\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Esta é uma função interna.\PYGZdq{}}\PYG{p}{)}
+
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Esta é uma função externa.\PYGZdq{}}\PYG{p}{)}
+	\PYG{n}{funcao\PYGZus{}interna}\PYG{p}{()}
+
+\PYG{n}{funcao\PYGZus{}externa}\PYG{p}{()}
+		
+\end{Verbatim}

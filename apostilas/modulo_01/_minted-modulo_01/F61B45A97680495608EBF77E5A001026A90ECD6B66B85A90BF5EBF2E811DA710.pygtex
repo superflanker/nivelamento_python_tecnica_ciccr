@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	
+\PYG{k}{def} \PYG{n+nf}{decorator}\PYG{p}{(}\PYG{n}{funcao}\PYG{p}{):}
+	\PYG{k}{def} \PYG{n+nf}{funcao\PYGZus{}decorada}\PYG{p}{(}\PYG{o}{*}\PYG{n}{args}\PYG{p}{,} \PYG{o}{**}\PYG{n}{kwargs}\PYG{p}{):}
+		\PYG{c+c1}{\PYGZsh{} Código adicional antes da execução da função}
+		\PYG{n}{resultado} \PYG{o}{=} \PYG{n}{funcao}\PYG{p}{(}\PYG{o}{*}\PYG{n}{args}\PYG{p}{,} \PYG{o}{**}\PYG{n}{kwargs}\PYG{p}{)}
+		\PYG{c+c1}{\PYGZsh{} Código adicional depois da execução da função}
+		\PYG{k}{return} \PYG{n}{resultado}
+	\PYG{k}{return} \PYG{n}{funcao\PYGZus{}decorada}
+
+\PYG{n+nd}{@decorator}
+\PYG{k}{def} \PYG{n+nf}{funcao\PYGZus{}original}\PYG{p}{():}
+	\PYG{c+c1}{\PYGZsh{} Implementação da função original}
+	\PYG{k}{pass}
+
+\end{Verbatim}

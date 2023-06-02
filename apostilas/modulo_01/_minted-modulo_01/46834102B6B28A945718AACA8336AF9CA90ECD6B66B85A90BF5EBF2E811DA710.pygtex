@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	
+		\PYG{n}{Imprimir} \PYG{l+s+s2}{\PYGZdq{}Digite o segundo operando: \PYGZdq{}}
+		\PYG{n}{Tentar}
+			\PYG{n}{Ler} \PYG{n}{opb} \PYG{n}{como} \PYG{n+nb}{float}
+		\PYG{n}{Capturar} \PYG{n}{erro} \PYG{n}{de} \PYG{n}{valor} \PYG{n}{inválido}
+			\PYG{n}{Imprimir} \PYG{l+s+s2}{\PYGZdq{}Somente números são permitidos\PYGZdq{}}
+			\PYG{n}{Continuar} \PYG{n}{para} \PYG{n}{próxima} \PYG{n}{iteração}
+			
+\end{Verbatim}

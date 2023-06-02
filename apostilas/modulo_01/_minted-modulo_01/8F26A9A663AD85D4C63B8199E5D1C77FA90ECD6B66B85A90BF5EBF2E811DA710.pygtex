@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+
+\PYG{k}{try}\PYG{p}{:}
+	\PYG{c+c1}{\PYGZsh{} Código que pode gerar uma exceção}
+	\PYG{n}{resultado} \PYG{o}{=} \PYG{n}{dividir}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{)}
+\PYG{k}{except} \PYG{n+ne}{ZeroDivisionError}\PYG{p}{:}
+	\PYG{c+c1}{\PYGZsh{} Código a ser executado caso ocorra uma divisão por zero}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Não é possível divisão por zero\PYGZdq{}}\PYG{p}{)}
+
+\end{Verbatim}

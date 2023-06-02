@@ -1,0 +1,49 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		
+\PYG{c+c1}{\PYGZsh{} Criando uma tupla}
+\PYG{n}{tupla} \PYG{o}{=} \PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{4}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Acessando elementos da tupla}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{tupla}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{])}  \PYG{c+c1}{\PYGZsh{} Saída: 1}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{tupla}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{])}  \PYG{c+c1}{\PYGZsh{} Saída: 3}
+
+\PYG{c+c1}{\PYGZsh{} Iterando sobre uma tupla}
+\PYG{k}{for} \PYG{n}{elemento} \PYG{o+ow}{in} \PYG{n}{tupla}\PYG{p}{:}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{elemento}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Obtendo o comprimento da tupla}
+\PYG{n}{comprimento} \PYG{o}{=} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{tupla}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{comprimento}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Saída: 5}
+
+\PYG{c+c1}{\PYGZsh{} Verificando se um elemento está presente na tupla}
+\PYG{k}{if} \PYG{l+m+mi}{3} \PYG{o+ow}{in} \PYG{n}{tupla}\PYG{p}{:}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}O elemento 3 está presente na tupla\PYGZdq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Concatenando tuplas}
+\PYG{n}{tupla2} \PYG{o}{=} \PYG{p}{(}\PYG{l+m+mi}{6}\PYG{p}{,} \PYG{l+m+mi}{7}\PYG{p}{,} \PYG{l+m+mi}{8}\PYG{p}{)}
+\PYG{n}{tupla\PYGZus{}concatenada} \PYG{o}{=} \PYG{n}{tupla} \PYG{o}{+} \PYG{n}{tupla2}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{tupla\PYGZus{}concatenada}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Saída: (1, 2, 3, 4, 5, 6, 7, 8)}
+
+\PYG{c+c1}{\PYGZsh{} Desempacotando uma tupla}
+\PYG{n}{a}\PYG{p}{,} \PYG{n}{b}\PYG{p}{,} \PYG{n}{c} \PYG{o}{=} \PYG{n}{tupla}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{a}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Saída: 1}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{b}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Saída: 2}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{c}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Saída: 3}
+
+\PYG{c+c1}{\PYGZsh{} Usando uma tupla como chave de dicionário}
+\PYG{n}{dicionario} \PYG{o}{=} \PYG{p}{\PYGZob{}(}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{):} \PYG{l+s+s2}{\PYGZdq{}Valor da tupla\PYGZdq{}}\PYG{p}{\PYGZcb{}}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{dicionario}\PYG{p}{[(}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{)])}  \PYG{c+c1}{\PYGZsh{} Saída: Valor da tupla}
+
+\PYG{c+c1}{\PYGZsh{} Retornando múltiplos valores de uma função usando tupla}
+\PYG{k}{def} \PYG{n+nf}{retorna\PYGZus{}valores}\PYG{p}{():}
+	\PYG{k}{return} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{3}
+
+\PYG{n}{valores} \PYG{o}{=} \PYG{n}{retorna\PYGZus{}valores}\PYG{p}{()}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{valores}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Saída: (1, 2, 3)}
+
+\PYG{c+c1}{\PYGZsh{} essa linha vai dar erro}
+\PYG{n}{tupla} \PYG{o}{=} \PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{)}
+
+\PYG{n}{tupla}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{=} \PYG{l+m+mi}{3}
+		
+\end{Verbatim}

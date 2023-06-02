@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	
+	\PYG{n}{Enquanto} \PYG{n}{q} \PYG{n}{diferente} \PYG{n}{de} \PYG{l+s+s1}{\PYGZsq{}q\PYGZsq{}} \PYG{n}{faça}
+	\PYG{c+c1}{\PYGZsh{} Entrada de operandos e operação \PYGZhy{} Notação Polonesa}
+
+	
+\end{Verbatim}

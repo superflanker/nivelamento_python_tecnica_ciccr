@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{django.http} \PYG{k+kn}{import} \PYG{n}{HttpResponse}
+
+\PYG{c+c1}{\PYGZsh{} Definição do decorator}
+\PYG{k}{def} \PYG{n+nf}{verifica\PYGZus{}autenticacao}\PYG{p}{(}\PYG{n}{view\PYGZus{}func}\PYG{p}{):}
+	\PYG{k}{def} \PYG{n+nf}{wrapper}\PYG{p}{(}\PYG{n}{request}\PYG{p}{,} \PYG{o}{*}\PYG{n}{args}\PYG{p}{,} \PYG{o}{**}\PYG{n}{kwargs}\PYG{p}{):}
+		\PYG{c+c1}{\PYGZsh{} Verifica se o usuário está autenticado}
+		\PYG{k}{if} \PYG{n}{request}\PYG{o}{.}\PYG{n}{user}\PYG{o}{.}\PYG{n}{is\PYGZus{}authenticated}\PYG{p}{:}
+			\PYG{c+c1}{\PYGZsh{} Se estiver autenticado, chama a view original}
+			\PYG{k}{return} \PYG{n}{view\PYGZus{}func}\PYG{p}{(}\PYG{n}{request}\PYG{p}{,} \PYG{o}{*}\PYG{n}{args}\PYG{p}{,} \PYG{o}{**}\PYG{n}{kwargs}\PYG{p}{)}
+		\PYG{k}{else}\PYG{p}{:}
+			\PYG{c+c1}{\PYGZsh{} Caso contrário, redireciona para a página de login}
+			\PYG{k}{return} \PYG{n}{HttpResponse}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Acesso negado. Faça login para continuar.\PYGZdq{}}\PYG{p}{)}
+
+	\PYG{k}{return} \PYG{n}{wrapper}
+
+\PYG{c+c1}{\PYGZsh{} Exemplo de uso do decorator em uma view}
+\PYG{n+nd}{@verifica\PYGZus{}autenticacao}
+\PYG{k}{def} \PYG{n+nf}{minha\PYGZus{}view}\PYG{p}{(}\PYG{n}{request}\PYG{p}{):}
+	\PYG{k}{return} \PYG{n}{HttpResponse}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Conteúdo da view protegida\PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}

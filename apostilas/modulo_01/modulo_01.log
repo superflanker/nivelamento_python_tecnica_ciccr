@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.30)  1 JUN 2023 13:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.30)  1 JUN 2023 23:15
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1065,8 +1065,85 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 54.
- (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarymatrix.code.tex
+File: tikzlibrarymatrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.callouts.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.callouts.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodepartlowerbox=\box82
+\pgfnodeparttwobox=\box83
+\pgfnodepartthreebox=\box84
+\pgfnodepartfourbox=\box85
+\pgfnodeparttwentybox=\box86
+\pgfnodepartnineteenbox=\box87
+\pgfnodeparteighteenbox=\box88
+\pgfnodepartseventeenbox=\box89
+\pgfnodepartsixteenbox=\box90
+\pgfnodepartfifteenbox=\box91
+\pgfnodepartfourteenbox=\box92
+\pgfnodepartthirteenbox=\box93
+\pgfnodeparttwelvebox=\box94
+\pgfnodepartelevenbox=\box95
+\pgfnodeparttenbox=\box96
+\pgfnodepartninebox=\box97
+\pgfnodeparteightbox=\box98
+\pgfnodepartsevenbox=\box99
+\pgfnodepartsixbox=\box100
+\pgfnodepartfivebox=\box101
+)))
+Package hyperref Info: Option `colorlinks' set `true' on input line 56.
+
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen326
 \lightrulewidth=\dimen327
@@ -1090,7 +1167,7 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 Package: arydshln 2019/02/21 v1.76 
 \dashlinedash=\dimen339
 \dashlinegap=\dimen340
-\adl@box=\box82
+\adl@box=\box102
 \adl@height=\dimen341
 \adl@heightsave=\dimen342
 \adl@depth=\dimen343
@@ -1117,35 +1194,35 @@ runsystem(rm modulo_01.aex)...executed.
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count392
-\l__pdf_internal_box=\box83
+\l__pdf_internal_box=\box103
 )
 (./modulo_01.aux)
 \openout1 = `modulo_01.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count393
 \scratchdimen=\dimen347
-\scratchbox=\box84
+\scratchbox=\box104
 \nofMPsegments=\count394
 \nofMParguments=\count395
 \everyMPshowfont=\toks52
@@ -1165,21 +1242,21 @@ e
 ))
 \symgns@font=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/ptm/m/n --> TS1/ptm/b/n on input line 79.
-Package gensymb Info: Math companion symbols declared on input line 79.
-LaTeX Info: Redefining \degree on input line 79.
-LaTeX Info: Redefining \celsius on input line 79.
+(Font)                  TS1/ptm/m/n --> TS1/ptm/b/n on input line 81.
+Package gensymb Info: Math companion symbols declared on input line 81.
+LaTeX Info: Redefining \degree on input line 81.
+LaTeX Info: Redefining \celsius on input line 81.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 79.
-LaTeX Info: Redefining \ohm on input line 79.
-Package gensymb Info: Using \textohm for \ohm on input line 79.
-Package gensymb Info: Using \textmu for \micro on input line 79.
+erthousand on input line 81.
+LaTeX Info: Redefining \ohm on input line 81.
+Package gensymb Info: Using \textohm for \ohm on input line 81.
+Package gensymb Info: Using \textmu for \micro on input line 81.
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 79.
+ on input line 81.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
@@ -1227,7 +1304,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-Package hyperref Info: Link coloring ON on input line 79.
+Package hyperref Info: Link coloring ON on input line 81.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1240,58 +1317,58 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count399
 )
-LaTeX Info: Redefining \ref on input line 79.
-LaTeX Info: Redefining \pageref on input line 79.
-LaTeX Info: Redefining \nameref on input line 79.
+LaTeX Info: Redefining \ref on input line 81.
+LaTeX Info: Redefining \pageref on input line 81.
+LaTeX Info: Redefining \nameref on input line 81.
 
 (./modulo_01.out) (./modulo_01.out)
 \@outlinefile=\write6
 \openout6 = `modulo_01.out'.
 
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 85.
+ 87.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 85.
+ 87.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 85.
+ 87.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 85.
+ 87.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 8
-5.
+7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 85.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 87.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 85.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 87.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 85.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 87.
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 8
-5.
+7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 85.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 87.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
@@ -1313,6 +1390,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [3]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
+45.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1340,12 +1422,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [6]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-95.
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-Overfull \hbox (13.93854pt too wide) in paragraph at lines 195--196
+Overfull \hbox (13.93854pt too wide) in paragraph at lines 199--200
 []\T1/ptm/b/it/12 Seleção: \T1/ptm/m/n/12 A se-le-ção é re-a-li-zada por meio d
 e es-tru-tu-ras de con-trole con-di-ci-o-nais, como o \T1/cmtt/m/n/12 ``if-else
 ''
@@ -1370,11 +1447,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [8]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 234.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 243.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 234.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 243.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 234.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 243.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1412,11 +1489,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [12]
-\openout4 = `modulo_01.pyg'.
-
- (./_minted-modulo_01/default.pygstyle)
-(./_minted-modulo_01/466044CE48F699749DB5CD12EBF680EAA90ECD6B66B85A90BF5EBF2E81
-1DA710.pygtex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1425,9 +1497,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[13])
+[13]
+\openout4 = `modulo_01.pyg'.
+
+ (./_minted-modulo_01/default.pygstyle)
+(./_minted-modulo_01/466044CE48F699749DB5CD12EBF680EAA90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 366.
+put line 378.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1450,18 +1527,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 \openout4 = `modulo_01.pyg'.
 
 
-(./_minted-modulo_01/8A9E28559C3839F012801D3F06379DF8A90ECD6B66B85A90BF5EBF2E81
-1DA710.pygtex
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 3.
-)
-Package hyperref Info: bookmark level for unknown listing defaults to 0 on inpu
-t line 445.
-\openout4 = `modulo_01.pyg'.
-
-
-(./_minted-modulo_01/2D6E3A843F28CA71002E9FE9FF2D0D0BA90ECD6B66B85A90BF5EBF2E81
-1DA710.pygtex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1471,15 +1536,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [16]
+(./_minted-modulo_01/8A9E28559C3839F012801D3F06379DF8A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 3.
+)
 \openout4 = `modulo_01.pyg'.
 
 
-(./_minted-modulo_01/28DE13687E5262F4E7609E07D305B339A90ECD6B66B85A90BF5EBF2E81
+(./_minted-modulo_01/2D6E3A843F28CA71002E9FE9FF2D0D0BA90ECD6B66B85A90BF5EBF2E81
 1DA710.pygtex)
 \openout4 = `modulo_01.pyg'.
 
 
-(./_minted-modulo_01/EC549F70A78C114F32A959405F6B5EBFA90ECD6B66B85A90BF5EBF2E81
+(./_minted-modulo_01/28DE13687E5262F4E7609E07D305B339A90ECD6B66B85A90BF5EBF2E81
 1DA710.pygtex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1493,12 +1563,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 \openout4 = `modulo_01.pyg'.
 
 
-(./_minted-modulo_01/C84CA314769023AC17DF219AD7615215A90ECD6B66B85A90BF5EBF2E81
+(./_minted-modulo_01/EC549F70A78C114F32A959405F6B5EBFA90ECD6B66B85A90BF5EBF2E81
 1DA710.pygtex)
 \openout4 = `modulo_01.pyg'.
 
 
-(./_minted-modulo_01/4368EDEBA4A6E06EDB7FC78F0CE3CFA0A90ECD6B66B85A90BF5EBF2E81
+(./_minted-modulo_01/C84CA314769023AC17DF219AD7615215A90ECD6B66B85A90BF5EBF2E81
 1DA710.pygtex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1512,14 +1582,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 \openout4 = `modulo_01.pyg'.
 
 
-(./_minted-modulo_01/CDED47796527DCD1908E91B4876661E4A90ECD6B66B85A90BF5EBF2E81
+(./_minted-modulo_01/4368EDEBA4A6E06EDB7FC78F0CE3CFA0A90ECD6B66B85A90BF5EBF2E81
 1DA710.pygtex)
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 617.
 \openout4 = `modulo_01.pyg'.
 
 
-(./_minted-modulo_01/E450E685E097C32D771BD1C771EA6885A90ECD6B66B85A90BF5EBF2E81
+(./_minted-modulo_01/CDED47796527DCD1908E91B4876661E4A90ECD6B66B85A90BF5EBF2E81
 1DA710.pygtex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1530,15 +1598,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [19]
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 627.
 \openout4 = `modulo_01.pyg'.
 
 
-(./_minted-modulo_01/CBA3A07A1255D5B78A60850FF4017BB1A90ECD6B66B85A90BF5EBF2E81
+(./_minted-modulo_01/E450E685E097C32D771BD1C771EA6885A90ECD6B66B85A90BF5EBF2E81
 1DA710.pygtex)
 \openout4 = `modulo_01.pyg'.
 
 
-(./_minted-modulo_01/B878A6C950163FED8DBC2E7071716823A90ECD6B66B85A90BF5EBF2E81
+(./_minted-modulo_01/CBA3A07A1255D5B78A60850FF4017BB1A90ECD6B66B85A90BF5EBF2E81
 1DA710.pygtex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1552,9 +1622,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 \openout4 = `modulo_01.pyg'.
 
 
+(./_minted-modulo_01/B878A6C950163FED8DBC2E7071716823A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/A7FFAAF130A36F050CAC546ACB37F60AA90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[21]
+\openout4 = `modulo_01.pyg'.
+
+
 (./_minted-modulo_01/93471BA400046C30C3010D345A725330A90ECD6B66B85A90BF5EBF2E81
 1DA710.pygtex)
-Overfull \hbox (7.93686pt too wide) in paragraph at lines 728--729
+Overfull \hbox (7.93686pt too wide) in paragraph at lines 780--781
 []\T1/ptm/m/n/12 Nesse exem-plo, o bloco de có-digo den-tro do \T1/ptm/m/it/12 
 loop \T1/cmtt/m/n/12 while \T1/ptm/m/n/12 será re-pe-tido en-quanto a va-riá-ve
 l \T1/cmtt/m/n/12 contador
@@ -1568,7 +1657,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[21]
+[22]
 \openout4 = `modulo_01.pyg'.
 
 
@@ -1587,30 +1676,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[22]
+[23]
 \openout4 = `modulo_01.pyg'.
 
 
 (./_minted-modulo_01/E1400CAF7D5B4EC16A654977C9795086A90ECD6B66B85A90BF5EBF2E81
 1DA710.pygtex)
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[23]
 \openout4 = `modulo_01.pyg'.
 
 
 (./_minted-modulo_01/C3D94E2A6AD2E081A3C0E0D50400562BA90ECD6B66B85A90BF5EBF2E81
-1DA710.pygtex)
-\openout4 = `modulo_01.pyg'.
-
-
-(./_minted-modulo_01/5BBF32C4CF514F54261EA002B3F15A1BA90ECD6B66B85A90BF5EBF2E81
 1DA710.pygtex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1624,7 +1699,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 \openout4 = `modulo_01.pyg'.
 
 
-(./_minted-modulo_01/F58F8787B76BC16AA044F5605C148D61A90ECD6B66B85A90BF5EBF2E81
+(./_minted-modulo_01/5BBF32C4CF514F54261EA002B3F15A1BA90ECD6B66B85A90BF5EBF2E81
 1DA710.pygtex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1638,7 +1713,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 \openout4 = `modulo_01.pyg'.
 
 
-(./_minted-modulo_01/4A1E540F64B712BF5918EB762661C6D1A90ECD6B66B85A90BF5EBF2E81
+(./_minted-modulo_01/F58F8787B76BC16AA044F5605C148D61A90ECD6B66B85A90BF5EBF2E81
 1DA710.pygtex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1652,7 +1727,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 \openout4 = `modulo_01.pyg'.
 
 
-(./_minted-modulo_01/1E577FE55F9DF7710260DBC42B1ECA26A90ECD6B66B85A90BF5EBF2E81
+(./_minted-modulo_01/4A1E540F64B712BF5918EB762661C6D1A90ECD6B66B85A90BF5EBF2E81
 1DA710.pygtex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1666,7 +1741,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 \openout4 = `modulo_01.pyg'.
 
 
-(./_minted-modulo_01/58300CA53DC16FD1BEC0067FC0781DC2A90ECD6B66B85A90BF5EBF2E81
+(./_minted-modulo_01/1E577FE55F9DF7710260DBC42B1ECA26A90ECD6B66B85A90BF5EBF2E81
 1DA710.pygtex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1680,11 +1755,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 \openout4 = `modulo_01.pyg'.
 
 
-(./_minted-modulo_01/137FD32D5BEC66DCF5D511914F5965A6A90ECD6B66B85A90BF5EBF2E81
+(./_minted-modulo_01/58300CA53DC16FD1BEC0067FC0781DC2A90ECD6B66B85A90BF5EBF2E81
 1DA710.pygtex)
 \openout4 = `modulo_01.pyg'.
 
 
+(./_minted-modulo_01/137FD32D5BEC66DCF5D511914F5965A6A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1694,15 +1771,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [29]
-(./_minted-modulo_01/ABCA0CB5F99495B1064C044445205853A90ECD6B66B85A90BF5EBF2E81
-1DA710.pygtex)
 \openout4 = `modulo_01.pyg'.
 
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-modulo_01/A3DFEF829E40CD2A80C98CEF11BF8385A90ECD6B66B85
-A90BF5EBF2E811DA710.pygtex modulo_01.pyg)...executed.
 
-
+(./_minted-modulo_01/ABCA0CB5F99495B1064C044445205853A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1712,22 +1785,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [30]
-(./_minted-modulo_01/A3DFEF829E40CD2A80C98CEF11BF8385A90ECD6B66B85A90BF5EBF2E81
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/5B2023BF44FC4C2E011E820842724F03A90ECD6B66B85A90BF5EBF2E81
 1DA710.pygtex
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
 5.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ))
-\openout4 = `modulo_01.pyg'.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-modulo_01/97786851650AEB968EF052F689B2198BA90ECD6B66B85
-A90BF5EBF2E811DA710.pygtex modulo_01.pyg)...executed.
-
-
-(./_minted-modulo_01/97786851650AEB968EF052F689B2198BA90ECD6B66B85A90BF5EBF2E81
-1DA710.pygtex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1739,21 +1806,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [31]
 \openout4 = `modulo_01.pyg'.
 
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-modulo_01/FD3837DF92BB78E162CED44A38EA547BA90ECD6B66B85
-A90BF5EBF2E811DA710.pygtex modulo_01.pyg)...executed.
 
-
-(./_minted-modulo_01/FD3837DF92BB78E162CED44A38EA547BA90ECD6B66B85A90BF5EBF2E81
-1DA710.pygtex)
-\openout4 = `modulo_01.pyg'.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-modulo_01/DD1FCDDAC00E2586F56400E13D5D1555A90ECD6B66B85
-A90BF5EBF2E811DA710.pygtex modulo_01.pyg)...executed.
-
-
-(./_minted-modulo_01/DD1FCDDAC00E2586F56400E13D5D1555A90ECD6B66B85A90BF5EBF2E81
+(./_minted-modulo_01/8416F1D2C111662F4294FCCD8FACD080A90ECD6B66B85A90BF5EBF2E81
 1DA710.pygtex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1773,6 +1827,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [33]
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/26FE17A68E07AD3C35ED510CF96BB374A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1781,35 +1840,402 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[34] (./modulo_01.aux)
+[34]
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/5B65A940BA00C130A1E2990EB8B71A01A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[35]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[36]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[37]
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/571EB604B226016002A04E06EDE4F2C4A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[38]
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/FEC3CBCE67DF03BD36157A08BEA75410A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/132E23C466ADD3054813F08000F8A1FEA90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[39]
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/E5C31E5966FDCFCBF41DA62CCA24DF98A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+\openout4 = `modulo_01.pyg'.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[40]
+(./_minted-modulo_01/26EE21C62D0B75697A7529FF99305670A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/47DE727058B99CCFD1FBA00B2D786B20A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/F61B45A97680495608EBF77E5A001026A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[41]
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/D1683D6CFD22770B675767DE8DC380B0A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[42]
+Overfull \hbox (23.45221pt too wide) in paragraph at lines 1737--1738
+[]\T1/ptm/m/n/12 No exem-plo de uso do \T1/cmtt/m/n/12 decorator\T1/ptm/m/n/12 
+, a fun-ção \T1/cmtt/m/n/12 minha_view \T1/ptm/m/n/12 é de-co-rada com \T1/cmtt
+/m/n/12 @verifica_autenticacao\T1/ptm/m/n/12 .
+ []
+
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/2AC459FED65CF25FBCE857A4ED198291A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[43]
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/8F26A9A663AD85D4C63B8199E5D1C77FA90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[44]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[45]
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/0950D230F1A05161C04465F137E07E83A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/1EA57037F37CB7531D9E835E1769D5F8A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[46]
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/89FBA20BB0684B4F02F6071FD3661412A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/8E3849939A1688A92A0535CF6C3956E2A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[47]
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/8161E7C3A0E7FC37C76364E3B220353BA90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/EB02DB7DAF71E18028673EE146FD8DC8A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/733E47D66C7AA6DE24A3926C8D332F4CA90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+\openout4 = `modulo_01.pyg'.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[48]
+(./_minted-modulo_01/51593806DAF661B198BFA708C9730FD2A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/46834102B6B28A945718AACA8336AF9CA90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/7CC45A218D14DD147253E9443582453FA90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[49]
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/66E25402B445914B09F7711A608B8089A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/AF1BC91BEBB0A19EADEF515FCCE5DC80A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/C8F6D946AD86252881976BDAFB2B32A4A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[50]
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/E2ED789426EC1AC932D9653C2CA562D3A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[51]
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/9A29D3C0E3C575409CF37564C7BE1A5CA90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[52]
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/94CA7DCBC3222AF7B174077AE89C948AA90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[53]
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/B81F88E22AD71588C129021D449A319CA90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[54]
+Underfull \vbox (badness 10000) detected at line 2357
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 2357
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[55]
+\openout4 = `modulo_01.pyg'.
+
+
+(./_minted-modulo_01/CF885D82AA3713A211EEAD4B326D0BA5A90ECD6B66B85A90BF5EBF2E81
+1DA710.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[56]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[57] (./modulo_01.aux)
 Package rerunfilecheck Info: File `modulo_01.out' has not changed.
-(rerunfilecheck)             Checksum: BFAD1E379420475669EC9AA654C8AEF5;1353.
+(rerunfilecheck)             Checksum: 1E545CA8D4B9DA712878FC832318F1FB;1786.
 runsystem(rm modulo_01.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 40018 strings out of 478287
- 905968 string characters out of 5849289
- 1304005 words of memory out of 5000000
- 57311 multiletter control sequences out of 15000+600000
- 544818 words of font info for 143 fonts, out of 8000000 for 9000
+ 42223 strings out of 478287
+ 979953 string characters out of 5849289
+ 1398116 words of memory out of 5000000
+ 59363 multiletter control sequences out of 15000+600000
+ 545133 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,131p,833b,904s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf
-/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/
+ 99i,12n,131p,859b,742s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
+fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texlive/texmf-dist/fonts/
 enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb></usr/share/texmf/fonts/type1/public/cm-super/sfit1000.pfb></usr/share/texmf
-/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/
-cm-super/sftt1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb
-8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on modulo_01.pdf (34 pages, 275208 bytes).
+/fonts/type1/public/cm-super/sfit1200.pfb></usr/share/texmf/fonts/type1/public/
+cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri
+8a.pfb>
+Output written on modulo_01.pdf (57 pages, 355325 bytes).
 PDF statistics:
- 325 PDF objects out of 1000 (max. 8388607)
- 264 compressed objects within 3 object streams
- 96 named destinations out of 1000 (max. 500000)
- 85 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 444 PDF objects out of 1000 (max. 8388607)
+ 355 compressed objects within 4 object streams
+ 115 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

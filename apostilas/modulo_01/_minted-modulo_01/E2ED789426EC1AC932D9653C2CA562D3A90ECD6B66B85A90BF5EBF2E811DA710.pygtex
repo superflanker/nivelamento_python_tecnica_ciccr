@@ -1,0 +1,74 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Algoritmo} \PYG{n}{Calculadora} \PYG{n}{Simples}
+
+\PYG{c+c1}{\PYGZsh{} Definição das funções de operação}
+\PYG{n}{Função} \PYG{n}{soma}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{b}\PYG{p}{)}
+	\PYG{n}{s} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n}{a} \PYG{o}{+} \PYG{n}{b}
+	\PYG{n}{Retornar} \PYG{n}{s}
+
+\PYG{n}{Função} \PYG{n}{subtrai}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{b}\PYG{p}{)}
+	\PYG{n}{s} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n}{a} \PYG{o}{\PYGZhy{}} \PYG{n}{b}
+	\PYG{n}{Retornar} \PYG{n}{s}
+
+\PYG{n}{Função} \PYG{n}{multiplica}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{b}\PYG{p}{)}
+	\PYG{n}{s} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n}{a} \PYG{o}{*} \PYG{n}{b}
+	\PYG{n}{Retornar} \PYG{n}{s}
+
+\PYG{n}{Função} \PYG{n}{divide}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{b}\PYG{p}{)}
+	\PYG{n}{Tentar}
+		\PYG{n}{s} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n}{a} \PYG{o}{/} \PYG{n}{b}
+		\PYG{n}{Retornar} \PYG{n}{s}
+	\PYG{n}{Capturar} \PYG{n}{erro} \PYG{n}{de} \PYG{n}{divisão} \PYG{n}{por} \PYG{n}{zero}
+		\PYG{n}{Imprimir} \PYG{l+s+s2}{\PYGZdq{}Não é possível divisão por zero\PYGZdq{}}
+
+\PYG{n}{Função} \PYG{n}{main}\PYG{p}{()}
+	\PYG{c+c1}{\PYGZsh{} Variável de controle do loop \PYGZhy{} quando o usuário quiser sair, basta digitar \PYGZsq{}q\PYGZsq{}}
+	\PYG{c+c1}{\PYGZsh{} após o loop exibir o resultado da operação}
+	\PYG{n}{q} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{l+s+s1}{\PYGZsq{}a\PYGZsq{}} \PYG{c+c1}{\PYGZsh{} atribuição inicial com valor diferente de q}
+	
+	\PYG{n}{Enquanto} \PYG{n}{q} \PYG{n}{diferente} \PYG{n}{de} \PYG{l+s+s1}{\PYGZsq{}q\PYGZsq{}} \PYG{n}{faça}
+		\PYG{c+c1}{\PYGZsh{} Entrada de operandos e operação \PYGZhy{} Notação Polonesa}
+		
+		\PYG{n}{Imprimir} \PYG{l+s+s2}{\PYGZdq{}Digite o primeiro operando: \PYGZdq{}}
+		\PYG{n}{Tentar}
+			\PYG{n}{Ler} \PYG{n}{opa} \PYG{n}{como} \PYG{n+nb}{float}
+		\PYG{n}{Capturar} \PYG{n}{erro} \PYG{n}{de} \PYG{n}{valor} \PYG{n}{inválido}
+			\PYG{n}{Imprimir} \PYG{l+s+s2}{\PYGZdq{}Somente números são permitidos\PYGZdq{}}
+			\PYG{n}{Continuar} \PYG{n}{para} \PYG{n}{próxima} \PYG{n}{iteração}
+		
+		\PYG{n}{Imprimir} \PYG{l+s+s2}{\PYGZdq{}Digite o segundo operando: \PYGZdq{}}
+		\PYG{n}{Tentar}
+			\PYG{n}{Ler} \PYG{n}{opb} \PYG{n}{como} \PYG{n+nb}{float}
+		\PYG{n}{Capturar} \PYG{n}{erro} \PYG{n}{de} \PYG{n}{valor} \PYG{n}{inválido}
+			\PYG{n}{Imprimir} \PYG{l+s+s2}{\PYGZdq{}Somente números são permitidos\PYGZdq{}}
+			\PYG{n}{Continuar} \PYG{n}{para} \PYG{n}{próxima} \PYG{n}{iteração}
+		
+		\PYG{n}{Imprimir} \PYG{l+s+s2}{\PYGZdq{}Informe o tipo de operação (0 \PYGZhy{} Soma; 1 \PYGZhy{} Subtração;}
+		\PYG{l+m+mi}{2} \PYG{o}{\PYGZhy{}} \PYG{n}{Multiplicação}\PYG{p}{;} \PYG{l+m+mi}{3} \PYG{o}{\PYGZhy{}} \PYG{n}{Divisão}\PYG{p}{):} \PYG{l+s+s2}{\PYGZdq{}}
+		\PYG{n}{Tentar}
+			\PYG{n}{Ler} \PYG{n}{op} \PYG{n}{como} \PYG{n}{inteiro}
+		\PYG{n}{Capturar} \PYG{n}{erro} \PYG{n}{de} \PYG{n}{valor} \PYG{n}{inválido}
+			\PYG{n}{Imprimir} \PYG{l+s+s2}{\PYGZdq{}Somente números inteiros são permitidos\PYGZdq{}}
+			\PYG{n}{Continuar} \PYG{n}{para} \PYG{n}{próxima} \PYG{n}{iteração}
+		
+		\PYG{c+c1}{\PYGZsh{} Análise e execução da operação escolhida}
+		\PYG{n}{Se} \PYG{n}{op} \PYG{n}{igual} \PYG{n}{a} \PYG{l+m+mi}{0} \PYG{n}{então}
+			\PYG{n}{Imprimir} \PYG{n}{soma}\PYG{p}{(}\PYG{n}{opa}\PYG{p}{,} \PYG{n}{opb}\PYG{p}{)}
+		\PYG{n}{Senão}\PYG{p}{,} \PYG{n}{se} \PYG{n}{op} \PYG{n}{igual} \PYG{n}{a} \PYG{l+m+mi}{1} \PYG{n}{então}
+			\PYG{n}{Imprimir} \PYG{n}{subtrai}\PYG{p}{(}\PYG{n}{opa}\PYG{p}{,} \PYG{n}{opb}\PYG{p}{)}
+		\PYG{n}{Senão}\PYG{p}{,} \PYG{n}{se} \PYG{n}{op} \PYG{n}{igual} \PYG{n}{a} \PYG{l+m+mi}{2} \PYG{n}{então}
+			\PYG{n}{Imprimir} \PYG{n}{multiplica}\PYG{p}{(}\PYG{n}{opa}\PYG{p}{,} \PYG{n}{opb}\PYG{p}{)}
+		\PYG{n}{Senão}\PYG{p}{,} \PYG{n}{se} \PYG{n}{op} \PYG{n}{igual} \PYG{n}{a} \PYG{l+m+mi}{3} \PYG{n}{então}
+			\PYG{n}{Imprimir} \PYG{n}{divide}\PYG{p}{(}\PYG{n}{opa}\PYG{p}{,} \PYG{n}{opb}\PYG{p}{)}
+		\PYG{n}{Senão}
+			\PYG{n}{Imprimir} \PYG{l+s+s2}{\PYGZdq{}Operação sem suporte\PYGZdq{}}
+		
+		\PYG{n}{Imprimir} \PYG{l+s+s2}{\PYGZdq{}Pressione qualquer tecla para continuar, q para sair\PYGZdq{}}
+		\PYG{n}{Ler} \PYG{n}{q}
+
+\PYG{c+c1}{\PYGZsh{} Chamada da função principal para iniciar a execução da calculadora}
+\PYG{n}{main}\PYG{p}{()}
+
+\PYG{n}{Fim} \PYG{n}{do} \PYG{n}{programa}
+	
+\end{Verbatim}

@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} Chamada da função principal para iniciar a execução da calculadora}
+\PYG{n}{main}\PYG{p}{()}
+
+\PYG{n}{Fim} \PYG{n}{do} \PYG{n}{programa}
+\end{Verbatim}

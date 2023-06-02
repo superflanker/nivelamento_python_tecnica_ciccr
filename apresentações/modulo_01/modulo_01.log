@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.30)  31 MAY 2023 13:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.30)  1 JUN 2023 23:15
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1789,7 +1789,7 @@ Here is how much of TeX's memory you used:
  48273 multiletter control sequences out of 15000+600000
  550522 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,16n,122p,1003b,1030s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,16n,122p,1003b,1029s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/caladea/cld_prieif.enc}{/usr/s
 hare/texlive/texmf-dist/fonts/enc/dvips/carlito/crlt_llspvt.enc}{/usr/share/tex
 live/texmf-dist/fonts/enc/dvips/carlito/crlt_ssbojb.enc}</usr/share/texlive/tex
@@ -1806,7 +1806,7 @@ onts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on modulo_01.pdf (70 pages, 1802757 bytes).
+Output written on modulo_01.pdf (70 pages, 1802728 bytes).
 PDF statistics:
  767 PDF objects out of 1000 (max. 8388607)
  646 compressed objects within 7 object streams

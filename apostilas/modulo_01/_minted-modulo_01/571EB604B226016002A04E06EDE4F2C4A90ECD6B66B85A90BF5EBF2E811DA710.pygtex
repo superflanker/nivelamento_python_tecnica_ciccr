@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} Definindo uma função para calcular a área de um círculo}
+\PYG{k}{def} \PYG{n+nf}{calcular\PYGZus{}area\PYGZus{}circulo}\PYG{p}{(}\PYG{n}{raio}\PYG{p}{):}
+	\PYG{n}{area} \PYG{o}{=} \PYG{l+m+mf}{3.14159} \PYG{o}{*} \PYG{n}{raio} \PYG{o}{**} \PYG{l+m+mi}{2}
+	\PYG{k}{return} \PYG{n}{area}
+
+\PYG{c+c1}{\PYGZsh{} Chamando a função e armazenando o resultado em uma variável}
+\PYG{n}{resultado} \PYG{o}{=} \PYG{n}{calcular\PYGZus{}area\PYGZus{}circulo}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Imprimindo o resultado}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}A área do círculo é:\PYGZdq{}}\PYG{p}{,} \PYG{n}{resultado}\PYG{p}{)}
+		
+\end{Verbatim}
