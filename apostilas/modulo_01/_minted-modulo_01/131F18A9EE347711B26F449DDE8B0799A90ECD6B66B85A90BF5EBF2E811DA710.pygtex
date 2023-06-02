@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	
+\PYG{k+kn}{import} \PYG{n+nn}{math}
+\PYG{n}{num} \PYG{o}{=} \PYG{n+nb}{input}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Digite um valor: \PYGZsq{}}\PYG{p}{)}
+\PYG{k}{if} \PYG{n}{num} \PYG{o}{==} \PYG{l+m+mi}{1} \PYG{o+ow}{or} \PYG{n}{num} \PYG{o}{==} \PYG{l+m+mi}{2}\PYG{p}{:}
+	\PYG{n+nb}{print} \PYG{n}{num}\PYG{o}{**}\PYG{l+m+mi}{3}
+\PYG{k}{elif} \PYG{n}{num}\PYG{o}{\PYGZpc{}}\PYG{l+m+mi}{3} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{:}
+	\PYG{n+nb}{print} \PYG{n}{math}\PYG{o}{.}\PYG{n}{factorial}\PYG{p}{(}\PYG{n}{num}\PYG{p}{)}
+\PYG{k}{elif} \PYG{n}{num} \PYG{o}{==} \PYG{l+m+mi}{4} \PYG{o+ow}{or} \PYG{n}{num} \PYG{o}{==} \PYG{l+m+mi}{5} \PYG{o+ow}{or} \PYG{n}{num} \PYG{o}{==}\PYG{l+m+mi}{7} \PYG{o+ow}{or} \PYG{n}{num} \PYG{o}{==} \PYG{l+m+mi}{8}\PYG{p}{:}
+	\PYG{n+nb}{print} \PYG{n}{num}\PYG{o}{/}\PYG{l+m+mf}{9.0}
+\PYG{k}{else}\PYG{p}{:}
+	\PYG{n+nb}{print} \PYG{l+s+s1}{\PYGZsq{}Valor inválido\PYGZsq{}}
+	
+\end{Verbatim}

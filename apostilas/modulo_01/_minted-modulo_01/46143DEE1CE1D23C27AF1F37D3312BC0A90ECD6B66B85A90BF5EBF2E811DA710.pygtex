@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+
+\PYG{n}{início}
+	\PYG{n}{ler} \PYG{n}{x}
+	\PYG{n}{ler} \PYG{n}{y}
+	\PYG{n}{z} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{p}{(}\PYG{n}{x}\PYG{o}{*}\PYG{n}{y}\PYG{p}{)} \PYG{o}{+} \PYG{l+m+mi}{5}
+	\PYG{n}{se} \PYG{n}{z} \PYG{o}{\PYGZlt{}=} \PYG{l+m+mi}{0} \PYG{n}{então}
+		\PYG{n}{resposta} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{l+s+s1}{\PYGZsq{}A\PYGZsq{}}
+	\PYG{n}{senão}
+		\PYG{n}{se} \PYG{n}{z} \PYG{o}{\PYGZlt{}=} \PYG{l+m+mi}{100} \PYG{n}{então}
+			\PYG{n}{resposta} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{l+s+s1}{\PYGZsq{}B\PYGZsq{}}
+		\PYG{n}{senão}
+			\PYG{n}{resposta} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{l+s+s1}{\PYGZsq{}C\PYGZsq{}}
+		\PYG{n}{fim\PYGZus{}se}
+	\PYG{n}{fim\PYGZus{}se}
+	\PYG{n}{escrever} \PYG{n}{z}\PYG{p}{,} \PYG{n}{resposta}
+
+\PYG{n}{fim}
+\end{Verbatim}

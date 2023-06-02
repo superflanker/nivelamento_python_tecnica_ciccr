@@ -24,81 +24,119 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN
 """
 
-"""
-Ingredientes:
-1 copo de fubá mimoso
-1 copo de farinha de trigo
-1 copo de leite
-1 e 1/2 copos de açúcar
-1 xícara de óleo
-3 ovos
-1 colher de fermento em pó
-semente de erva-docesementes de erva doce a gosto 
-"""
+import random
 
-def reservar_liquidificador(n):
-    print("Separando um liquidificador de {:.02f} litros para preparo da receita de bolo".format(n))
+def preaquecer_forno() -> None:
+    """
+    Pré-aquecendo o forno
+    Args:
+        None
+    Returns:
+        None
+    """
+    print("Pré-aquecendo o forno a 200 graus")
 
-def pre_aquecimento(n):
-    print("Pré-aquecendo o forno a {:.02f} graus".format(200))
+def misturar_ingredientes() -> None:
+    """
+    Misturar os Ingredientes em um liquidificador
+    Args:
+        None
+    Returns:
+        None
+    """
+    print("Misturando ingredientes em um liquidificador:")
+    print("     1 copo de fubá mimoso")
+    print("     1 copo de farinha de trigo")
+    print("     1 e 1/2 copos de açúcar")
+    print("     1 colher de fermento em pó ")
+    print("     1 copo de leite")
+    print("     1 xícara de óleo")
+    print("     3 ovos")
 
-def adicionar_fuba_mimoso(n):
-    print("Adicionando ingrediente - fubá mimoso ({:.02f} copo(s))".format(n))
+def despejar_massa_na_forma() -> None:
+    """
+    Despejar massa na forma
+    Args:
+        None
+    Returns:
+        None
+    """
+    print("Despejando a massa em uma forma")
 
-def adicionar_farinha_de_trigo(n):
-    print("Adicionando ingrediente - farinha de trigo ({:.02f} copo(s))".format(n))
+def assar_o_bolo() -> None:
+    """
+    Assar o Bolo
+    Args:
+        None
+    Returns:
+        None
+    """
+    print("Assando o bolo")
 
-def adicionar_leite(n):
-    print("Adicionando ingrediente - leite ({:.02f} copo(s))".format(n))
+def palito_seco() -> bool:
+    """
+    Verifica se o palito está seco
+    Args:
+        None
+    Returns:
+        boolean
+    """
+    r = random.random()
+    # se for menor que 1/30, simulamos palito seco
+    if r < 1/30:
+        print("O palito está seco")
+        return True
+    print("O palito ainda não está seco")
+    return False
 
-def adicionar_acucar(n):
-    print("Adicionando ingrediente - açúcar ({:.02f} copo(s))".format(n))
+def deixar_esfriar() -> None:
+    """
+    Deixar Esfriar
+    Args:
+        None
+    Returns:
+        None
+    """
+    print("Deixando esfriar")
+def polvilhar_com_erva_doce() -> None:
+    """
+    Polvilhar com erva doce
+    Args:
+        None
+    Returns:
+        None
+    """
+    print("Polvilhando com erva doce")
+def servir_o_bolo() -> None:
+    """
+    Servir o Bolo
+    Args:
+        None
+    Returns:
+        None
+    """
+    print("Servindo o Bolo")
 
-def adicionar_oleo(n):
-    print("Adicionando ingrediente - óleo ({:.02f} xicara(s))".format(n))
 
-def adicionar_ovos(n):
-    print("Adicionando ingrediente - ovos ({:.02f} ovos(s))".format(n))
+def fazer_bolo() -> None:
+    """
+    Fazer o bolo - wrapper do algoritmo principal
+    Args:
+        None
+    Returns:
+        None
+    """
+    # vamos falsear
+    preaquecer_forno()
+    misturar_ingredientes()
+    despejar_massa_na_forma()
+    assar_o_bolo()
+    while not palito_seco():
+        assar_o_bolo()
+    deixar_esfriar()
+    polvilhar_com_erva_doce()
+    servir_o_bolo()
 
-def adicionar_fermento(n):
-    print("Adicionando ingrediente - Fermento ({:.02f} colher(es))".format(n))
+# chamada para a função fazer_bolo
 
-def adicionar_erva_doce(n):
-    print("Polvilhando o bolo com Erva Doce ({:.02f} colher(es))".format(n))
-
-def bater_ingredientes():
-    print("Batendo todos os ingredientes")
-
-def despejar_em_uma_forma(n):
-    print("Despejando em uma forma untada")
-
-def assando(n):
-    print("Assando o bolo no forno aquecido por {:d} minutos".format(n))
-
-def esfriando():
-    print("Esperando a forma esfriar")
-
-def tirando_da_forma():
-    print("Tirando o bolo da forma")
-
-def servindo():
-    print("Servindo o bolo")
-
-def receita_bolo_de_fuba():
-    pre_aquecimento(200)
-    reservar_liquidificador(1.5)
-    adicionar_fuba_mimoso(1)
-    adicionar_farinha_de_trigo(1)
-    adicionar_acucar(1.5)
-    adicionar_fermento(1)
-    adicionar_ovos(3)
-    adicionar_leite(1)
-    adicionar_oleo(1)
-    bater_ingredientes()
-    assando(35)
-    esfriando()
-    tirando_da_forma()
-    adicionar_erva_doce(1)
-    servindo()
-
-receita_bolo_de_fuba()
+fazer_bolo()

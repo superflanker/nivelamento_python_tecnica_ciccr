@@ -1,7 +1,7 @@
 \frametitle{Exercícios - Programação}
 \label{exercicio_10_resposta_pytonica}
 	
-	Resposta mais \textit{Pytônica}:
+	Resposta mais \textit{Pythônica}:
 	
 \begin{minted}[fontsize={\fontsize{9.5}{10.5}\selectfont}]{python}
 	import math

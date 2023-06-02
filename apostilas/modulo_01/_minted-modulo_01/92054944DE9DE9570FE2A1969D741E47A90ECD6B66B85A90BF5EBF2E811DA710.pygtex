@@ -1,0 +1,26 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	
+	\PYG{n}{Função} \PYG{n}{calcular\PYGZus{}salario\PYGZus{}total}\PYG{p}{(}\PYG{n}{horas\PYGZus{}trabalhadas}\PYG{p}{,} \PYG{n}{salario\PYGZus{}hora}\PYG{p}{)}
+		\PYG{n}{horas\PYGZus{}semanais} \PYG{err}{←} \PYG{l+m+mi}{40}
+		\PYG{n}{semanas\PYGZus{}mes} \PYG{err}{←} \PYG{l+m+mi}{4}
+		
+		\PYG{n}{salario\PYGZus{}base} \PYG{err}{←} \PYG{n}{horas\PYGZus{}semanais} \PYG{o}{*} \PYG{n}{salario\PYGZus{}hora}
+		\PYG{n}{salario\PYGZus{}extra} \PYG{err}{←} \PYG{l+m+mi}{0}
+		
+		\PYG{n}{Se} \PYG{n}{horas\PYGZus{}trabalhadas} \PYG{o}{\PYGZgt{}} \PYG{p}{(}\PYG{n}{horas\PYGZus{}semanais} \PYG{o}{*} \PYG{n}{semanas\PYGZus{}mes}\PYG{p}{)} \PYG{n}{então}
+			\PYG{n}{horas\PYGZus{}extras} \PYG{err}{←} \PYG{n}{horas\PYGZus{}trabalhadas} \PYG{o}{\PYGZhy{}} \PYG{p}{(}\PYG{n}{horas\PYGZus{}semanais} \PYG{o}{*} \PYG{n}{semanas\PYGZus{}mes}\PYG{p}{)}
+			\PYG{n}{salario\PYGZus{}extra} \PYG{err}{←} \PYG{n}{horas\PYGZus{}extras} \PYG{o}{*} \PYG{n}{salario\PYGZus{}hora} \PYG{o}{*} \PYG{l+m+mf}{1.5}
+		\PYG{n}{Fim} \PYG{n}{Se}
+		
+		\PYG{n}{salario\PYGZus{}total} \PYG{err}{←} \PYG{n}{salario\PYGZus{}base} \PYG{o}{+} \PYG{n}{salario\PYGZus{}extra}
+		\PYG{n}{Retorne} \PYG{n}{salario\PYGZus{}total}
+	\PYG{n}{Fim} \PYG{n}{Função}
+	
+	\PYG{c+c1}{\PYGZsh{} Exemplo de uso da função}
+	\PYG{n}{horas\PYGZus{}trabalhadas} \PYG{err}{←} \PYG{n}{ler} \PYG{n}{valor} \PYG{n}{da} \PYG{n}{entrada}
+	\PYG{n}{salario\PYGZus{}hora} \PYG{err}{←} \PYG{n}{ler} \PYG{n}{valor} \PYG{n}{da} \PYG{n}{entrada}
+	
+	\PYG{n}{salario\PYGZus{}final} \PYG{err}{←} \PYG{n}{calcular\PYGZus{}salario\PYGZus{}total}\PYG{p}{(}\PYG{n}{horas\PYGZus{}trabalhadas}\PYG{p}{,} \PYG{n}{salario\PYGZus{}hora}\PYG{p}{)}
+	
+	\PYG{n}{Imorima} \PYG{l+s+s2}{\PYGZdq{}O salário total do funcionário é: R\PYGZdl{}\PYGZdq{}}\PYG{p}{,} \PYG{n}{salario\PYGZus{}final}
+\end{Verbatim}

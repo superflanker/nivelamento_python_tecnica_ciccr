@@ -81,7 +81,7 @@ O Nivelamento de \textbf{\textit{Conceitos de Programação - Introdução ao Py
 		\item \href{https://django-book.readthedocs.io/en/latest/}{\textbf{\textit{Django Book}}}
 		\item \href{https://books.agiliq.com/projects/django-orm-cookbook/en/latest/}{\textbf{\textit{Django ORM Cookbook}}}
 		\item \href{bibliografia/The Definitive Guide to Django - Apress.pdf}{\textbf{\textit{The Definitive Guide to Django}}}
-		\item \href{bibliografia/apostila_modulo_01.pdf}{\textbf{\textit{Apostila Módulo 01}}}
+		\item \href{apostilas/apostila_modulo_01.pdf}{\textbf{\textit{Apostila Módulo 01}}}
 	\end{itemize}
 \end{frame}
 
@@ -914,6 +914,71 @@ Exemplo com tipo de retorno definido:
 	\rule{\textwidth}{1pt}
 \end{frame}
 
+
+\begin{frame}{Funções em \textit{Python}}
+	\label{decorators}
+	\begin{itemize}
+		\item \textbf{\textit{Decorators:}} são recursos avançados que permitem modificar o comportamento de funções ou classes sem alterar o código fonte original, oferecendo uma maneira elegante de adicionar funcionalidades extras à execução das mesmas.
+		\begin{itemize}
+			\item Frequentemente utilizados em \textit{frameworks} como \textit{\textbf{Django}}, \textit{\textbf{Wagtail}} e \textit{\textbf{Flask}}.
+			\item Função aninhada implícita
+			\item Utilização em Cascata
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Funções em \textit{Python}}
+	\label{decorators_sintaxe}
+	Sintaxe:
+	\rule{\textwidth}{1pt}
+	\scriptsize
+	\begin{minted}{python}
+		def decorator(funcao):
+			def funcao_decorada(*args, **kwargs):
+				# Código adicional antes da execução da função
+				resultado = funcao(*args, **kwargs)
+				# Código adicional depois da execução da função
+				return resultado
+			return funcao_decorada
+		
+		@decorator
+		def funcao_original():
+			# Implementação da função original
+			pass
+	\end{minted}
+	\rule{\textwidth}{1pt}
+\end{frame}
+
+\begin{frame}[fragile]{Funções em \textit{Python}}
+\label{decorators_exemplo}
+Exemplo prático:
+\rule{\textwidth}{1pt}
+\scriptsize
+\begin{minted}[fontsize={\fontsize{5.5}{6.5}\selectfont}]{python}
+		from django.http import HttpResponse
+		
+		# Definição do decorator
+		def verifica_autenticacao(view_func):
+			def wrapper(request, *args, **kwargs):
+				# Verifica se o usuário está autenticado
+				if request.user.is_authenticated:
+					# Se estiver autenticado, chama a view original
+					return view_func(request, *args, **kwargs)
+				else:
+					# Caso contrário, redireciona para a página de login
+					return HttpResponse("Acesso negado. Faça login para continuar.")
+			
+			return wrapper
+			
+		# Exemplo de uso do decorator em uma view
+		@verifica_autenticacao
+		def minha_view(request):
+			return HttpResponse("Conteúdo da view protegida")
+\end{minted}
+\rule{\textwidth}{1pt}
+\end{frame}
+
+
 \subsection{Aplicativo em \textit{Python}}
 
 \begin{frame}{Aplicativo em \textit{Python}}
@@ -954,23 +1019,10 @@ Receita de Bolo da Vovó:
 	\end{itemize}
 \end{frame}
 
-
-\begin{frame}{Exercício - Algoritmos}
-	\label{exercicio_03}
-	Implemente um sistema de recomendação para solução de problemas, estilo do algoritmo da lâmpada.
-	\begin{itemize}
-		\item Não vale utilizar o mesmo exemplo.
-		\item Encontre um problema que se resolva em 3 passos na sua casa.
-		\item Crie um fluxograma de solução do problema.
-		\item Implemente utilizando funções em \textbf{\textit{Python}}, ao estilo do exercício 1.
-	\end{itemize}
-\end{frame}
-
 \begin{frame}{Exercício - Algoritmos}
 	\label{exercicio_04}
 	 O que falta na bula de remédios para se tornar um algoritmo? Comente pelo menos 2 casos aplicáveis.
 \end{frame}
-
 
 \begin{frame}{Exercício - Algoritmos}
 	\label{exercicio_05}
@@ -1115,9 +1167,9 @@ crie um algoritmo que leia um valor e a partir disso faça:
 \end{frame}
 
 \begin{frame}[fragile]{Exercícios - Programação}
-		\label{exercicio_10_resposta_pytonica}
+	\label{exercicio_10_resposta_pytonica}
 	
-	Resposta mais \textit{Pytônica}:
+	Resposta mais \textit{Pythônica}:
 	
 \begin{minted}[fontsize={\fontsize{9.5}{10.5}\selectfont}]{python}
 	import math
@@ -1138,12 +1190,45 @@ crie um algoritmo que leia um valor e a partir disso faça:
 	\label{palavras_finais}
 	
 	\begin{enumerate}
-		\item Programar é uma arte que exige esforço, pensamento e muita fé: em várias situações, não se sabe qual o melhor caminho da solução. E para isto não há remédio, somente a experiência lhe indica o melhor a fazer. Mas confie em si, pois é você quem vai resolver o pepino
+		\item Programar é uma arte que exige esforço, pensamento e muita fé: em várias situações, não se sabe qual o melhor caminho da solução. E para isto não há remédio, somente a experiência lhe indica o melhor a fazer. Mas confie em si, pois é você quem vai resolver o problema.
 		\item O estudo e o esforço são os investimentos que rendem os melhores juros. \alert{\textbf{\textit{Lembre-se disto!!!}}}
 	\end{enumerate}
 	
 \end{frame}
 
+\begin{frame}{Palavras Finais}
+	\label{desafio}
+	Eu gostaria de propor um desafio: se eu receber até 80\% de todos os exercícios que faremos durante o nivelamento, eu me proponho a ministrar uma aula bônus de mecanismos de inteligência artificial, o que acham?
+	
+	mas tem regras:
+	
+	\begin{itemize}
+		\item Sejam honestos. Não vale trapacear, ok?
+		
+		\subitem A lista de exercícios deve ser feita de acordo com o que cada um sabe e não é uma simples cópia dos exercícios que há na apostila ou algo que o valha.
+		
+		\subitem Se forem usar o \textit{ChatGPT} para ajudar, lembrem-se que a resposta mais simples eu já conheço, não sendo portanto válida. Caprichem nas perguntas que fizerem ao \textit{ChatGPT}.
+		
+	\end{itemize}
+	
+\end{frame}
+
+\begin{frame}{Palavras Finais}
+	\label{desafio_2}
+
+	Então, vamos ao desafio do dia:
+	
+	\begin{itemize}
+		\item O programa da calculadora usa somente estruturas condicionais do tipo \texttt{if-elif-else}. Produza uma nova forma de avaliação da operação na função \texttt{main} que mantenha o comportamento da estrutura condicional implementada mas faça de outra forma (Eu vejo 2 soluções que nem usam expressões condicionais) 
+	\end{itemize}
+	
+	Se me entregarem este desafio, ganham um ponto em busca da inteligência artificial no Nivelamento de \textbf{\textit{Python}}.
+	
+\end{frame}
+
+\begin{frame}{Palavras Finais}
+	\textit{\textbf{``Ainda que eu ande pelo vale da sombra da morte, não temerei mal algum, pois tu estás comigo; a tua vara e o teu cajado me consolam.'' (Salmo 23:4)}}
+\end{frame}
 
 \backmatter
 \end{document}

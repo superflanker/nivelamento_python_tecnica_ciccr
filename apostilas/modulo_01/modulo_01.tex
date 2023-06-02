@@ -38,12 +38,14 @@
 \usepackage{fancyhdr}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
+
 \usepackage{tikz}
-\usetikzlibrary{matrix,calc,shapes}
+\usetikzlibrary{shapes.geometric, arrows}
+
 \renewcommand{\headrulewidth}{1pt}
 \renewcommand{\footrulewidth}{0.5pt}
 \fancyhf{} % limpa os cabecalhos e rodapés
-\fancyhead[C]{\textit{INTRODUÇÃO AO PYTHON - NIVELAMENTO} } % define o cabeçalho personalizado
+\fancyhead[C]{\textit{INTRODUÇÃO AO PYTHON - NIVELAMENTO - MÒDULO 1} } % define o cabeçalho personalizado
 \fancyfoot[C]{\textit{AUGUSTO MATHIAS ADAMS (INSTRUTOR)}}
 \pagestyle{fancy} % sem definir esse comando, o cabeçalho personalizado não é exibido
 
@@ -52,12 +54,13 @@
 	linkcolor=blue,
 	filecolor=blue,      
 	urlcolor=blue,
-	pdftitle={INTRODUÇÃO AO PYTHON - NIVELAMENTO}
+	pdftitle={INTRODUÇÃO AO PYTHON - NIVELAMENTO - MÒDULO 1}
 }
 \renewcommand\theadalign{bc}
 \renewcommand\theadfont{\bfseries}
 \renewcommand\theadgape{\Gape[4pt]}
 \renewcommand\cellgape{\Gape[4pt]}
+
 
 %dashed line
 \usepackage{booktabs, makecell}
@@ -79,6 +82,22 @@
 \renewcommand\Affilfont{\itshape\small}
 
 \begin{document}
+	
+	\definecolor{adaee4ed-88c8-5b21-a9e7-31316ebef86f}{RGB}{255, 179, 178}
+	\definecolor{f3551e38-74df-57e2-b793-83d7fe876c85}{RGB}{0, 0, 0}
+	\definecolor{0b71a967-1f15-55a5-9bb9-70efa7b4fc58}{RGB}{51, 51, 51}
+	\definecolor{747aec21-333b-59ee-84e3-ddff893e5ccd}{RGB}{255, 216, 176}
+	\definecolor{70af333d-4869-5f2a-97ca-9904a9fce6c3}{RGB}{179, 254, 174}
+	\definecolor{da22c119-ac26-5c44-abee-80d4e1c3b86d}{RGB}{87, 227, 137}
+	\definecolor{5856d031-3da1-575c-834e-c77e9e438c62}{RGB}{162, 177, 195}
+	
+	\tikzstyle{512bdd77-c3aa-5669-a956-85f7a90c6fb4} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text centered, font=\normalsize, color=0b71a967-1f15-55a5-9bb9-70efa7b4fc58, draw=f3551e38-74df-57e2-b793-83d7fe876c85, line width=1, fill=adaee4ed-88c8-5b21-a9e7-31316ebef86f]
+	\tikzstyle{69bbb168-da59-5865-902f-94e77902bf95} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, font=\normalsize, color=0b71a967-1f15-55a5-9bb9-70efa7b4fc58, draw=f3551e38-74df-57e2-b793-83d7fe876c85, line width=1, fill=747aec21-333b-59ee-84e3-ddff893e5ccd]
+	\tikzstyle{087dbb4e-745a-5e6d-a957-eaaa92be42c8} = [rectangle, minimum width=3cm, minimum height=2cm, text centered, font=\normalsize, color=0b71a967-1f15-55a5-9bb9-70efa7b4fc58, draw=f3551e38-74df-57e2-b793-83d7fe876c85, line width=1, fill=747aec21-333b-59ee-84e3-ddff893e5ccd]
+	\tikzstyle{b0e005f8-e267-5a3a-a638-881fb9faed1d} = [diamond, minimum width=3cm, minimum height=2cm, text centered, font=\normalsize, color=0b71a967-1f15-55a5-9bb9-70efa7b4fc58, draw=f3551e38-74df-57e2-b793-83d7fe876c85, line width=1, fill=70af333d-4869-5f2a-97ca-9904a9fce6c3]
+	\tikzstyle{352e1c97-7d59-5eb2-89b1-63dd72ef26de} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text centered, font=\normalsize, color=0b71a967-1f15-55a5-9bb9-70efa7b4fc58, draw=f3551e38-74df-57e2-b793-83d7fe876c85, line width=1, fill=da22c119-ac26-5c44-abee-80d4e1c3b86d]
+	\tikzstyle{7be24b85-97d0-5b76-ba9e-d94005dca8f2} = [thick, draw=5856d031-3da1-575c-834e-c77e9e438c62, line width=2, ->, >=stealth]
+	
 	% Seleciona o idioma do documento
 	\selectlanguage{brazil}
 	
@@ -179,7 +198,7 @@
 		
 		\item \textbf{\textit{Programação Orientada a Objetos (POO)}}: Nesse paradigma, os programas são organizados em torno de objetos, que são instâncias de classes. Os objetos possuem atributos (dados) e métodos (ações) que podem interagir uns com os outros. A POO enfatiza a reutilização de código, encapsulamento e modularidade.
 		
-		\item \textbf{\textit{Programação Funcional:}} Nesse paradigma, o foco está nas funções. Os programas são escritos em termos de funções puras, que não possuem efeitos colaterais e retornam um valor com base em seus argumentos. A programação funcional enfatiza a imutabilidade dos dados e o uso de funções de ordem superior.
+		\item \textbf{\textit{Programação Funcional ou Procedural:}} Nesse paradigma, o foco está nas funções. Os programas são escritos em termos de funções puras, que não possuem efeitos colaterais e retornam um valor com base em seus argumentos. A programação funcional enfatiza a imutabilidade dos dados e o uso de funções de ordem superior.
 		
 		\item \textbf{\textit{Programação Lógica:}} Nesse paradigma, os programas são escritos em termos de regras lógicas. A programação lógica se baseia no uso de predicados e inferência lógica para resolver problemas. A linguagem de programação Prolog é um exemplo comum de programação lógica.
 		
@@ -1702,7 +1721,7 @@ Os \texttt{decorators} são amplamente usados para implementar recursos como \te
 
 Em resumo, os \texttt{decorators} são recursos avançados do \textit{\textbf{Python}} que permitem modificar o comportamento de uma função ou classe sem alterar o código fonte original. Eles envolvem a função original com lógica adicional, adicionando funcionalidades extras antes, depois ou em torno da execução da função. Os \texttt{decorators} são amplamente usados para implementar recursos adicionais de forma modular e reutilizável.
 
-Um exemplo prático (não se preocupe com o django, veremos detalhadamente do que se trata este \textit{framework} em outro módulo):
+Um exemplo prático (não se preocupe com o \textit{Django}, veremos detalhadamente do que se trata este \textit{framework} em outro módulo):
 
 \begin{minted}[frame=lines,
 	framesep=2mm,
@@ -1837,7 +1856,7 @@ Neste exemplo, o código dentro do bloco \texttt{try} chama uma função \texttt
 	
 	\end{itemize}
 
-	A princípio, o pseudocódigo define as operações da calculadora como funções. A seguir, uma explicação exaustiva, porém necessária, para os iniciantes na \textit{arte de transformar café em código}, ou seja, programar.
+	A princípio, devemos definir as operações da calculadora como funções. A seguir, uma explicação exaustiva, porém necessária, para os iniciantes na \textit{arte de transformar café em código}, ou seja, programar.
 	
 	\paragraph{Função \texttt{soma}} A primeira função definida é a função \texttt{soma}, que recebe dois parâmetros, $a$ e $b$, e retorna a soma desses dois valores:
 	
@@ -1925,12 +1944,12 @@ Função divide(a, b)
 \end{minted}
 
 \begin{itemize}
-	\item A função \textbf{divide} é definida com os parâmetros $a$ e $b$.
-	\item Tenta-se executar o bloco de código dentro do comando \textbf{Tentar}.
+	\item A função \texttt{divide} é definida com os parâmetros $a$ e $b$.
+	\item Tenta-se executar o bloco de código dentro do comando \texttt{Tentar}.
 	\item Dentro do bloco, a variável $s$ é inicializada com o resultado da divisão de $a$ por $b$.
 	\item O valor de $s$ é retornado como resultado da função.
 	\item Se ocorrer um erro de divisão por zero, o fluxo de execução será interrompido e passará para o bloco \textbf{Capturar erro de divisão por zero}.
-	\item Dentro desse bloco, a mensagem "Não é possível divisão por zero" é impressa.
+	\item Dentro desse bloco, a mensagem \textit{"Não é possível divisão por zero"} é impressa.
 \end{itemize}
 
 \paragraph{Função \texttt{main}} a função \texttt{main} é um tanto extensa, o que torna necessário sua explicação passo a passo:
@@ -1945,7 +1964,7 @@ Função divide(a, b)
 	fontsize=\footnotesize
 	]{python}
 		
-	Função main()
+Função main()
 	
 \end{minted}
 
@@ -2367,7 +2386,7 @@ Fácil não? Relaxa, é brincadeira. Todo mundo que é programador e analista de
 	
 	\item Resolva um pequeno problema por vez. Teste. Reteste. Corrija os erros. Teste novamente, até que esteja funcionando para todos os casos de interesse.
 	
-	\item Por fim, faça a síntese de tudo que você resolveu até agora em um programa principal. Não ache que você não precisa de nada disto que foi feito até agora e comece escrevendo código \textit{``macarrônico''} em um \textit{script} somente. Dependendo do código, nem compensa fazer grande coisa, tal como o código simples de \textit{ping} a seguir:
+	\item Por fim, faça a síntese de tudo que você resolveu até agora em um programa principal. Não ache que você não precisa de nada disto que foi feito até agora e comece escrevendo código monolítico em um \textit{script} somente. Dependendo do código, nem compensa fazer grande coisa, tal como o código simples de \textit{ping} a seguir:
 	
 \begin{minted}[frame=lines,
 	framesep=2mm,
@@ -2404,7 +2423,7 @@ def ping(file):
 ping("data/ipping.csv")
 \end{minted}
 
-Este é um exemplo de um código feito às pressas para resolver rapidamente um problema. Embora funcional e tenha elementos de programação estruturada, é um tanto complicado adicionar funcionalidades pois, embora tenha uma função (\texttt{ping}), praticamente todo o \textit{loop} principal do \textit{script} está contido nela e se precisarmos de algo complexo, teremos problemas para colocar tudo neste \textit{loop} da mesma forma que colocamos tudo que precisávamos para resolver um pequeno, porém importante, problema. Defina quantas funções forem necessárias, desenhe um fluxograma (ou melhor vários) para todo e qualquer parte do algoritmo, refaça algoritmos se for necessário, inclusive os que estão descritos aqui.
+Este é um exemplo de um código feito às pressas para resolver rapidamente um problema. Embora funcional e tenha elementos de programação estruturada, é um tanto complicado adicionar funcionalidades pois, embora tenha uma função (\texttt{ping}), praticamente todo o \textit{loop} principal do \textit{script} está contido nela e se precisarmos de algo complexo, teremos problemas para colocar tudo neste \textit{loop} da mesma forma que colocamos tudo que precisávamos para resolver um pequeno, porém importante, problema. Defina quantas funções forem necessárias, desenhe um fluxograma (ou melhor vários) para toda e qualquer parte do algoritmo, refaça algoritmos se for necessário, inclusive os que estão descritos aqui.
 	\item Vale lembrar também que:
 	\begin{itemize}
 		\item Nenhum problema admite solução única.
@@ -2416,6 +2435,507 @@ Este é um exemplo de um código feito às pressas para resolver rapidamente um 
 
 \end{itemize}
 
+\section{Exercícios}
 
+\subsection{Questão 1}
+	Receita de Bolo da Vovó:
+	\begin{itemize}
+		\item Pegue uma receita de bolo, ou de qualquer prato que goste (roubar uma receita da esposa serve)
+		\item Leia atentamente a receita.
+		\item Descreva utilizando um fluxograma passo a passo a confecção da receita
+	\end{itemize}
+
+\textbf{\textit{Resposta:}}
+
+A receita é a de bolo de fubá mimoso, que se encontra em: \href{https://www.tudogostoso.com.br/receita/44278-bolo-de-fuba-simples-mas-maravilhoso.html}{Bolo de fubá simples mas maravilhoso} 
+
+\textbf{\textit{Fluxograma:}}
+
+\begin{figure}[ht]
+\centering
+
+\scalebox{0.4}{
+	
+	\begin{tikzpicture}[node distance=2cm]
+		\node (88e39224-08d3-4bdc-b2b4-38adb142e6ae) [512bdd77-c3aa-5669-a956-85f7a90c6fb4] {Início};
+		\node (4e10ab1b-4af1-430e-8d27-209f051fecea) [69bbb168-da59-5865-902f-94e77902bf95, below of=88e39224-08d3-4bdc-b2b4-38adb142e6ae] {Pre-aquecer o forno};
+		\node (d48033f7-832c-4ecb-89d0-6d706ee85eff) [69bbb168-da59-5865-902f-94e77902bf95, below of=4e10ab1b-4af1-430e-8d27-209f051fecea] {Misturar Ingredientes};
+		\node (5ef6aa25-0c11-4fe9-93aa-df93efe03477) [087dbb4e-745a-5e6d-a957-eaaa92be42c8, below of=d48033f7-832c-4ecb-89d0-6d706ee85eff] {Despejar Massa na Forma};
+		\node (8c07ef74-4563-41bc-bf11-c7e9fffed44c) [69bbb168-da59-5865-902f-94e77902bf95, below of=5ef6aa25-0c11-4fe9-93aa-df93efe03477] {Assar o Bolo};
+		\node (5aa5fa31-196c-4607-940c-78f7cad5195a) [b0e005f8-e267-5a3a-a638-881fb9faed1d, below of=8c07ef74-4563-41bc-bf11-c7e9fffed44c, xshift=3cm] {Palito Seco};
+		\node (03de34ae-1cec-4576-b90a-340d5c97ac45) [69bbb168-da59-5865-902f-94e77902bf95, below of=5aa5fa31-196c-4607-940c-78f7cad5195a, yshift=-0.5cm] {Deixar Esfriar};
+		\node (09f15b6b-550f-4959-88fb-f5dc32606aea) [69bbb168-da59-5865-902f-94e77902bf95, below of=03de34ae-1cec-4576-b90a-340d5c97ac45] {Polvilhar erva doce};
+		\node (b657afdf-1f34-4820-a96b-54d16cef84fa) [69bbb168-da59-5865-902f-94e77902bf95, below of=09f15b6b-550f-4959-88fb-f5dc32606aea] {Servir o Bolo};
+		\node (2fda6024-724d-4f9d-a38e-c0e2abf65e93) [352e1c97-7d59-5eb2-89b1-63dd72ef26de, below of=b657afdf-1f34-4820-a96b-54d16cef84fa] {Fim};
+		\draw [7be24b85-97d0-5b76-ba9e-d94005dca8f2] (88e39224-08d3-4bdc-b2b4-38adb142e6ae) --  (4e10ab1b-4af1-430e-8d27-209f051fecea);
+		\draw [7be24b85-97d0-5b76-ba9e-d94005dca8f2] (4e10ab1b-4af1-430e-8d27-209f051fecea) --  (d48033f7-832c-4ecb-89d0-6d706ee85eff);
+		\draw [7be24b85-97d0-5b76-ba9e-d94005dca8f2] (d48033f7-832c-4ecb-89d0-6d706ee85eff) --  (5ef6aa25-0c11-4fe9-93aa-df93efe03477);
+		\draw [7be24b85-97d0-5b76-ba9e-d94005dca8f2] (5ef6aa25-0c11-4fe9-93aa-df93efe03477) --  (8c07ef74-4563-41bc-bf11-c7e9fffed44c);
+		\draw [7be24b85-97d0-5b76-ba9e-d94005dca8f2] (03de34ae-1cec-4576-b90a-340d5c97ac45) --  (09f15b6b-550f-4959-88fb-f5dc32606aea);
+		\draw [7be24b85-97d0-5b76-ba9e-d94005dca8f2] (09f15b6b-550f-4959-88fb-f5dc32606aea) --  (b657afdf-1f34-4820-a96b-54d16cef84fa);
+		\draw [7be24b85-97d0-5b76-ba9e-d94005dca8f2] (b657afdf-1f34-4820-a96b-54d16cef84fa) --  (2fda6024-724d-4f9d-a38e-c0e2abf65e93);
+		\draw [7be24b85-97d0-5b76-ba9e-d94005dca8f2] (5aa5fa31-196c-4607-940c-78f7cad5195a) -- node[anchor=east] {Sim} (03de34ae-1cec-4576-b90a-340d5c97ac45);
+		\draw [7be24b85-97d0-5b76-ba9e-d94005dca8f2] (8c07ef74-4563-41bc-bf11-c7e9fffed44c) |-  (5aa5fa31-196c-4607-940c-78f7cad5195a);
+		\draw [7be24b85-97d0-5b76-ba9e-d94005dca8f2] (5aa5fa31-196c-4607-940c-78f7cad5195a) |-
+		node[anchor=west] {Não}  (8c07ef74-4563-41bc-bf11-c7e9fffed44c);
+	\end{tikzpicture}
+}
+\end{figure}
+
+\textbf{\textit{Pseudocódigo:}}
+
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize,
+	linenos
+	]{python}
+Inicio
+	Pré-aquecer o forno
+	Misturar Ingredientes
+	Despejar Massa Na Forma
+	Assar o Bolo
+	Enquanto Palito seco for Falso FAÇA:
+		Assar o Bolo
+	Fim Enquanto
+	Deixar esfriar
+	Polvilhar com erva doce
+	Servir o Bolo
+Fim
+\end{minted}
+
+\subsection{Questão 2}
+
+Receita de Bolo da Vovó em \textit{Python}:
+\begin{itemize}
+	\item Crie uma função para cada item do algoritmo definido no exercício anterior.
+	\item Crie uma função que gerenciará os passos de execução do algoritmo.
+	\item Crie uma chamada de função ao gerenciador que criou e exiba a saída do programa.
+	
+\end{itemize}
+
+\textbf{\textit{Resposta:}}
+
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize,
+	linenos
+	]{python}
+"""
+Receita de Bolo da Vovó
+@author Augusto Mathias Adams <augusto.mathias@sesp.pr.gov.br>
+
+MIT License
+
+Copyright (c) 2023 Augusto Mathias Adams
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN
+"""
+
+import random
+
+def preaquecer_forno() -> None:
+	"""
+	Pré-aquecendo o forno
+		Args:
+			None
+		Returns:
+			None
+	"""
+	print("Pré-aquecendo o forno a 200 graus")
+
+def misturar_ingredientes() -> None:
+	"""
+	Misturar os Ingredientes em um liquidificador
+		Args:
+			None
+		Returns:
+			None
+	"""
+	print("Misturando ingredientes em um liquidificador:")
+	print("     1 copo de fubá mimoso")
+	print("     1 copo de farinha de trigo")
+	print("     1 e 1/2 copos de açúcar")
+	print("     1 colher de fermento em pó ")
+	print("     1 copo de leite")
+	print("     1 xícara de óleo")
+	print("     3 ovos")
+
+def despejar_massa_na_forma() -> None:
+	"""
+	Despejar massa na forma
+		Args:
+			None
+		Returns:
+			None
+	"""
+	print("Despejando a massa em uma forma")
+
+def assar_o_bolo() -> None:
+	"""
+	Assar o Bolo
+		Args:
+			None
+		Returns:
+			None
+	"""
+	print("Assando o bolo")
+
+def palito_seco() -> bool:
+	"""
+	Verifica se o palito está seco
+		Args:
+			None
+		Returns:
+		boolean
+	"""
+	r = random.random()
+	# se for menor que 1/30, simulamos palito seco
+	if r < 1/30:
+		print("O palito está seco")
+		return True
+	print("O palito ainda não está seco")
+	return False
+
+def deixar_esfriar() -> None:
+	"""
+	Deixar Esfriar
+		Args:
+			None
+		Returns:
+			None
+	"""
+	print("Deixando esfriar")
+
+def polvilhar_com_erva_doce() -> None:
+	"""
+	Polvilhar com erva doce
+		Args:
+			None
+		Returns:
+			None
+	"""
+	print("Polvilhando com erva doce")
+
+def servir_o_bolo() -> None:
+	"""
+	Servir o Bolo
+		Args:
+			None
+		Returns:
+			None
+	"""
+	print("Servindo o Bolo")
+
+
+def fazer_bolo() -> None:
+	"""
+	Fazer o bolo - wrapper do algoritmo principal
+		Args:
+			None
+		Returns:
+			None
+	"""
+	# vamos falsear
+	preaquecer_forno()
+	misturar_ingredientes()
+	despejar_massa_na_forma()
+	assar_o_bolo()
+	while not palito_seco():
+		assar_o_bolo()
+	deixar_esfriar()
+	polvilhar_com_erva_doce()
+	servir_o_bolo()
+
+# chamada para a função fazer_bolo
+
+fazer_bolo()
+
+\end{minted}
+
+\subsection{Questão 3}
+
+O que falta na bula de remédios para se tornar um algoritmo? Comente pelo menos 2 casos aplicáveis.
+
+\textbf{\textit{Resposta:}} um método como fazer. Como fazer o remédio (fabricação) e como tomar o remédio (prescrição) são coisas que faltam na bula de remédios. Um receituário é um algoritmo, pois traz como tomar o remédio. O método industrial para a produção do remédio também é um algoritmo.
+
+\subsection{Questão 4}
+
+Uma revendedora de carros usados paga a seus funcionários vendedores um salário fixo por mês,	mais uma comissão também fixa para cada carro vendido e mais 5\% do valor das vendas por ele	efetuadas. Escrever um algoritmo que leia o número de carros por ele vendidos, o valor total de suas vendas, o salário fixo e o valor que ele recebe por carro vendido. Calcule e escreva o salário final do vendedor.
+
+\textbf{\textit{Resposta:}}
+
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize,
+	linenos
+	]{python}
+	
+Algoritmo Cálculo do Salário do Vendedor
+	// Entrada de dados
+	Ler numero_carros_vendidos
+	Ler valor_total_vendas
+	Ler salario_fixo
+	Ler valor_por_carro_vendido
+	
+	// Cálculo do salário final
+	comissao_carros <- numero_carros_vendidos * valor_por_carro_vendido
+	comissao_vendas <- valor_total_vendas * 0.05
+	salario_final <- salario_fixo + comissao_carros + comissao_vendas
+	
+	// Exibição do resultado
+	Imprima "O salário final do vendedor é: ", salario_final
+Fim
+\end{minted}
+
+\subsection{Questão 5}
+
+A jornada de trabalho semanal de um funcionário é de 40 horas. O funcionário que trabalhar mais	de 40 horas receberá hora extra, cujo cálculo é o valor da hora regular com um acréscimo de 50\%.
+Escreva um algoritmo que leia o número de horas trabalhadas em um mês, o salário por hora e escreva o salário total do funcionário, que deverá ser acrescido das horas extras, caso tenham sido trabalhadas (considere que o mês possua 4 semanas exatas).
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize,
+	linenos
+	]{python}
+	
+	Função calcular_salario_total(horas_trabalhadas, salario_hora)
+		horas_semanais ← 40
+		semanas_mes ← 4
+		
+		salario_base ← horas_semanais * salario_hora
+		salario_extra ← 0
+		
+		Se horas_trabalhadas > (horas_semanais * semanas_mes) então
+			horas_extras ← horas_trabalhadas - (horas_semanais * semanas_mes)
+			salario_extra ← horas_extras * salario_hora * 1.5
+		Fim Se
+		
+		salario_total ← salario_base + salario_extra
+		Retorne salario_total
+	Fim Função
+	
+	# Exemplo de uso da função
+	horas_trabalhadas ← ler valor da entrada
+	salario_hora ← ler valor da entrada
+	
+	salario_final ← calcular_salario_total(horas_trabalhadas, salario_hora)
+	
+	Imorima "O salário total do funcionário é: R$", salario_final
+\end{minted}
+
+\subsection{Questão 6}
+
+Identifique o erro:\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize,
+	linenos
+	]{python}
+	
+inicio
+	ler nome
+	ler sexo
+	se sexo = M então
+		peso_ideal <- (72.7 * altura) - 58
+	senão
+		peso_ideal <- (62.1 * altura) - 44
+	fim_se
+	escrever peso_ideal
+fim
+\end{minted}
+
+\textbf{Resposta: a altura não é medida em lugar nenhum do algoritmo.}
+
+\subsection{Questão 7}
+
+	Preencha a Tabela considerando o pseudocódigo:
+
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize,
+	linenos
+	]{python}
+
+início
+	ler x
+	ler y
+	z <- (x*y) + 5
+	se z <= 0 então
+		resposta <- 'A'
+	senão
+		se z <= 100 então
+			resposta <- 'B'
+		senão
+			resposta <- 'C'
+		fim_se
+	fim_se
+	escrever z, resposta
+
+fim
+\end{minted}
+
+\begin{table}[ht]
+	\centering
+	
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\textbf{\textit{X}} & \textbf{\textit{Y}} & \textbf{\textit{Z}} & \textbf{\textit{Resposta}} \\
+		\hline 
+			3 & 2 & \textbf{11} & \textbf{B} \\
+			\hline
+			150 & 3 & \textbf{455} & \textbf{C} \\
+			\hline
+			7 & -1 & \textbf{-2} & \textbf{A} \\
+			\hline
+			-2 & 5 & \textbf{-5} & \textbf{A} \\
+			\hline
+			50 & 3 & \textbf{155} & \textbf{C} \\
+			\hline
+
+		\hline
+	\end{tabular}
+	
+\end{table}
+
+\subsection{Questão 9}
+	
+	Faça um algoritmo que solicite ao usuário números e os armazene em um vetor de 30 posições. Crie uma função que recebe o vetor preenchido e substitua todas as ocorrência de valores positivos por 1 e todos os valores negativos por 0.
+	
+	\textbf{Resposta:}
+	
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize,
+	linenos
+	]{python}
+
+def troca(vet):
+	for i in range(3):
+		if vet[i] >= 0:
+			vet[i] = 1
+		else:
+			vet[i] = 0
+		return vet
+	
+vet = [0]*30
+for i in range(30):
+	vet[i] = input('Digite um valor: ')
+	print vet
+	troca(vet)
+print(vet)
+
+\end{minted}
+	
+\subsection{Questão 10}
+
+Crie um algoritmo que leia um valor e a partir disso faça: 
+\begin{enumerate}
+	\item se o valor for 1 e 2, mostre o valor elevado ao cubo;
+	\item se o valor for múltiplo de 3 mostre o fatorial desse número;
+	\item se o valor for os valores 4, 5, 7 ou 8, mostre o valor dividido 9. Caso não seja nenhum dos valores, informe como “valor inválido”.
+\end{enumerate}
+
+\textbf{Resposta:}
+
+\begin{minted}[frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	bgcolor=LightGray,
+	fontsize=\footnotesize,
+	linenos
+	]{python}
+	
+import math
+num = input('Digite um valor: ')
+if num == 1 or num == 2:
+	print num**3
+elif num%3 == 0:
+	print math.factorial(num)
+elif num == 4 or num == 5 or num ==7 or num == 8:
+	print num/9.0
+else:
+	print 'Valor inválido'
+	
+\end{minted}
+
+
+Resposta mais \textit{Pythônica}:
+
+\begin{minted}[frame=lines,
+		framesep=2mm,
+		baselinestretch=1.2,
+		bgcolor=LightGray,
+		fontsize=\footnotesize,
+		linenos
+		]{python}
+		
+import math
+num = input('Digite um valor: ')
+if num in [1,2]:
+	print num**3
+elif num%3 == 0:
+	print math.factorial(num)
+elif num in [4,5,7,8]:
+	print num/9.0
+else:
+	print 'Valor inválido'
+	
+\end{minted}
+
+\section{Palavras Finais}
+
+Eu gostaria de propor um desafio: se eu receber até 80\% de todos os exercícios que faremos durante o nivelamento, eu me proponho a ministrar uma aula bônus de mecanismos de inteligência artificial, o que acham?
+
+mas tem regras:
+
+\begin{itemize}
+	\item Sejam honestos. Não vale trapacear, ok?
+	
+	\subitem A lista de exercícios deve ser feita de acordo com o que cada um sabe e não é uma simples cópia dos exercícios que há na apostila ou algo que o valha.
+	
+	\subitem Se forem usar o \textit{ChatGPT} para ajudar, lembrem-se que a resposta mais simples eu já conheço, não sendo portanto válida. Caprichem nas perguntas que fizerem ao \textit{ChatGPT}.
+	
+\end{itemize}
+
+Então, vamos ao desafio do dia:
+
+\begin{itemize}
+	\item O programa da calculadora usa somente estruturas condicionais do tipo \texttt{if-elif-else}. Produza uma nova forma de avaliação da operação na função \texttt{main} que mantenha o comportamento da estrutura condicional implementada mas faça de outra forma (Eu vejo 2 soluções que nem usam expressões condicionais) 
+\end{itemize}
+
+Se me entregarem este desafio, ganham um ponto em busca da inteligência artificial no Nivelamento de \textbf{\textit{Python}}.
+
+\textit{Por hoje é só.}
+
+\textit{Até o módulo 2.}
+
+Citação bíblica: \textit{\textbf{``Ainda que eu ande pelo vale da sombra da morte, não temerei mal algum, pois tu estás comigo; a tua vara e o teu cajado me consolam.'' (Salmo 23:4)}}
 
 \end{document}

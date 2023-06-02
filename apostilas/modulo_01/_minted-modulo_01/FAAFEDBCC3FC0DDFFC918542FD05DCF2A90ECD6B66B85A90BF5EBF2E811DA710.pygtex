@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	
+\PYG{n}{Algoritmo} \PYG{n}{Cálculo} \PYG{n}{do} \PYG{n}{Salário} \PYG{n}{do} \PYG{n}{Vendedor}
+	\PYG{o}{//} \PYG{n}{Entrada} \PYG{n}{de} \PYG{n}{dados}
+	\PYG{n}{Ler} \PYG{n}{numero\PYGZus{}carros\PYGZus{}vendidos}
+	\PYG{n}{Ler} \PYG{n}{valor\PYGZus{}total\PYGZus{}vendas}
+	\PYG{n}{Ler} \PYG{n}{salario\PYGZus{}fixo}
+	\PYG{n}{Ler} \PYG{n}{valor\PYGZus{}por\PYGZus{}carro\PYGZus{}vendido}
+	
+	\PYG{o}{//} \PYG{n}{Cálculo} \PYG{n}{do} \PYG{n}{salário} \PYG{n}{final}
+	\PYG{n}{comissao\PYGZus{}carros} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n}{numero\PYGZus{}carros\PYGZus{}vendidos} \PYG{o}{*} \PYG{n}{valor\PYGZus{}por\PYGZus{}carro\PYGZus{}vendido}
+	\PYG{n}{comissao\PYGZus{}vendas} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n}{valor\PYGZus{}total\PYGZus{}vendas} \PYG{o}{*} \PYG{l+m+mf}{0.05}
+	\PYG{n}{salario\PYGZus{}final} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n}{salario\PYGZus{}fixo} \PYG{o}{+} \PYG{n}{comissao\PYGZus{}carros} \PYG{o}{+} \PYG{n}{comissao\PYGZus{}vendas}
+	
+	\PYG{o}{//} \PYG{n}{Exibição} \PYG{n}{do} \PYG{n}{resultado}
+	\PYG{n}{Imprima} \PYG{l+s+s2}{\PYGZdq{}O salário final do vendedor é: \PYGZdq{}}\PYG{p}{,} \PYG{n}{salario\PYGZus{}final}
+\PYG{n}{Fim}
+\end{Verbatim}

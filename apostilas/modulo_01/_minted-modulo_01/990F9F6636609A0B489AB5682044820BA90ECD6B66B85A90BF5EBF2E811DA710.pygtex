@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	
+\PYG{n}{inicio}
+	\PYG{n}{ler} \PYG{n}{nome}
+	\PYG{n}{ler} \PYG{n}{sexo}
+	\PYG{n}{se} \PYG{n}{sexo} \PYG{o}{=} \PYG{n}{M} \PYG{n}{então}
+		\PYG{n}{peso\PYGZus{}ideal} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{p}{(}\PYG{l+m+mf}{72.7} \PYG{o}{*} \PYG{n}{altura}\PYG{p}{)} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{58}
+	\PYG{n}{senão}
+		\PYG{n}{peso\PYGZus{}ideal} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{p}{(}\PYG{l+m+mf}{62.1} \PYG{o}{*} \PYG{n}{altura}\PYG{p}{)} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{44}
+	\PYG{n}{fim\PYGZus{}se}
+	\PYG{n}{escrever} \PYG{n}{peso\PYGZus{}ideal}
+\PYG{n}{fim}
+\end{Verbatim}

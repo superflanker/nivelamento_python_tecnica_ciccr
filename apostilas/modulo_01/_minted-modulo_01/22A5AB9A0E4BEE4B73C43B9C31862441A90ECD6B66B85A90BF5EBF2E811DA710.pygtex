@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Inicio}
+	\PYG{n}{Pré}\PYG{o}{\PYGZhy{}}\PYG{n}{aquecer} \PYG{n}{o} \PYG{n}{forno}
+	\PYG{n}{Misturar} \PYG{n}{Ingredientes}
+	\PYG{n}{Despejar} \PYG{n}{Massa} \PYG{n}{Na} \PYG{n}{Forma}
+	\PYG{n}{Assar} \PYG{n}{o} \PYG{n}{Bolo}
+	\PYG{n}{Palito} \PYG{n}{seco}\PYG{err}{?}
+	\PYG{n}{Se} \PYG{n}{não}
+		\PYG{n}{Assar} \PYG{n}{o} \PYG{n}{Bolo}
+	\PYG{n}{Deixar} \PYG{n}{esfriar}
+	\PYG{n}{Polvilhar} \PYG{n}{com} \PYG{n}{erva} \PYG{n}{doce}
+	\PYG{n}{Servir} \PYG{n}{o} \PYG{n}{Bolo}
+\PYG{n}{Fim}
+\end{Verbatim}

@@ -1,0 +1,147 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+sd}{Receita de Bolo da Vovó}
+\PYG{l+s+sd}{@author Augusto Mathias Adams \PYGZlt{}augusto.mathias@sesp.pr.gov.br\PYGZgt{}}
+
+\PYG{l+s+sd}{MIT License}
+
+\PYG{l+s+sd}{Copyright (c) 2023 Augusto Mathias Adams}
+
+\PYG{l+s+sd}{Permission is hereby granted, free of charge, to any person obtaining a copy}
+\PYG{l+s+sd}{of this software and associated documentation files (the \PYGZdq{}Software\PYGZdq{}), to deal}
+\PYG{l+s+sd}{in the Software without restriction, including without limitation the rights}
+\PYG{l+s+sd}{to use, copy, modify, merge, publish, distribute, sublicense, and/or sell}
+\PYG{l+s+sd}{copies of the Software, and to permit persons to whom the Software is}
+\PYG{l+s+sd}{furnished to do so, subject to the following conditions:}
+
+\PYG{l+s+sd}{The above copyright notice and this permission notice shall be included in all}
+\PYG{l+s+sd}{copies or substantial portions of the Software.}
+
+\PYG{l+s+sd}{THE SOFTWARE IS PROVIDED \PYGZdq{}AS IS\PYGZdq{}, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR}
+\PYG{l+s+sd}{IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,}
+\PYG{l+s+sd}{FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE}
+\PYG{l+s+sd}{AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER}
+\PYG{l+s+sd}{LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,}
+\PYG{l+s+sd}{OUT OF OR IN}
+\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+
+\PYG{k+kn}{import} \PYG{n+nn}{random}
+
+\PYG{k}{def} \PYG{n+nf}{preaquecer\PYGZus{}forno}\PYG{p}{()} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{k+kc}{None}\PYG{p}{:}
+\PYG{+w}{	}\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+sd}{	Pré\PYGZhy{}aquecendo o forno}
+\PYG{l+s+sd}{		Args:}
+\PYG{l+s+sd}{			None}
+\PYG{l+s+sd}{		Returns:}
+\PYG{l+s+sd}{			None}
+\PYG{l+s+sd}{	\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Pré\PYGZhy{}aquecendo o forno a 200 graus\PYGZdq{}}\PYG{p}{)}
+
+\PYG{k}{def} \PYG{n+nf}{misturar\PYGZus{}ingredientes}\PYG{p}{()} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{k+kc}{None}\PYG{p}{:}
+\PYG{+w}{	}\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+sd}{	Misturar os Ingredientes em um liquidificador}
+\PYG{l+s+sd}{		Args:}
+\PYG{l+s+sd}{			None}
+\PYG{l+s+sd}{		Returns:}
+\PYG{l+s+sd}{			None}
+\PYG{l+s+sd}{	\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Misturando ingredientes em um liquidificador:\PYGZdq{}}\PYG{p}{)}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}     1 copo de fubá mimoso\PYGZdq{}}\PYG{p}{)}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}     1 copo de farinha de trigo\PYGZdq{}}\PYG{p}{)}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}     1 e 1/2 copos de açúcar\PYGZdq{}}\PYG{p}{)}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}     1 colher de fermento em pó \PYGZdq{}}\PYG{p}{)}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}     1 copo de leite\PYGZdq{}}\PYG{p}{)}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}     1 xícara de óleo\PYGZdq{}}\PYG{p}{)}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}     3 ovos\PYGZdq{}}\PYG{p}{)}
+
+\PYG{k}{def} \PYG{n+nf}{despejar\PYGZus{}massa\PYGZus{}na\PYGZus{}forma}\PYG{p}{()} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{k+kc}{None}\PYG{p}{:}
+\PYG{+w}{	}\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+sd}{	Despejar massa na forma}
+\PYG{l+s+sd}{		Args:}
+\PYG{l+s+sd}{			None}
+\PYG{l+s+sd}{		Returns:}
+\PYG{l+s+sd}{			None}
+\PYG{l+s+sd}{	\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Despejando a massa em uma forma\PYGZdq{}}\PYG{p}{)}
+
+\PYG{k}{def} \PYG{n+nf}{assar\PYGZus{}o\PYGZus{}bolo}\PYG{p}{()} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{k+kc}{None}\PYG{p}{:}
+\PYG{+w}{	}\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+sd}{	Assar o Bolo}
+\PYG{l+s+sd}{		Args:}
+\PYG{l+s+sd}{			None}
+\PYG{l+s+sd}{		Returns:}
+\PYG{l+s+sd}{			None}
+\PYG{l+s+sd}{	\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Assando o bolo\PYGZdq{}}\PYG{p}{)}
+
+\PYG{k}{def} \PYG{n+nf}{palito\PYGZus{}seco}\PYG{p}{()} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{n+nb}{bool}\PYG{p}{:}
+\PYG{+w}{	}\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+sd}{	Verifica se o palito está seco}
+\PYG{l+s+sd}{		Args:}
+\PYG{l+s+sd}{			None}
+\PYG{l+s+sd}{		Returns:}
+\PYG{l+s+sd}{		boolean}
+\PYG{l+s+sd}{	\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+	\PYG{n}{r} \PYG{o}{=} \PYG{n}{random}\PYG{o}{.}\PYG{n}{random}\PYG{p}{()}
+	\PYG{c+c1}{\PYGZsh{} se for menor que 1/30, simulamos palito seco}
+	\PYG{k}{if} \PYG{n}{r} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{1}\PYG{o}{/}\PYG{l+m+mi}{30}\PYG{p}{:}
+		\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}O palito está seco\PYGZdq{}}\PYG{p}{)}
+		\PYG{k}{return} \PYG{k+kc}{True}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}O palito ainda não está seco\PYGZdq{}}\PYG{p}{)}
+	\PYG{k}{return} \PYG{k+kc}{False}
+
+\PYG{k}{def} \PYG{n+nf}{deixar\PYGZus{}esfriar}\PYG{p}{()} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{k+kc}{None}\PYG{p}{:}
+\PYG{+w}{	}\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+sd}{	Deixar Esfriar}
+\PYG{l+s+sd}{		Args:}
+\PYG{l+s+sd}{			None}
+\PYG{l+s+sd}{		Returns:}
+\PYG{l+s+sd}{			None}
+\PYG{l+s+sd}{	\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Deixando esfriar\PYGZdq{}}\PYG{p}{)}
+
+\PYG{k}{def} \PYG{n+nf}{polvilhar\PYGZus{}com\PYGZus{}erva\PYGZus{}doce}\PYG{p}{()} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{k+kc}{None}\PYG{p}{:}
+\PYG{+w}{	}\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+sd}{	Polvilhar com erva doce}
+\PYG{l+s+sd}{		Args:}
+\PYG{l+s+sd}{			None}
+\PYG{l+s+sd}{		Returns:}
+\PYG{l+s+sd}{			None}
+\PYG{l+s+sd}{	\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Polvilhando com erva doce\PYGZdq{}}\PYG{p}{)}
+
+\PYG{k}{def} \PYG{n+nf}{servir\PYGZus{}o\PYGZus{}bolo}\PYG{p}{()} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{k+kc}{None}\PYG{p}{:}
+\PYG{+w}{	}\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+sd}{	Servir o Bolo}
+\PYG{l+s+sd}{		Args:}
+\PYG{l+s+sd}{			None}
+\PYG{l+s+sd}{		Returns:}
+\PYG{l+s+sd}{			None}
+\PYG{l+s+sd}{	\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+	\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Servindo o Bolo\PYGZdq{}}\PYG{p}{)}
+
+
+\PYG{k}{def} \PYG{n+nf}{fazer\PYGZus{}bolo}\PYG{p}{()} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{k+kc}{None}\PYG{p}{:}
+\PYG{+w}{	}\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+sd}{	Fazer o bolo \PYGZhy{} wrapper do algoritmo principal}
+\PYG{l+s+sd}{		Args:}
+\PYG{l+s+sd}{			None}
+\PYG{l+s+sd}{		Returns:}
+\PYG{l+s+sd}{			None}
+\PYG{l+s+sd}{	\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+	\PYG{c+c1}{\PYGZsh{} vamos falsear}
+	\PYG{n}{preaquecer\PYGZus{}forno}\PYG{p}{()}
+	\PYG{n}{misturar\PYGZus{}ingredientes}\PYG{p}{()}
+	\PYG{n}{despejar\PYGZus{}massa\PYGZus{}na\PYGZus{}forma}\PYG{p}{()}
+	\PYG{n}{assar\PYGZus{}o\PYGZus{}bolo}\PYG{p}{()}
+	\PYG{k}{while} \PYG{o+ow}{not} \PYG{n}{palito\PYGZus{}seco}\PYG{p}{():}
+		\PYG{n}{assar\PYGZus{}o\PYGZus{}bolo}\PYG{p}{()}
+	\PYG{n}{deixar\PYGZus{}esfriar}\PYG{p}{()}
+	\PYG{n}{polvilhar\PYGZus{}com\PYGZus{}erva\PYGZus{}doce}\PYG{p}{()}
+	\PYG{n}{servir\PYGZus{}o\PYGZus{}bolo}\PYG{p}{()}
+
+\PYG{c+c1}{\PYGZsh{} chamada para a função fazer\PYGZus{}bolo}
+
+\PYG{n}{fazer\PYGZus{}bolo}\PYG{p}{()}
+
+\end{Verbatim}
